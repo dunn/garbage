@@ -10,6 +10,7 @@ $narrow: 5%;
 $tiny: 2%;
 
 $box-border: .2em;
+$default-corner: .5em;
 
 $break1: 900px;
 $break2: 500px;
@@ -49,6 +50,10 @@ body {
   }
 }
 
+body > header > h1 {
+  padding-top: .1em;
+}
+
 body > header > h2 {
   padding-bottom: .5em;
 }
@@ -71,6 +76,7 @@ section.about {
   text-align: left;
   background-color: $fallback;
   background-color: $see-thru;
+  @include border-radius($default-corner, $default-corner);
 
   & > h2 {
     margin-top: .375em;
@@ -87,6 +93,7 @@ section.index {
 .cat article {
   background-color: $fallback;
   background-color: $see-thru;
+  @include border-radius($default-corner, $default-corner);
 
   padding-right: 1em;
   padding-bottom: .1em;
