@@ -1,0 +1,3 @@
+[submodule "exists.js"]
+        path = exists.js/
+        url = git://github.com/grumble/exists.js.git
