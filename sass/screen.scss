@@ -78,8 +78,8 @@ section.about {
   background-color: $see-thru;
   @include border-radius($default-corner, $default-corner);
 
-  & > h2 {
-    margin-top: .375em;
+  h2 {
+    padding-top: .375em;
   }
 }
 
