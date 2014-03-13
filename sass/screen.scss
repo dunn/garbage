@@ -65,19 +65,20 @@ main {
   text-align: center;
 }
 
+/* need two-element section->div structure to mirror two-element
+/* section->article structure of .primary and keep y-positions the same */
 section.about {
   float: left;
-  width: 25%;
-
-  padding-right: 1em;
-  padding-bottom: 0;
-  padding-left: 1em;
-
-  text-align: left;
+  width: 30%;
+}
+div.about {
   background-color: $fallback;
   background-color: $see-thru;
+  padding-right: 1em;
+  padding-bottom: .1em;
+  padding-left: 1em;
+  text-align: left;
   @include border-radius($default-corner, $default-corner);
-
   h2 {
     padding-top: .375em;
   }
@@ -114,8 +115,6 @@ section.single,
   width: 50%;
   margin: inherit;
 }
-
-/////////////// LESS IMPORTAT SHIT ///////////////
 
 h2,
 h3,
