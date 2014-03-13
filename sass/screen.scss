@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 @import "base";
 
 // ==============
@@ -52,6 +52,12 @@ body {
 
 body > header > h1 {
   padding-top: .1em;
+  &::before {
+	  content: "👻 ";
+  }
+  &::after {
+	  content: " 👻";
+  }
 }
 
 body > header > h2 {
