@@ -52,12 +52,6 @@ body {
 
 body > header > h1 {
   padding-top: .1em;
-  &::before {
-	  content: "👻 ";
-  }
-  &::after {
-	  content: " 👻";
-  }
 }
 
 body > header > h2 {
@@ -108,6 +102,15 @@ section.index {
 
   h2 {
     padding-top: .375em;
+  }
+  &:nth-of-type(odd) {
+    @include rotate(10deg);
+  }
+  &:nth-of-type(even) {
+    @include rotate(-10deg);
+  }
+  &:hover {
+    @include rotate(0deg);
   }
 }
 
@@ -187,6 +190,59 @@ article hr {
   color: black;
 }
 
+.ghost::before {
+	  content: "👻";
+    padding-right: 5em;
+    font-style: normal;
+    /* position: fixed or absolute is absolutely essential and nobody told me */
+    position: absolute;
+    -webkit-animation: ghost 4s linear infinite;
+    -moz-animation: ghost 4s linear infinite;
+    -o-animation: ghost 4s linear infinite;
+    animation: ghost 4s linear infinite;
+}
+
+@-moz-keyframes ghost {
+  from {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes ghost {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ghost {
+  from {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 //////////////////////// media queries ..................///////////////
 @media screen and (max-width: $break1) {
   section.about,
@@ -238,6 +294,17 @@ article hr {
   .sub article {
     width: auto;
   }
+.cat article {
+  &:nth-of-type(odd) {
+    @include rotate(5deg);
+  }
+  &:nth-of-type(even) {
+    @include rotate(-5deg);
+  }
+  &:hover {
+    @include rotate(inherit);
+  }
+}
   h1 {
     font-size: 171.5%;
   }
