@@ -202,6 +202,26 @@ article hr {
     animation: ghost 4s linear infinite;
 }
 
+.one::before {
+  -webkit-animation-delay: -1s;
+  -moz-animation-delay: -1s;
+  -o-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.two::before {
+  -webkit-animation-delay: -2s;
+  -moz-animation-delay: -2s;
+  -o-animation-delay: -2s;
+  animation-delay: -2s;
+}
+.three::before {
+  -webkit-animation-delay: -3s;
+  -moz-animation-delay: -3s;
+  -o-animation-delay: -3s;
+  animation-delay: -3s;
+}
+
 @-moz-keyframes ghost {
   from {
     -moz-transform: rotate(0deg);
