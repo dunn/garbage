@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import "base";
+
+// ==============
+// DIMENSIONS
+// ==============
+$break1: 1100px;
+$break2: 800px;
+$break3: 500px;
+
+///////// DECORATION //////////////////
+///////// DECORATION //////////////////
+///////// DECORATION //////////////////
+///////// DECORATION //////////////////
+///////// DECORATION //////////////////
+
+.page-header {
+  background: oldlace;
+
+  border-top: .2em solid bisque;
+  border-bottom: .2em solid bisque;
+  h1 {
+    color: sienna;
+    border-bottom: .125em solid sienna;
+  }
+  h2 {
+    color: burlywood;
+  }
+//  @include text-shadow(lightsteelblue 1px 1px 0);
+}
+
+ol li {
+  color: darkgrey;
+}
+
+p {
+  color: dimgrey;
+}
+
+/////////////////////////// LAYOUT ///////////////////////////
+/////////////////////////// LAYOUT ///////////////////////////
+/////////////////////////// LAYOUT ///////////////////////////
+/////////////////////////// LAYOUT ///////////////////////////
+
+.page-header {
+  h2 + h2 {
+    margin-top: -.75em;
+  }
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 20%;
+}
+
+main {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ol {
+  text-align: left;
+}
+
+///////// text //////
+///////// text //////
+///////// text //////
+///////// text //////
+
+body {
+  font-size: 16pt;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 225%;
+}
+
+h3 {
+  font-size: 150%;
+}
+
+h4 {
+  font-size: 131.25%;
+}
+
+h5,
+h6 {
+  font-size: 112.5%;
+}
+
+img,
+object,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+//////////////////////// media queries ..................///////////////
+//////////////////////// media queries ..................///////////////
+//////////////////////// media queries ..................///////////////
+@media screen and (max-width: $break1) {
+  body {
+    font-size: 14pt;
+  }
+  h1 {
+    font-size: 225%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  h3 {
+    font-size: 131.25%;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 112.5%;
+  }
+}
+
+@media screen and (max-width: $break2) {
+  main {
+    width: 65%;
+  }
+
+  body {
+    font-size: 12pt;
+  }
+  h1 {
+    font-size: 171.5%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  h3 {
+    font-size: 128.5%;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 114.3%;
+  }
+}
+
+@media screen and (max-width: $break3) {
+.page-header {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+  main {
+    width: 90%;
+  }
+}
