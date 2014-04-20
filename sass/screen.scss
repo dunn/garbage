@@ -19,12 +19,14 @@ $break2: 500px;
 $fallback: rgb(255, 255, 255) transparent;
 $see-thru: rgba(255,255,255,.75);
 
-/////////////////////////// LAYOUT ///////////////////////////
-
-/////////////// MAJOR ELEMENTS ///////////////
+/////////////////////// DECORATIONS ////////////////////////
 
 html {
   background: lightgreen;
+  // http://css-tricks.com/css3-gradients/
+  // http://compass-style.org/examples/compass/css3/gradient/
+  // https://github.com/chriseppstein/compass/issues/401
+  @include background-image(repeating-linear-gradient(45deg, lightgreen, lightgreen 100px, mediumaquamarine 100px, mediumaquamarine 200px));
 }
 
 html.cat {
@@ -35,163 +37,37 @@ html.cat {
   background-size: cover;
 }
 
-body {
-  font-size: 16pt;
-}
-
-body {
-  & > header,
-  & > footer {
-    clear: both;
-
-    text-align: center;
-    background-color: $fallback;
-    background-color: $see-thru;
-  }
-}
-
-body > header > h1 {
-  padding-top: .1em;
-}
-
-body > header > h2 {
-  padding-bottom: .5em;
-}
-
-main {
-  width: 90%;
-
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* need two-element section->div structure to mirror two-element
-/* section->article structure of .primary and keep y-positions the same */
-section.about {
-  float: left;
-  width: 35%;
-}
-div.about {
-  background-color: $fallback;
-  background-color: $see-thru;
-  padding-right: 1em;
-  padding-bottom: .1em;
-  padding-left: 1em;
-  text-align: left;
-  @include border-radius($default-corner, $default-corner);
-  h2 {
-    padding-top: .375em;
-  }
-}
-
-section.index {
-  float: right;
-  width: 60%;
-
-  margin-bottom: 1em;
-}
-
-.cat article {
-  background-color: $fallback;
-  background-color: $see-thru;
-  @include border-radius($default-corner, $default-corner);
-
-  padding-right: 1em;
-  padding-bottom: .1em;
-  padding-left: 1em;
-
-  h2 {
-    padding-top: .375em;
-  }
-  &:nth-of-type(odd) {
-    @include rotate(10deg);
-  }
-  &:nth-of-type(even) {
-    @include rotate(-10deg);
-  }
-  &:hover {
-    @include rotate(0deg);
-  }
-}
-
-article,
+body > header,
+body > footer,
+div.about,
+.cat article,
 section.single {
-  text-align: left;
+  background-color: $fallback;
+  background-color: $see-thru;
 }
 
 section.single,
-.sub article {
-  width: 50%;
-  margin: inherit;
+div.about,
+.cat article {
+  @include border-radius($default-corner, $default-corner);
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 100%;
-}
-
-h1 {
-  font-size: 300%;
-}
-
-h2 {
-  font-size: 225%;
-}
-
-h3 {
-  font-size: 150%;
-}
-
-h4 {
-  font-size: 131.25%;
-}
-
-h5,
-h6 {
-  font-size: 112.5%;
-}
-
-h1 + h2 {
-  margin-top: -1em;
-}
-
-/* http://unstoppablerobotninja.com/entry/fluid-images/ */
-// /* needs width: 100% in IE stylesheet */
-img,
-object,
-iframe {
-  max-width: 100%;
-}
 img {
-  margin: .5em 0 .5em 0;
-  height: auto;
   border: $box-border solid black;
-  @media screen and (max-width: $break2) {
-    float: none;
-  }
 }
 
 hr {
-  height: .125em;
-  width: 50%;
-  border: 0;
   background-color: white;
   color: white;
 }
 
 article hr {
-  height: .125em;
-  width: 50%;
-  border: 0;
   background-color: black;
   color: black;
 }
 
 .ghost::before {
-	  content: "👻";
+	content: "👻";
     padding-right: 5em;
     font-style: normal;
     /* position: fixed or absolute is absolutely essential and nobody told me */
@@ -261,6 +137,160 @@ article hr {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+//////////////////////////////////////////////////////////////
+/////////////////////////// LAYOUT ///////////////////////////
+/////////////////////////////////////////////////////////////
+
+body {
+  font-size: 16pt;
+}
+
+body {
+  & > header,
+  & > footer {
+    clear: both;
+    text-align: center;
+  }
+}
+
+body > header > h1 {
+  padding-top: .1em;
+}
+
+body > header > h2 {
+  padding-bottom: .5em;
+}
+
+main {
+  width: 90%;
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* need two-element section->div structure to mirror two-element
+/* section->article structure of .primary and keep y-positions the same */
+section.about {
+  float: left;
+  width: 35%;
+}
+div.about {
+  padding-right: 1em;
+  padding-bottom: .1em;
+  padding-left: 1em;
+  text-align: left;
+  h2 {
+    padding-top: .375em;
+  }
+}
+
+section.index {
+  float: right;
+  width: 60%;
+
+  margin-bottom: 1em;
+}
+
+.cat article {
+  padding-right: 1em;
+  padding-bottom: .1em;
+  padding-left: 1em;
+
+  h2 {
+    padding-top: .375em;
+  }
+  &:nth-of-type(odd) {
+    @include rotate(10deg);
+  }
+  &:nth-of-type(even) {
+    @include rotate(-10deg);
+  }
+  &:hover {
+    @include rotate(0deg);
+  }
+}
+
+article,
+section.single {
+  text-align: left;
+}
+
+section.single,
+.sub article {
+  width: 50%;
+  margin: inherit;
+}
+
+section.single {
+  padding: .1em 1em;
+}
+
+.single {
+	main > footer {
+		color: white;
+	}
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 100%;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 225%;
+}
+
+h3 {
+  font-size: 150%;
+}
+
+h4 {
+  font-size: 131.25%;
+}
+
+h5,
+h6 {
+  font-size: 112.5%;
+}
+
+h1 + h2 {
+  margin-top: -1em;
+}
+
+/* http://unstoppablerobotninja.com/entry/fluid-images/ */
+// /* needs width: 100% in IE stylesheet */
+img,
+object,
+iframe {
+  max-width: 100%;
+}
+img {
+  margin: .5em 0 .5em 0;
+  height: auto;
+  @media screen and (max-width: $break2) {
+    float: none;
+  }
+}
+
+hr {
+  height: .125em;
+  width: 50%;
+  border: 0;
+}
+
+article hr {
+  height: .125em;
+  width: 50%;
+  border: 0;
 }
 
 //////////////////////// media queries ..................///////////////

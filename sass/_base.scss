@@ -13,8 +13,16 @@ body {
   font-family: "Amaranth";
 }
 
+blockquote,
 .slogan,
 dt,
 footer {
   font-style: italic;
+}
+
+.slogan,
+blockquote {
+  em {
+    font-style: normal;
+  }
 }

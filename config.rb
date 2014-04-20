@@ -1,4 +1,5 @@
 # Require any additional compass plugins here.
+Compass::BrowserSupport.add_support("repeating-linear-gradient", "webkit", "moz", "ms")
 
 # Set this to the root of your project when deployed:
 http_path = "/"
