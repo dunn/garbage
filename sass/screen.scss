@@ -331,9 +331,15 @@ article hr {
   body {
     font-size: 14pt;
   }
-	main {
-		margin: 0;
-	}
+  main {
+    margin: 0;
+  }
+  main footer {
+    margin-left: 1em;
+  }
+  blockquote {
+    margin: 0 1em;
+  }
   section.about,
   section.index {
     width: auto;
