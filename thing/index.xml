@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Things on Alex Dunn has no idea what he&#39;s doing </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://megr.im/thing/index.xml</link>
+    
+    
+    
+    <updated>Sun, 20 Apr 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Jerry Fodor&#39;s Wittgenstein parody</title>
+      <link>http://megr.im/thing/fodor</link>
+      <pubDate>Sun, 20 Apr 2014 00:00:00 UTC</pubDate>
+      
+      <guid>http://megr.im/thing/fodor</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://tar.weatherson.org/2007/01/27/foggy-wittgenstein/&#34;&gt;Sometime in the 60s&lt;/a&gt; Michael Frayn wrote a &lt;a href=&#34;http://stevepetersen.net/personal/wittgenstein-fog.html&#34; title=&#34;Fog-like Sensations&#34;&gt;goofy parody&lt;/a&gt; of Ludwig Wittgenstein&amp;rsquo;s &lt;em&gt;Philosophical Investigations&lt;/em&gt;, and around 1970 Jerry Fodor wrote some &amp;ldquo;further addenda.&amp;rdquo;  Fodor&amp;rsquo;s parody isn&amp;rsquo;t really as good, but it still deserves to be better preserved than it is &lt;a href=&#34;http://www.nyu.edu/gsas/dept/philo/faculty/block/miscellaneous/Fodor_Wittgenstein.png&#34; title=&#34;PNG image&#34;&gt;at present&lt;/a&gt;, so I transcribed it here.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exists.js</title>
+      <link>http://megr.im/thing/exists.js</link>
+      <pubDate>Fri, 28 Feb 2014 00:00:00 UTC</pubDate>
+      
+      <guid>http://megr.im/thing/exists.js</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re a scumbag analytic philosopher like me then this might actually
+come in handy, like when your &amp;ldquo;friend&amp;rdquo; suggests that chairs are
+ontologically innocent.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reading.js</title>
+      <link>http://megr.im/thing/reading</link>
+      <pubDate>Thu, 30 Aug 2012 00:00:00 UTC</pubDate>
+      
+      <guid>http://megr.im/thing/reading</guid>
+      <description>&lt;p&gt;Reading.js is a crummy bit of CSS and JavaScript that&amp;rsquo;s supposed to
+make it easier to read long documents online.
+(&lt;a href=&#34;modernphilosophy/text.html&#34; title=&#34;HTML version of Modern Philosophy&#34;&gt;Like this one!&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Include two lines in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of a plain HTML file&amp;mdash;the kind
+produced by &lt;a href=&#34;http://johnmacfarlane.net/pandoc/&#34; title=&#34;pandoc project
+page&#34;&gt;pandoc&lt;/a&gt; or by most
+&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34; title=&#34;Markdown
+project page&#34;&gt;Markdown&lt;/a&gt;-to-HTML converters&amp;mdash;and gain nifty features like
+keyboard shortcuts, section folding, and color scheme switching:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;http://baruffio.com/reading.js/stylesheets/reading.css&amp;quot;&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://baruffio.com/reading.js/scripts/reading.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fountain CLM</title>
+      <link>http://megr.im/thing/fountain</link>
+      <pubDate>Mon, 04 Jun 2012 00:00:00 UTC</pubDate>
+      
+      <guid>http://megr.im/thing/fountain</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.barebones.com/support/develop/clm.html&#34; title=&#34;Documentation from Bare Bones Software&#34;&gt;Codeless Language Modules&lt;/a&gt; (CLMs) are plugins for
+&lt;a href=&#34;http://www.barebones.com/products/TextWrangler/&#34; title=&#34;TextWrangler product page on Bare Bones Software&#34;&gt;TextWrangler&lt;/a&gt; and
+&lt;a href=&#34;http://www.barebones.com/products/bbedit/&#34; title=&#34;BBEdit product
+page on Bare Bones Software&#34;&gt;BBEdit&lt;/a&gt; that add syntax highlighting, code
+folding, and other capabilities for languages not natively supported
+by these programs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://fountain.io/&#34; title=&#34;Fountain information page&#34;&gt;Fountain&lt;/a&gt; is a
+plain-text syntax for writing screenplays. (The
+&lt;a href=&#34;http://fountain.io/syntax&#34; title=&#34;Fountain syntax
+reference&#34;&gt;Fountain syntax&lt;/a&gt; is similar to that of
+&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34; title=&#34;Markdown
+project page&#34;&gt;Markdown&lt;/a&gt;, a general-purpose syntax.) Fountain files are designed
+to be very readable, but they can be easily converted to other formats
+(like PDF and FDX) using
+&lt;a href=&#34;http://fountain.io/apps&#34; title=&#34;Fountain
+apps&#34;&gt;Fountain-compatible applications&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

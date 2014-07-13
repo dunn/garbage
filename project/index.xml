@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Projects on Alex Dunn has no idea what he&#39;s doing </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://megr.im/project/index.xml</link>
+    
+    
+    
+    <updated>Tue, 11 Jun 2013 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Santa Barbara Bullshit</title>
+      <link>http://megr.im/project/bullshit</link>
+      <pubDate>Tue, 11 Jun 2013 00:00:00 UTC</pubDate>
+      
+      <guid>http://megr.im/project/bullshit</guid>
+      <description>&lt;p&gt;Santa Barbara is full of Serious People with Serious Problems.  If
+they aren&amp;rsquo;t heroically defending the city&amp;rsquo;s Mediterranean
+architecture, or battling against City Council&amp;rsquo;s perpetual War on
+Cars, they are fretting about the lack of civility shown by today&amp;rsquo;s
+youths and marvelling at the impudence of the homeless population&amp;rsquo;s
+continued existence.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Santa Barbara Bullshit&lt;/em&gt; treats all these concerns with the deadly
+earnestness they deserve.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Daily Nonsense</title>
+      <link>http://megr.im/project/nonsense</link>
+      <pubDate>Sat, 27 Apr 2013 00:00:00 UTC</pubDate>
+      
+      <guid>http://megr.im/project/nonsense</guid>
+      <description>&lt;p&gt;I am delighted to announce the launch of &lt;em&gt;The Daily Nonsense&lt;/em&gt;, the
+only campus publication at UCSB with any moral compass at all.  Upon
+learning of our existence, a group of campus Republicans went back in
+time and started something called
+&lt;a href=&#34;http://dailynexus.com/&#34; title=&#34;WARNING WARNING FAKE
+SITE&#34;&gt;&amp;ldquo;The Daily Nexus&amp;rdquo;&lt;/a&gt; in an attempt to undermine our credibility. Support the
+&lt;em&gt;Nonsense&lt;/em&gt; and recognize the &lt;em&gt;Nexus&lt;/em&gt; for the cabal of hacks they are!&lt;/p&gt;
+
+&lt;p&gt;(Please direct all complaints to
+&lt;a href=&#34;https://twitter.com/thedailynexus&#34;&gt;our social media intern&lt;/a&gt;.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>&#34;Modern Philosophy&#34; in plain text</title>
+      <link>http://megr.im/project/modphil</link>
+      <pubDate>Mon, 28 May 2012 00:00:00 UTC</pubDate>
+      
+      <guid>http://megr.im/project/modphil</guid>
+      <description>&lt;p&gt;&lt;em&gt;Modern Philosophy&lt;/em&gt; is a free textbook created by
+&lt;a href=&#34;https://filebox.vt.edu/users/ottw/ott.htm&#34; title=&#34;Walter Ott&#39;s
+personal site&#34;&gt;Walter Ott&lt;/a&gt;. It combines public-domain primary sources with
+supplementary material and study questions. Everything not in the
+public domain is licensed under
+&lt;a href=&#34;http://creativecommons.org/licenses/by-nc-sa/3.0/&#34; title=&#34;Creative Commons license page&#34;&gt;CC BY-NC-SA 3.0&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This modified version of the text is written in
+&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34; title=&#34;Markdown
+project page&#34;&gt;Markdown&lt;/a&gt;. Markdown is a plain-text syntax that allows for easy
+conversion to other file formats.  Using
+&lt;a href=&#34;http://johnmacfarlane.net/pandoc/&#34; title=&#34;pandoc project page&#34;&gt;pandoc&lt;/a&gt;,
+&lt;em&gt;Modern Philosophy&lt;/em&gt; can be easily converted to HTML, PDF, EPUB, and
+&lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#options&#34; title=&#34;pandoc options&#34;&gt;many other formats&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This version of &lt;em&gt;Modern Philosophy&lt;/em&gt; is kept in a
+&lt;a href=&#34;https://github.com/grumble/modernphilosophy&#34; title=&#34;GitHub repository&#34;&gt;public repository on GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
