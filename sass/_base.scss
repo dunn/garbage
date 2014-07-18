@@ -1,6 +1,6 @@
-@import "compass/css3";
+@import "compass";
 
-@import url(http://fonts.googleapis.com/css?family=Amaranth:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic);
 
 /* variables and mixins */
 
@@ -10,7 +10,7 @@
 /////// stuff for print and screen
 
 body {
-  font-family: "Amaranth";
+  font-family: "Cabin", Helvetica, 'sans-serif';
 }
 
 blockquote,

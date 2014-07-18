@@ -10,132 +10,52 @@ $narrow: 5%;
 $tiny: 2%;
 
 $box-border: .2em;
-$default-corner: .5em;
+$default-corner: .25em;
 
 $break1: 900px;
 $break2: 500px;
 
 ///////// colors /////
-$fallback: rgb(255, 255, 255) transparent;
-$see-thru: rgba(255,255,255,.75);
+$ggg: #ebd987;
+$bbb: #87ceeb;
+$rrr: #eb87b7;
+
+$wwr: white;
 
 /////////////////////// DECORATIONS ////////////////////////
 html {
-  background: lightgreen;
+  background: $ggg;
   // http://css-tricks.com/css3-gradients/
   // http://compass-style.org/examples/compass/css3/gradient/
   // https://github.com/chriseppstein/compass/issues/401
-  @include background-image(repeating-linear-gradient(45deg, lightgreen, lightgreen 100px, mediumaquamarine 100px, mediumaquamarine 200px));
+  @include background-image(repeating-linear-gradient(45deg, $ggg, $ggg 150px, $bbb 150px, $bbb 300px));
 }
 
-html.cat {
-  background: url(http://i.imgur.com/GgvLwHV.gif) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body {
+	color: $wwr;
 }
 
-body > header,
-body > footer,
+a {
+	color: $wwr;
+	text-decoration: none;
+	border-bottom: .125em dotted $ggg;
+}
+
+.page-header,
+.page-footer,
 div.about,
 .cat article,
 section.single {
-  background-color: $fallback;
-  background-color: $see-thru;
-}
-
-section.single,
-div.about,
-.cat article {
-  @include border-radius($default-corner, $default-corner);
+  background-color: $rrr;
 }
 
 img {
-  border: $box-border solid black;
+  border: $box-border solid $wwr;
 }
 
 hr {
-  background-color: white;
-  color: white;
-}
-
-article hr {
-  background-color: black;
-  color: black;
-}
-
-.ghost::before {
-	content: "👻";
-    padding-right: 5em;
-    font-style: normal;
-    /* position: fixed or absolute is absolutely essential and nobody told me */
-    position: absolute;
-    -webkit-animation: ghost 4s linear infinite;
-    -moz-animation: ghost 4s linear infinite;
-    -o-animation: ghost 4s linear infinite;
-    animation: ghost 4s linear infinite;
-}
-
-.one::before {
-  -webkit-animation-delay: -1s;
-  -moz-animation-delay: -1s;
-  -o-animation-delay: -1s;
-  animation-delay: -1s;
-}
-
-.two::before {
-  -webkit-animation-delay: -2s;
-  -moz-animation-delay: -2s;
-  -o-animation-delay: -2s;
-  animation-delay: -2s;
-}
-.three::before {
-  -webkit-animation-delay: -3s;
-  -moz-animation-delay: -3s;
-  -o-animation-delay: -3s;
-  animation-delay: -3s;
-}
-
-@-moz-keyframes ghost {
-  from {
-    -moz-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -moz-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes ghost {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes ghost {
-  from {
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+  background-color: $wwr;
+  color: $wwr;
 }
 
 //////////////////////////////////////////////////////////////
@@ -146,19 +66,17 @@ body {
   font-size: 16pt;
 }
 
-body {
-  & > header,
-  & > footer {
+.page-header,
+.page-footer {
     clear: both;
     text-align: center;
-  }
 }
 
-body > header > h1 {
+.page-header h1 {
   padding-top: .1em;
 }
 
-body > header > h2 {
+.page-header h2 {
   padding-bottom: .5em;
 }
 
@@ -200,15 +118,6 @@ section.index {
   h2 {
     padding-top: .375em;
   }
-  &:nth-of-type(odd) {
-    @include rotate(10deg);
-  }
-  &:nth-of-type(even) {
-    @include rotate(-10deg);
-  }
-  &:hover {
-    @include rotate(0deg);
-  }
 }
 
 article,
@@ -224,12 +133,6 @@ section.single,
 
 section.single {
   padding: .1em 1em;
-}
-
-.single {
-	main > footer {
-		color: white;
-	}
 }
 
 h2,
@@ -349,17 +252,6 @@ article hr {
   .sub article {
     width: auto;
   }
-.cat article {
-  &:nth-of-type(odd) {
-    @include rotate(5deg);
-  }
-  &:nth-of-type(even) {
-    @include rotate(-5deg);
-  }
-  &:hover {
-    @include rotate(inherit);
-  }
-}
   h1 {
     font-size: 171.5%;
   }
