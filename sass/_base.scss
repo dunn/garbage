@@ -1,5 +1,4 @@
 @import "compass";
-
 @import url(http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic);
 
 /* variables and mixins */
@@ -8,6 +7,11 @@
 @import "normalize";
 
 /////// stuff for print and screen
+/* apply a natural box layout model to all elements */
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
 
 body {
   font-family: "Cabin", Helvetica, 'sans-serif';

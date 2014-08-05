@@ -16,46 +16,112 @@ $break1: 900px;
 $break2: 500px;
 
 ///////// colors /////
+// SOLARIZED COLORS
+// Copyright (c) 2011 Ethan Schoonover */
+// Released under the MIT license and available at */
+// http://ethanschoonover.com/solarized */
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+//// tricolor scheme
 $ggg: #ebd987;
 $bbb: #87ceeb;
 $rrr: #eb87b7;
-
 $wwr: white;
 
 /////////////////////// DECORATIONS ////////////////////////
 html {
-  background: $ggg;
+  background: $base3;
   // http://css-tricks.com/css3-gradients/
   // http://compass-style.org/examples/compass/css3/gradient/
   // https://github.com/chriseppstein/compass/issues/401
-  @include background-image(repeating-linear-gradient(45deg, $ggg, $ggg 150px, $bbb 150px, $bbb 300px));
+  @include background-image(repeating-linear-gradient(45deg, $base3, $base3 150px, $base03 150px, $base03 300px));
 }
 
 body {
-	color: $wwr;
-}
-
-a {
-	color: $wwr;
-	text-decoration: none;
-	border-bottom: .125em dotted $ggg;
-}
-
-.page-header,
-.page-footer,
-div.about,
-.cat article,
-section.single {
-  background-color: $rrr;
+	color: $base3;
 }
 
 img {
-  border: $box-border solid $wwr;
+  border: $box-border solid $base3;
 }
 
 hr {
-  background-color: $wwr;
-  color: $wwr;
+  background-color: $base3;
+  color: $base3;
+}
+
+a {
+	color: $base3;
+	text-decoration: none;
+	border-bottom: .125em dotted;
+}
+
+.page-header,
+.page-footer {
+  background-color: $base03;
+}
+
+///// Types
+.about {
+	border-color: $red;
+	background-color: $red;
+	a {
+		border-bottom-color: $blue;
+	}
+}
+.project {
+	border-color: $magenta;
+	background-color: $magenta;
+	a {
+		border-bottom-color: $cyan;
+	}
+}
+.story {
+	border-color: $orange;
+	background-color: $orange;
+	a {
+		border-bottom-color: $violet;
+	}
+}
+.thing {
+	border-color: $violet;
+	background-color: $violet;
+	a {
+		border-bottom-color: $orange;
+	}
+}
+.website {
+	border-color: $blue;
+	background-color: $blue;
+	a {
+		border-bottom-color: $red;
+	}
+}
+.post {
+	border-color: $cyan;
+	background-color: $cyan;
+	a {
+		border-bottom-color: $magenta;
+	}
+}
+a:hover {
+	background-color: $base03;
+	border-bottom-color: $base3;
 }
 
 //////////////////////////////////////////////////////////////
@@ -64,6 +130,31 @@ hr {
 
 body {
   font-size: 16pt;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+article {
+	margin: 0;
+	text-align: left;
+	border: .25em solid;
+	padding-left: 3%;
+	padding-right: 3%;
+	float: left;
+	width: 50%;
+}
+
+section {
+	text-align: left;
+	border: .25em solid;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding-left: 3%;
+	padding-right: 3%;
 }
 
 .page-header,
@@ -78,61 +169,6 @@ body {
 
 .page-header h2 {
   padding-bottom: .5em;
-}
-
-main {
-  width: 90%;
-
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* need two-element section->div structure to mirror two-element
-/* section->article structure of .primary and keep y-positions the same */
-section.about {
-  float: left;
-  width: 35%;
-}
-div.about {
-  padding-right: 1em;
-  padding-bottom: .1em;
-  padding-left: 1em;
-  text-align: left;
-  h2 {
-    padding-top: .375em;
-  }
-}
-
-section.index {
-  float: right;
-  width: 60%;
-
-  margin-bottom: 1em;
-}
-
-.cat article {
-  padding-right: 1em;
-  padding-bottom: .1em;
-  padding-left: 1em;
-
-  h2 {
-    padding-top: .375em;
-  }
-}
-
-article,
-section.single {
-  text-align: left;
-}
-
-section.single,
-.sub article {
-  width: 50%;
-  margin: inherit;
-}
-
-section.single {
-  padding: .1em 1em;
 }
 
 h2,
@@ -189,25 +225,14 @@ hr {
   border: 0;
 }
 
-article hr {
-  height: .125em;
-  width: 50%;
-  border: 0;
-}
-
 //////////////////////// media queries ..................///////////////
 @media screen and (max-width: $break1) {
-  section.about,
-  section.index {
+  article {
     float: none;
-    width: 80%;
-    margin: inherit;
+    width: 100%;
+    margin: 0;
   }
-  section.about {
-    padding: .1em 1em;
-  }
-  section.single,
-  .sub article {
+  section {
     width: 80%;
   }
   h1 {
@@ -233,24 +258,15 @@ article hr {
   body {
     font-size: 14pt;
   }
-  main {
-    margin: 0;
-  }
   main footer {
     margin-left: 1em;
   }
   blockquote {
     margin: 0 1em;
   }
-  section.about,
-  section.index {
-    width: auto;
-  }
-  section.single {
+  section {
+	margin: 0;
     width: 100%;
-  }
-  .sub article {
-    width: auto;
   }
   h1 {
     font-size: 171.5%;
