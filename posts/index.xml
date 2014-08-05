@@ -1,78 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Recent Content on Alex Dunn has no idea what he’s doing </title>
+      <title>Posts on Alex Dunn has no idea what he’s doing </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://megr.im/index.xml</link>
+    <link>http://megr.im/posts/index.xml</link>
     
     
     
-    <updated>Thu, 17 Jul 2014 00:00:00 UTC</updated>
-    
-    <item>
-      <title>The Good Trolle</title>
-      <link>http://megr.im/things/trolle</link>
-      <pubDate>Thu, 17 Jul 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/trolle</guid>
-      <description>&lt;p&gt;The Good Trolle is a new Twitter citizen who serves two complementary roles:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;It notifies its battle-ready followers of racists, sexists, homophobes, transphobes, and ableists in need of a good drubbing, and it does this by:&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;allowing anyone overwhelmed by said jerks to tweet at &lt;a href=&#34;https://twitter.com/good_trolle&#34;&gt;@good_trolle&lt;/a&gt; and offload the abuse onto people with the time and energy to shoulder the burden.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Baruffio</title>
-      <link>http://megr.im/websites/baruffio</link>
-      <pubDate>Mon, 05 May 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/websites/baruffio</guid>
-      <description>&lt;p&gt;&lt;em&gt;Baruffio&lt;/em&gt; is a blog for people who take silly things way too
-seriously. It&amp;rsquo;s where you can read ludicrously in-depth analyses of a
-single spell. It&amp;rsquo;s where the only argument against a conspiracy
-theory is that it&amp;rsquo;s not consistent. It&amp;rsquo;s where we&amp;rsquo;re still talking
-about &lt;em&gt;Harry Potter,&lt;/em&gt; after all these years.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Jerry Fodor&#39;s Wittgenstein parody</title>
-      <link>http://megr.im/things/fodor</link>
-      <pubDate>Sun, 20 Apr 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/fodor</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tar.weatherson.org/2007/01/27/foggy-wittgenstein/&#34;&gt;Sometime in the 60s&lt;/a&gt; Michael Frayn wrote a &lt;a href=&#34;http://stevepetersen.net/personal/wittgenstein-fog.html&#34; title=&#34;Fog-like Sensations&#34;&gt;goofy parody&lt;/a&gt; of Ludwig Wittgenstein&amp;rsquo;s &lt;em&gt;Philosophical Investigations&lt;/em&gt;, and around 1970 Jerry Fodor wrote some &amp;ldquo;further addenda.&amp;rdquo;  Fodor&amp;rsquo;s parody isn&amp;rsquo;t really as good, but it still deserves to be better preserved than it is &lt;a href=&#34;http://www.nyu.edu/gsas/dept/philo/faculty/block/miscellaneous/Fodor_Wittgenstein.png&#34; title=&#34;PNG image&#34;&gt;at present&lt;/a&gt;, so I transcribed it here.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Exists.js</title>
-      <link>http://megr.im/things/exists.js</link>
-      <pubDate>Fri, 28 Feb 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/exists.js</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;re a scumbag analytic philosopher like me then this might actually
-come in handy, like when your &amp;ldquo;friend&amp;rdquo; suggests that chairs are
-ontologically innocent.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>UCSB Philosophy</title>
-      <link>http://megr.im/websites/ucsb</link>
-      <pubDate>Sun, 26 Jan 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/websites/ucsb</guid>
-      <description>&lt;p&gt;The University of California, Santa Barbara has a Philosophy
-department, and the Philosophy department has a website.  In my
-capacity as graduate student/web aficionado during the Winter 2014 quarter, I rewrote the website
-from the ground up, making it vastly more responsive and accessible.&lt;/p&gt;
-</description>
-    </item>
+    <updated>Tue, 24 Sep 2013 00:00:00 UTC</updated>
     
     <item>
       <title>Leading a Horse</title>
@@ -321,43 +256,6 @@ getting better every day.&lt;/p&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Good work today, everyone.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Santa Barbara Bullshit</title>
-      <link>http://megr.im/projects/bullshit</link>
-      <pubDate>Tue, 11 Jun 2013 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/projects/bullshit</guid>
-      <description>&lt;p&gt;Santa Barbara is full of Serious People with Serious Problems.  If
-they aren&amp;rsquo;t heroically defending the city&amp;rsquo;s Mediterranean
-architecture, or battling against City Council&amp;rsquo;s perpetual War on
-Cars, they are fretting about the lack of civility shown by today&amp;rsquo;s
-youths and marvelling at the impudence of the homeless population&amp;rsquo;s
-continued existence.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Santa Barbara Bullshit&lt;/em&gt; treats all these concerns with the deadly
-earnestness they deserve.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Daily Nonsense</title>
-      <link>http://megr.im/projects/nonsense</link>
-      <pubDate>Sat, 27 Apr 2013 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/projects/nonsense</guid>
-      <description>&lt;p&gt;I am delighted to announce the launch of &lt;em&gt;The Daily Nonsense&lt;/em&gt;, the
-only campus publication at UCSB with any moral compass at all.  Upon
-learning of our existence, a group of campus Republicans went back in
-time and started something called
-&lt;a href=&#34;http://dailynexus.com/&#34; title=&#34;WARNING WARNING FAKE
-SITE&#34;&gt;&amp;ldquo;The Daily Nexus&amp;rdquo;&lt;/a&gt; in an attempt to undermine our credibility. Support the
-&lt;em&gt;Nonsense&lt;/em&gt; and recognize the &lt;em&gt;Nexus&lt;/em&gt; for the cabal of hacks they are!&lt;/p&gt;
-
-&lt;p&gt;(Please direct all complaints to
-&lt;a href=&#34;https://twitter.com/thedailynexus&#34;&gt;our social media intern&lt;/a&gt;.)&lt;/p&gt;
 </description>
     </item>
     
@@ -713,110 +611,6 @@ Lucidity is perpetuating racism against Indigenous peoples.
 &lt;/p&gt;
 
 &lt;p&gt;Oh, if only it was.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Reading.js</title>
-      <link>http://megr.im/things/reading</link>
-      <pubDate>Thu, 30 Aug 2012 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/reading</guid>
-      <description>&lt;p&gt;Reading.js is a crummy bit of CSS and JavaScript that&amp;rsquo;s supposed to
-make it easier to read long documents online.
-(&lt;a href=&#34;modernphilosophy/text.html&#34; title=&#34;HTML version of Modern Philosophy&#34;&gt;Like this one!&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;Include two lines in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of a plain HTML file&amp;mdash;the kind
-produced by &lt;a href=&#34;http://johnmacfarlane.net/pandoc/&#34; title=&#34;pandoc project
-page&#34;&gt;pandoc&lt;/a&gt; or by most
-&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34; title=&#34;Markdown
-project page&#34;&gt;Markdown&lt;/a&gt;-to-HTML converters&amp;mdash;and gain nifty features like
-keyboard shortcuts, section folding, and color scheme switching:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;http://baruffio.com/reading.js/stylesheets/reading.css&amp;quot;&amp;gt;
-&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://baruffio.com/reading.js/scripts/reading.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Students for Justice in Palestine at UC Berkeley</title>
-      <link>http://megr.im/websites/sjp</link>
-      <pubDate>Wed, 08 Aug 2012 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/websites/sjp</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://calsjp.org/?page_id=455&#34; title=&#34;About CalSJP&#34;&gt;The Berkeley chapter of Students for Justice in Palestine is&lt;/a&gt; &amp;ldquo;a group of students, faculty, and community members
-working together at the University of California, Berkeley, in
-solidarity with the struggle of the indigenous Palestinian people
-against apartheid and occupation.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;In July of 2012, I redesigned their website,
-&lt;a href=&#34;http://calsjp.org&#34; title=&#34;CalSJP website&#34;&gt;http://calsjp.org&lt;/a&gt;, making it
-more accessible (especially for mobile devices) and more maintainable.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fountain CLM</title>
-      <link>http://megr.im/things/fountain</link>
-      <pubDate>Mon, 04 Jun 2012 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/fountain</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.barebones.com/support/develop/clm.html&#34; title=&#34;Documentation from Bare Bones Software&#34;&gt;Codeless Language Modules&lt;/a&gt; (CLMs) are plugins for
-&lt;a href=&#34;http://www.barebones.com/products/TextWrangler/&#34; title=&#34;TextWrangler product page on Bare Bones Software&#34;&gt;TextWrangler&lt;/a&gt; and
-&lt;a href=&#34;http://www.barebones.com/products/bbedit/&#34; title=&#34;BBEdit product
-page on Bare Bones Software&#34;&gt;BBEdit&lt;/a&gt; that add syntax highlighting, code
-folding, and other capabilities for languages not natively supported
-by these programs.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://fountain.io/&#34; title=&#34;Fountain information page&#34;&gt;Fountain&lt;/a&gt; is a
-plain-text syntax for writing screenplays. (The
-&lt;a href=&#34;http://fountain.io/syntax&#34; title=&#34;Fountain syntax
-reference&#34;&gt;Fountain syntax&lt;/a&gt; is similar to that of
-&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34; title=&#34;Markdown
-project page&#34;&gt;Markdown&lt;/a&gt;, a general-purpose syntax.) Fountain files are designed
-to be very readable, but they can be easily converted to other formats
-(like PDF and FDX) using
-&lt;a href=&#34;http://fountain.io/apps&#34; title=&#34;Fountain
-apps&#34;&gt;Fountain-compatible applications&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>&#34;Modern Philosophy&#34; in plain text</title>
-      <link>http://megr.im/projects/modphil</link>
-      <pubDate>Mon, 28 May 2012 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/projects/modphil</guid>
-      <description>&lt;p&gt;&lt;em&gt;Modern Philosophy&lt;/em&gt; is a free textbook created by
-&lt;a href=&#34;https://filebox.vt.edu/users/ottw/ott.htm&#34; title=&#34;Walter Ott&#39;s
-personal site&#34;&gt;Walter Ott&lt;/a&gt;. It combines public-domain primary sources with
-supplementary material and study questions. Everything not in the
-public domain is licensed under
-&lt;a href=&#34;http://creativecommons.org/licenses/by-nc-sa/3.0/&#34; title=&#34;Creative Commons license page&#34;&gt;CC BY-NC-SA 3.0&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This modified version of the text is written in
-&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34; title=&#34;Markdown
-project page&#34;&gt;Markdown&lt;/a&gt;. Markdown is a plain-text syntax that allows for easy
-conversion to other file formats.  Using
-&lt;a href=&#34;http://johnmacfarlane.net/pandoc/&#34; title=&#34;pandoc project page&#34;&gt;pandoc&lt;/a&gt;,
-&lt;em&gt;Modern Philosophy&lt;/em&gt; can be easily converted to HTML, PDF, EPUB, and
-&lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#options&#34; title=&#34;pandoc options&#34;&gt;many other formats&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This version of &lt;em&gt;Modern Philosophy&lt;/em&gt; is kept in a
-&lt;a href=&#34;https://github.com/grumble/modernphilosophy&#34; title=&#34;GitHub repository&#34;&gt;public repository on GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sacrifices</title>
-      <link>http://megr.im/stories/sacrifices</link>
-      <pubDate>Tue, 01 Mar 2011 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/stories/sacrifices</guid>
-      <description>&lt;p&gt;A hip new version of Judith Jarvis Thomson&amp;rsquo;s violinist thought
-experiment.  Maybe a little more realistic.  But probably no more
-convincing.&lt;/p&gt;
 </description>
     </item>
     
