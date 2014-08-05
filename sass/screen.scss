@@ -123,6 +123,11 @@ a:hover {
 	background-color: $base03;
 	border-bottom-color: $base3;
 }
+a.reverse:hover {
+	background-color: $base3;
+	border-bottom-color: $base03;
+	color: $base03;
+}
 
 //////////////////////////////////////////////////////////////
 /////////////////////////// LAYOUT ///////////////////////////
@@ -201,7 +206,7 @@ h6 {
 }
 
 h1 + h2 {
-  margin-top: -1em;
+  margin-top: -.5em;
 }
 
 /* http://unstoppablerobotninja.com/entry/fluid-images/ */
