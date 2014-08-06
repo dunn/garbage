@@ -2,6 +2,13 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic);
 
 /* variables and mixins */
+@mixin hide {
+  position: absolute;
+  left: -999em;
+  /* apparently this second push is for old Opera:
+  /* http://css-tricks.com/snippets/css/accessibilityseo-friendly-css-hiding/ */
+  top: -999px;
+}
 
 // _normalize.scss
 @import "normalize";
