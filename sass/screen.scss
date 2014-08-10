@@ -230,6 +230,10 @@ hr {
   border: 0;
 }
 
+.assistive-text {
+	@include hide;
+}
+
 //////////////////////// media queries ..................///////////////
 @media screen and (max-width: $break1) {
   article {
