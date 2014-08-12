@@ -21,18 +21,24 @@
  }
 
 body {
-  font-family: "Cabin", Helvetica, 'sans-serif';
+  font-family: "Cabin", Helvetica, 'sans-serif', 'sans serif';
 }
 
-blockquote,
+blockquote {
+	//margin: 0;
+    font-style: italic;
+  em {
+    font-style: normal;
+  }
+}
+
 .slogan,
 dt,
 footer {
   font-style: italic;
 }
 
-.slogan,
-blockquote {
+.slogan {
   em {
     font-style: normal;
   }
