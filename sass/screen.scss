@@ -76,6 +76,15 @@ a {
   background-color: $base03;
 }
 
+p.browsehappy {
+  text-align: center;
+  color: $red;
+  background-color: $base3;
+  a {
+    color: $cyan;
+  }
+}
+
 ///// Types
 .about {
 	border-color: $red;
