@@ -1,31 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-      <title>Projects on Alex Dunn has no idea what he’s doing </title>
-      <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://megr.im/projects/index.xml</link>
-    
-    
-    
-    <updated>Sun, 31 Aug 2014 00:00:00 UTC</updated>
-    
-    <item>
-      <title>Twitter bots</title>
-      <link>http://megr.im/projects/bots</link>
-      <pubDate>Sun, 31 Aug 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/projects/bots</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here.  Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Santa Barbara Bullshit</title>
-      <link>http://megr.im/projects/bullshit</link>
-      <pubDate>Tue, 11 Jun 2013 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/projects/bullshit</guid>
-      <description>&lt;p&gt;Santa Barbara is full of Serious People with Serious Problems.  If
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/projects/index.xml/</link><updated>Sun, 31 Aug 2014 00:00:00 UTC</updated><item><title>Twitter bots</title><link>http://megr.im/projects/bots/</link><pubDate>Sun, 31 Aug 2014 00:00:00 UTC</pubDate><guid>http://megr.im/projects/bots/</guid><description>&lt;p&gt;I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here.  Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)&lt;/p&gt;
+</description></item><item><title>Santa Barbara Bullshit</title><link>http://megr.im/projects/bullshit/</link><pubDate>Tue, 11 Jun 2013 00:00:00 UTC</pubDate><guid>http://megr.im/projects/bullshit/</guid><description>&lt;p&gt;Santa Barbara is full of Serious People with Serious Problems.  If
 they aren&amp;rsquo;t heroically defending the city&amp;rsquo;s Mediterranean
 architecture, or battling against City Council&amp;rsquo;s perpetual War on
 Cars, they are fretting about the lack of civility shown by today&amp;rsquo;s
@@ -34,16 +8,7 @@ continued existence.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Santa Barbara Bullshit&lt;/em&gt; treats all these concerns with the deadly
 earnestness they deserve.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Daily Nonsense</title>
-      <link>http://megr.im/projects/nonsense</link>
-      <pubDate>Sat, 27 Apr 2013 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/projects/nonsense</guid>
-      <description>&lt;p&gt;I am delighted to announce the launch of &lt;em&gt;The Daily Nonsense&lt;/em&gt;, the
+</description></item><item><title>The Daily Nonsense</title><link>http://megr.im/projects/nonsense/</link><pubDate>Sat, 27 Apr 2013 00:00:00 UTC</pubDate><guid>http://megr.im/projects/nonsense/</guid><description>&lt;p&gt;I am delighted to announce the launch of &lt;em&gt;The Daily Nonsense&lt;/em&gt;, the
 only campus publication at UCSB with any moral compass at all.  Upon
 learning of our existence, a group of campus Republicans went back in
 time and started something called
@@ -53,16 +18,7 @@ SITE&#34;&gt;&amp;ldquo;The Daily Nexus&amp;rdquo;&lt;/a&gt; in an attempt to un
 
 &lt;p&gt;(Please direct all complaints to
 &lt;a href=&#34;https://twitter.com/thedailynexus&#34;&gt;our social media intern&lt;/a&gt;.)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>&#34;Modern Philosophy&#34; in plain text</title>
-      <link>http://megr.im/projects/modphil</link>
-      <pubDate>Mon, 28 May 2012 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/projects/modphil</guid>
-      <description>&lt;p&gt;&lt;em&gt;Modern Philosophy&lt;/em&gt; is a free textbook created by
+</description></item><item><title>&#34;Modern Philosophy&#34; in plain text</title><link>http://megr.im/projects/modphil/</link><pubDate>Mon, 28 May 2012 00:00:00 UTC</pubDate><guid>http://megr.im/projects/modphil/</guid><description>&lt;p&gt;&lt;em&gt;Modern Philosophy&lt;/em&gt; is a free textbook created by
 &lt;a href=&#34;https://filebox.vt.edu/users/ottw/ott.htm&#34; title=&#34;Walter Ott&#39;s
 personal site&#34;&gt;Walter Ott&lt;/a&gt;. It combines public-domain primary sources with
 supplementary material and study questions. Everything not in the
@@ -79,8 +35,4 @@ conversion to other file formats.  Using
 
 &lt;p&gt;This version of &lt;em&gt;Modern Philosophy&lt;/em&gt; is kept in a
 &lt;a href=&#34;https://github.com/grumble/modernphilosophy&#34; title=&#34;GitHub repository&#34;&gt;public repository on GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+</description></item></channel></rss>

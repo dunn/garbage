@@ -1,48 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-      <title>Websites on Alex Dunn has no idea what he’s doing </title>
-      <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://megr.im/websites/index.xml</link>
-    
-    
-    
-    <updated>Mon, 05 May 2014 00:00:00 UTC</updated>
-    
-    <item>
-      <title>Baruffio</title>
-      <link>http://megr.im/websites/baruffio</link>
-      <pubDate>Mon, 05 May 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/websites/baruffio</guid>
-      <description>&lt;p&gt;&lt;em&gt;Baruffio&lt;/em&gt; is a blog for people who take silly things way too
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Websites on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/websites/index.xml/</link><updated>Mon, 05 May 2014 00:00:00 UTC</updated><item><title>Baruffio</title><link>http://megr.im/websites/baruffio/</link><pubDate>Mon, 05 May 2014 00:00:00 UTC</pubDate><guid>http://megr.im/websites/baruffio/</guid><description>&lt;p&gt;&lt;em&gt;Baruffio&lt;/em&gt; is a blog for people who take silly things way too
 seriously. It&amp;rsquo;s where you can read ludicrously in-depth analyses of a
 single spell. It&amp;rsquo;s where the only argument against a conspiracy
 theory is that it&amp;rsquo;s not consistent. It&amp;rsquo;s where we&amp;rsquo;re still talking
 about &lt;em&gt;Harry Potter,&lt;/em&gt; after all these years.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>UCSB Philosophy</title>
-      <link>http://megr.im/websites/ucsb</link>
-      <pubDate>Sun, 26 Jan 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/websites/ucsb</guid>
-      <description>&lt;p&gt;The University of California, Santa Barbara has a Philosophy
-department, and the Philosophy department has a website.  In my
-capacity as graduate student/web aficionado during the Winter 2014 quarter, I rewrote the website
-from the ground up, making it vastly more responsive and accessible.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Students for Justice in Palestine at UC Berkeley</title>
-      <link>http://megr.im/websites/sjp</link>
-      <pubDate>Wed, 08 Aug 2012 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/websites/sjp</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://calsjp.org/?page_id=455&#34; title=&#34;About CalSJP&#34;&gt;The Berkeley chapter of Students for Justice in Palestine is&lt;/a&gt; &amp;ldquo;a group of students, faculty, and community members
+</description></item><item><title>UCSB Philosophy</title><link>http://megr.im/websites/ucsb/</link><pubDate>Sun, 26 Jan 2014 00:00:00 UTC</pubDate><guid>http://megr.im/websites/ucsb/</guid><description>&lt;p&gt;The University of California, Santa Barbara has a Philosophy department, and the Philosophy
+department has a website. In 2014 I rewrote the website from the ground up, making it responsive, accessible, and maintainable.&lt;/p&gt;
+</description></item><item><title>Students for Justice in Palestine at UC Berkeley</title><link>http://megr.im/websites/sjp/</link><pubDate>Wed, 08 Aug 2012 00:00:00 UTC</pubDate><guid>http://megr.im/websites/sjp/</guid><description>&lt;p&gt;&lt;a href=&#34;http://calsjp.org/?page_id=455&#34; title=&#34;About CalSJP&#34;&gt;The Berkeley chapter of Students for Justice in Palestine is&lt;/a&gt; &amp;ldquo;a group of students, faculty, and community members
 working together at the University of California, Berkeley, in
 solidarity with the struggle of the indigenous Palestinian people
 against apartheid and occupation.&amp;rdquo;&lt;/p&gt;
@@ -50,8 +13,4 @@ against apartheid and occupation.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;In July of 2012, I redesigned their website,
 &lt;a href=&#34;http://calsjp.org&#34; title=&#34;CalSJP website&#34;&gt;http://calsjp.org&lt;/a&gt;, making it
 more accessible (especially for mobile devices) and more maintainable.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+</description></item></channel></rss>

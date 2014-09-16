@@ -1,96 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-      <title>Recent Content on Alex Dunn has no idea what he’s doing </title>
-      <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://megr.im/index.xml</link>
-    
-    
-    
-    <updated>Sun, 31 Aug 2014 00:00:00 UTC</updated>
-    
-    <item>
-      <title>Twitter bots</title>
-      <link>http://megr.im/projects/bots</link>
-      <pubDate>Sun, 31 Aug 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/projects/bots</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here.  Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Good Trolle</title>
-      <link>http://megr.im/things/trolle</link>
-      <pubDate>Thu, 17 Jul 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/trolle</guid>
-      <description>&lt;p&gt;The Good Trolle is a new Twitter citizen who serves two complementary roles:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recent Content on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/index.xml/</link><updated>Sun, 31 Aug 2014 00:00:00 UTC</updated><item><title>Twitter bots</title><link>http://megr.im/projects/bots/</link><pubDate>Sun, 31 Aug 2014 00:00:00 UTC</pubDate><guid>http://megr.im/projects/bots/</guid><description>&lt;p&gt;I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here.  Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)&lt;/p&gt;
+</description></item><item><title>The Good Trolle</title><link>http://megr.im/things/trolle/</link><pubDate>Thu, 17 Jul 2014 00:00:00 UTC</pubDate><guid>http://megr.im/things/trolle/</guid><description>&lt;p&gt;The Good Trolle is a new Twitter citizen who serves two complementary roles:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;It notifies its battle-ready followers of racists, sexists, homophobes, transphobes, and ableists in need of a good drubbing, and it does this by:&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;allowing anyone overwhelmed by said jerks to tweet at &lt;a href=&#34;https://twitter.com/good_trolle&#34;&gt;@good_trolle&lt;/a&gt; and offload the abuse onto people with the time and energy to shoulder the burden.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Baruffio</title>
-      <link>http://megr.im/websites/baruffio</link>
-      <pubDate>Mon, 05 May 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/websites/baruffio</guid>
-      <description>&lt;p&gt;&lt;em&gt;Baruffio&lt;/em&gt; is a blog for people who take silly things way too
+</description></item><item><title>Baruffio</title><link>http://megr.im/websites/baruffio/</link><pubDate>Mon, 05 May 2014 00:00:00 UTC</pubDate><guid>http://megr.im/websites/baruffio/</guid><description>&lt;p&gt;&lt;em&gt;Baruffio&lt;/em&gt; is a blog for people who take silly things way too
 seriously. It&amp;rsquo;s where you can read ludicrously in-depth analyses of a
 single spell. It&amp;rsquo;s where the only argument against a conspiracy
 theory is that it&amp;rsquo;s not consistent. It&amp;rsquo;s where we&amp;rsquo;re still talking
 about &lt;em&gt;Harry Potter,&lt;/em&gt; after all these years.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Jerry Fodor&#39;s Wittgenstein parody</title>
-      <link>http://megr.im/things/fodor</link>
-      <pubDate>Sun, 20 Apr 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/fodor</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tar.weatherson.org/2007/01/27/foggy-wittgenstein/&#34;&gt;Sometime in the 60s&lt;/a&gt; Michael Frayn wrote a &lt;a href=&#34;http://stevepetersen.net/personal/wittgenstein-fog.html&#34; title=&#34;Fog-like Sensations&#34;&gt;goofy parody&lt;/a&gt; of Ludwig Wittgenstein&amp;rsquo;s &lt;em&gt;Philosophical Investigations&lt;/em&gt;, and around 1970 Jerry Fodor wrote some &amp;ldquo;further addenda.&amp;rdquo;  Fodor&amp;rsquo;s parody isn&amp;rsquo;t really as good, but it still deserves to be better preserved than it is &lt;a href=&#34;http://www.nyu.edu/gsas/dept/philo/faculty/block/miscellaneous/Fodor_Wittgenstein.png&#34; title=&#34;PNG image&#34;&gt;at present&lt;/a&gt;, so I transcribed it here.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Exists.js</title>
-      <link>http://megr.im/things/exists.js</link>
-      <pubDate>Fri, 28 Feb 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/exists.js</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;re a scumbag analytic philosopher like me then this might actually
+</description></item><item><title>Jerry Fodor&#39;s Wittgenstein parody</title><link>http://megr.im/things/fodor/</link><pubDate>Sun, 20 Apr 2014 00:00:00 UTC</pubDate><guid>http://megr.im/things/fodor/</guid><description>&lt;p&gt;&lt;a href=&#34;http://tar.weatherson.org/2007/01/27/foggy-wittgenstein/&#34;&gt;Sometime in the 60s&lt;/a&gt; Michael Frayn wrote a &lt;a href=&#34;http://stevepetersen.net/personal/wittgenstein-fog.html&#34; title=&#34;Fog-like Sensations&#34;&gt;goofy parody&lt;/a&gt; of Ludwig Wittgenstein&amp;rsquo;s &lt;em&gt;Philosophical Investigations&lt;/em&gt;, and around 1970 Jerry Fodor wrote some &amp;ldquo;further addenda.&amp;rdquo;  Fodor&amp;rsquo;s parody isn&amp;rsquo;t really as good, but it still deserves to be better preserved than it is &lt;a href=&#34;http://www.nyu.edu/gsas/dept/philo/faculty/block/miscellaneous/Fodor_Wittgenstein.png&#34; title=&#34;PNG image&#34;&gt;at present&lt;/a&gt;, so I transcribed it here.&lt;/p&gt;
+</description></item><item><title>Exists.js</title><link>http://megr.im/things/exists.js/</link><pubDate>Fri, 28 Feb 2014 00:00:00 UTC</pubDate><guid>http://megr.im/things/exists.js/</guid><description>&lt;p&gt;If you&amp;rsquo;re a scumbag analytic philosopher like me then this might actually
 come in handy, like when your &amp;ldquo;friend&amp;rdquo; suggests that chairs are
 ontologically innocent.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>UCSB Philosophy</title>
-      <link>http://megr.im/websites/ucsb</link>
-      <pubDate>Sun, 26 Jan 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/websites/ucsb</guid>
-      <description>&lt;p&gt;The University of California, Santa Barbara has a Philosophy
-department, and the Philosophy department has a website.  In my
-capacity as graduate student/web aficionado during the Winter 2014 quarter, I rewrote the website
-from the ground up, making it vastly more responsive and accessible.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Leading a Horse</title>
-      <link>http://megr.im/posts/horse_ebooks</link>
-      <pubDate>Tue, 24 Sep 2013 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/posts/horse_ebooks</guid>
-      <description>
+</description></item><item><title>UCSB Philosophy</title><link>http://megr.im/websites/ucsb/</link><pubDate>Sun, 26 Jan 2014 00:00:00 UTC</pubDate><guid>http://megr.im/websites/ucsb/</guid><description>&lt;p&gt;The University of California, Santa Barbara has a Philosophy department, and the Philosophy
+department has a website. In 2014 I rewrote the website from the ground up, making it responsive, accessible, and maintainable.&lt;/p&gt;
+</description></item><item><title>Leading a Horse</title><link>http://megr.im/posts/horse_ebooks/</link><pubDate>Tue, 24 Sep 2013 00:00:00 UTC</pubDate><guid>http://megr.im/posts/horse_ebooks/</guid><description>
 
 &lt;p&gt;I don&amp;rsquo;t really know why all of a sudden I&amp;rsquo;m so cut up about
 @Horse_ebooks
@@ -169,24 +96,15 @@ fools?&#34;&gt;&amp;quot;got funnier&amp;quot;&lt;/a&gt; in September of 2011,
 suddenly seem preferable, actually better, because they&amp;rsquo;re &lt;em&gt;real&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;Nothing: I am not taught to make any thing&lt;/p&gt;&amp;mdash; Horse ebooks (@Horse_ebooks) &lt;a href=&#34;https://twitter.com/Horse_ebooks/statuses/49625817868804097&#34;&gt;March 21, 2011&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Dudebros as a sublime expression of the absurd, or: proving Shanley&#39;s point without realizing it</title>
-      <link>http://megr.im/posts/dudebros</link>
-      <pubDate>Tue, 03 Sep 2013 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/posts/dudebros</guid>
-      <description>&lt;p&gt;Today &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote a
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description></item><item><title>Dudebros as a sublime expression of the absurd, or: proving Shanley&#39;s point without realizing it</title><link>http://megr.im/posts/dudebros/</link><pubDate>Tue, 03 Sep 2013 00:00:00 UTC</pubDate><guid>http://megr.im/posts/dudebros/</guid><description>&lt;p&gt;Today &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote a
 &lt;a href=&#34;https://medium.com/about-work/82978662b2d6&#34; title=&#34;Things I
 Never, Ever Want To Hear Again&#34;&gt;great piece&lt;/a&gt; that was made even greater because of
 the people on Twitter who rose to the challenge of proving her points
 for her.&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;And right on cue, Dudebros &lt;a href=&#34;https://twitter.com/leashless&#34;&gt;@leashless&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/chrisbeach&#34;&gt;@chrisbeach&lt;/a&gt; and others are now literally doing the &lt;em&gt;exact thing&lt;/em&gt; &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote that Dudebros do.&lt;/p&gt;&amp;mdash; Faruk Ateş (@KuraFire) &lt;a href=&#34;https://twitter.com/KuraFire/statuses/375027715818004482&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -207,10 +125,11 @@ angry.&lt;/p&gt;
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;Men with anger issues like this are called assholes
     &lt;a href=&#34;https://t.co/kihKzHZDS0&#34;&gt;&lt;a href=&#34;https://t.co/kihKzHZDS0&#34;&gt;https://t.co/kihKzHZDS0&lt;/a&gt;
     &lt;/a&gt; Women with these kinds of anger issues can hide behind Feminism.&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375000489999360000&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;.&lt;a href=&#34;https://twitter.com/thomas_lord&#34;&gt;@thomas_lord&lt;/a&gt; &lt;a href=&#34;https://twitter.com/pawzilla&#34;&gt;@pawzilla&lt;/a&gt; &lt;a href=&#34;https://twitter.com/metaAnnelies&#34;&gt;@metaAnnelies&lt;/a&gt; Gupta&amp;#39;s seen many good men take real personal damage from women with personal issues crying Feminism.&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375006955372167168&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -228,10 +147,11 @@ discrediting her.&lt;/p&gt;
 &lt;p&gt;Dudebros:&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;What I&amp;#39;d &lt;em&gt;LOVE&lt;/em&gt; to see is a non-disempowering, non-asshole way to say &amp;quot;hey your personal anger is interfering with your effectiveness&amp;quot;&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375010456361906176&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;I&amp;#39;m looking for something that could be said, in a time of conflict, to alert somebody to a place where they&amp;#39;re hurting themselves in anger.&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375014010128580608&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -251,13 +171,14 @@ fundamental misunderstanding of the problem.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Dudebros:&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;.&lt;a href=&#34;https://twitter.com/alexstapleton&#34;&gt;@alexstapleton&lt;/a&gt; No, I&amp;#39;m saying this is a person with an anger problem channelling their anger into a socially acceptable (if abusive) form.&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375001937713713152&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/pawzilla&#34;&gt;@pawzilla&lt;/a&gt; I&amp;#39;m interested in gender-blind integration in tech. Not pitting men vs. women as militant feminists like &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; do&lt;/p&gt;&amp;mdash; Chris Beach (@chrisbeach) &lt;a href=&#34;https://twitter.com/chrisbeach/statuses/375011527348461568&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/alexstapleton&#34;&gt;@alexstapleton&lt;/a&gt; &lt;a href=&#34;https://twitter.com/leashless&#34;&gt;@leashless&lt;/a&gt; I have to say that although I generally agree with &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; I stopped reading her stuff because of all the vitriol&lt;/p&gt;&amp;mdash; Russ Garrett (@russss) &lt;a href=&#34;https://twitter.com/russss/statuses/375002543429939201&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -276,10 +197,10 @@ whatsoever for your words and actions.&lt;/p&gt;
 &lt;p&gt;Dudebros:&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/exiledsurfer&#34;&gt;@exiledsurfer&lt;/a&gt; &lt;a href=&#34;https://twitter.com/Grimeandreason&#34;&gt;@Grimeandreason&lt;/a&gt; &lt;a href=&#34;https://twitter.com/pawzilla&#34;&gt;@pawzilla&lt;/a&gt; &lt;a href=&#34;https://twitter.com/metaAnnelies&#34;&gt;@metaAnnelies&lt;/a&gt; Note that my guru was a woman: I&amp;#39;ve lived and worked under absolue female powers&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375011180567207936&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/exiledsurfer&#34;&gt;@exiledsurfer&lt;/a&gt; &lt;a href=&#34;https://twitter.com/Grimeandreason&#34;&gt;@Grimeandreason&lt;/a&gt; &lt;a href=&#34;https://twitter.com/pawzilla&#34;&gt;@pawzilla&lt;/a&gt; &lt;a href=&#34;https://twitter.com/metaAnnelies&#34;&gt;@metaAnnelies&lt;/a&gt; &amp;quot;my guru was a woman&amp;quot; doesn&amp;#39;t mean much to most non-Hindus but it&amp;#39;s &lt;em&gt;huge&lt;/em&gt; in my world&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375011319688081408&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -299,16 +220,20 @@ it does about my writing.&lt;/p&gt;
 &lt;p&gt;Dudebros:&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/alexstapleton&#34;&gt;@alexstapleton&lt;/a&gt; do you enjoy being called a &amp;quot;rapist&amp;quot;? I didn&amp;#39;t. It&amp;#39;s an absurd post&lt;/p&gt;&amp;mdash; Chris Beach (@chrisbeach) &lt;a href=&#34;https://twitter.com/chrisbeach/statuses/375011748660908032&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/leashless&#34;&gt;@leashless&lt;/a&gt; &lt;a href=&#34;https://twitter.com/alexstapleton&#34;&gt;@alexstapleton&lt;/a&gt; It&amp;#39;s an uncontrolled, blanket-accusative, contradictory rant from &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; that does nothing for her cause&lt;/p&gt;&amp;mdash; Chris Beach (@chrisbeach) &lt;a href=&#34;https://twitter.com/chrisbeach/statuses/375008653616881665&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;Dear &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt;, when you use hateful sweeping generalizations to get others to stop making hateful sweeping generalizations. You&amp;#39;ve given up.&lt;/p&gt;&amp;mdash; Cody Brown (@CodyBrown) &lt;a href=&#34;https://twitter.com/CodyBrown/statuses/375030607450865664&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; &lt;a href=&#34;https://twitter.com/eevee&#34;&gt;@eevee&lt;/a&gt; It is quite vitriolic, and that accusatory, aggressive tone doesn&amp;#39;t help, especially in the &amp;quot;not about you&amp;quot; section.&lt;/p&gt;&amp;mdash; kshade (@kshade_hyaena) &lt;a href=&#34;https://twitter.com/kshade_hyaena/statuses/375013650940977152&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -328,19 +253,11 @@ getting better every day.&lt;/p&gt;
 &lt;p&gt;Dudebros:&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; just looks a bit attention-seeking, particularly your enjoyment of the response. If you cared about the cause, you&amp;#39;d write better&lt;/p&gt;&amp;mdash; Chris Beach (@chrisbeach) &lt;a href=&#34;https://twitter.com/chrisbeach/statuses/375009796455669760&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Good work today, everyone.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Santa Barbara Bullshit</title>
-      <link>http://megr.im/projects/bullshit</link>
-      <pubDate>Tue, 11 Jun 2013 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/projects/bullshit</guid>
-      <description>&lt;p&gt;Santa Barbara is full of Serious People with Serious Problems.  If
+</description></item><item><title>Santa Barbara Bullshit</title><link>http://megr.im/projects/bullshit/</link><pubDate>Tue, 11 Jun 2013 00:00:00 UTC</pubDate><guid>http://megr.im/projects/bullshit/</guid><description>&lt;p&gt;Santa Barbara is full of Serious People with Serious Problems.  If
 they aren&amp;rsquo;t heroically defending the city&amp;rsquo;s Mediterranean
 architecture, or battling against City Council&amp;rsquo;s perpetual War on
 Cars, they are fretting about the lack of civility shown by today&amp;rsquo;s
@@ -349,16 +266,7 @@ continued existence.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Santa Barbara Bullshit&lt;/em&gt; treats all these concerns with the deadly
 earnestness they deserve.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Daily Nonsense</title>
-      <link>http://megr.im/projects/nonsense</link>
-      <pubDate>Sat, 27 Apr 2013 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/projects/nonsense</guid>
-      <description>&lt;p&gt;I am delighted to announce the launch of &lt;em&gt;The Daily Nonsense&lt;/em&gt;, the
+</description></item><item><title>The Daily Nonsense</title><link>http://megr.im/projects/nonsense/</link><pubDate>Sat, 27 Apr 2013 00:00:00 UTC</pubDate><guid>http://megr.im/projects/nonsense/</guid><description>&lt;p&gt;I am delighted to announce the launch of &lt;em&gt;The Daily Nonsense&lt;/em&gt;, the
 only campus publication at UCSB with any moral compass at all.  Upon
 learning of our existence, a group of campus Republicans went back in
 time and started something called
@@ -368,16 +276,7 @@ SITE&#34;&gt;&amp;ldquo;The Daily Nexus&amp;rdquo;&lt;/a&gt; in an attempt to un
 
 &lt;p&gt;(Please direct all complaints to
 &lt;a href=&#34;https://twitter.com/thedailynexus&#34;&gt;our social media intern&lt;/a&gt;.)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Cultural Appropriation at Lucidity</title>
-      <link>http://megr.im/posts/lucidity</link>
-      <pubDate>Fri, 26 Apr 2013 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/posts/lucidity</guid>
-      <description>
+</description></item><item><title>Cultural Appropriation at Lucidity</title><link>http://megr.im/posts/lucidity/</link><pubDate>Fri, 26 Apr 2013 00:00:00 UTC</pubDate><guid>http://megr.im/posts/lucidity/</guid><description>
 
 &lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt; (1 August 2013): Jonah Haas has published
   &lt;a href=&#34;http://lucidityfestival.com/reframing-the-cultural-appropriation-conversation-towards-synergy-co-learning-and-peace/&#34; title=&#34;Reframing the cultural appropriation conversation towards synergy,
@@ -504,7 +403,8 @@ ignorant individuals callously mashing together random aspects of
 different minority cultures while exoticizing and demeaning them.&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;What&amp;rsquo;s your favorite mythological/fantastical/imaginative creature?&lt;/p&gt;&amp;mdash; Lucidity Festival (@LucidityFest) &lt;a href=&#34;https://twitter.com/LucidityFest/status/284096417188966400&#34;&gt;December 27, 2012&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;What Lucidity is doing here is lumping Indigenous tribes together with
 mythological, fantastical, and imaginative &amp;ldquo;creatures&amp;rdquo;.  And,
@@ -720,19 +620,10 @@ Lucidity is perpetuating racism against Indigenous peoples.
 &lt;em&gt;Because they&amp;rsquo;re a tribe too.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;How do you know this isn&amp;rsquo;t a dream?&lt;/p&gt;&amp;mdash; Lucidity Festival (@LucidityFest) &lt;a href=&#34;https://twitter.com/LucidityFest/status/277652871057641472&#34;&gt;December 9, 2012&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Oh, if only it was.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Reading.js</title>
-      <link>http://megr.im/things/reading</link>
-      <pubDate>Thu, 30 Aug 2012 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/reading</guid>
-      <description>&lt;p&gt;Reading.js is a crummy bit of CSS and JavaScript that&amp;rsquo;s supposed to
+</description></item><item><title>Reading.js</title><link>http://megr.im/things/reading/</link><pubDate>Thu, 30 Aug 2012 00:00:00 UTC</pubDate><guid>http://megr.im/things/reading/</guid><description>&lt;p&gt;Reading.js is a crummy bit of CSS and JavaScript that&amp;rsquo;s supposed to
 make it easier to read long documents online.
 (&lt;a href=&#34;modernphilosophy/text.html&#34; title=&#34;HTML version of Modern Philosophy&#34;&gt;Like this one!&lt;/a&gt;)&lt;/p&gt;
 
@@ -743,19 +634,10 @@ page&#34;&gt;pandoc&lt;/a&gt; or by most
 project page&#34;&gt;Markdown&lt;/a&gt;-to-HTML converters&amp;mdash;and gain nifty features like
 keyboard shortcuts, section folding, and color scheme switching:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;http://baruffio.com/reading.js/stylesheets/reading.css&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;http://baruffio.com/reading.js/stylesheets/reading.css&amp;quot;&amp;gt;
 &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://baruffio.com/reading.js/scripts/reading.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Students for Justice in Palestine at UC Berkeley</title>
-      <link>http://megr.im/websites/sjp</link>
-      <pubDate>Wed, 08 Aug 2012 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/websites/sjp</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://calsjp.org/?page_id=455&#34; title=&#34;About CalSJP&#34;&gt;The Berkeley chapter of Students for Justice in Palestine is&lt;/a&gt; &amp;ldquo;a group of students, faculty, and community members
+</description></item><item><title>Students for Justice in Palestine at UC Berkeley</title><link>http://megr.im/websites/sjp/</link><pubDate>Wed, 08 Aug 2012 00:00:00 UTC</pubDate><guid>http://megr.im/websites/sjp/</guid><description>&lt;p&gt;&lt;a href=&#34;http://calsjp.org/?page_id=455&#34; title=&#34;About CalSJP&#34;&gt;The Berkeley chapter of Students for Justice in Palestine is&lt;/a&gt; &amp;ldquo;a group of students, faculty, and community members
 working together at the University of California, Berkeley, in
 solidarity with the struggle of the indigenous Palestinian people
 against apartheid and occupation.&amp;rdquo;&lt;/p&gt;
@@ -763,16 +645,7 @@ against apartheid and occupation.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;In July of 2012, I redesigned their website,
 &lt;a href=&#34;http://calsjp.org&#34; title=&#34;CalSJP website&#34;&gt;http://calsjp.org&lt;/a&gt;, making it
 more accessible (especially for mobile devices) and more maintainable.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fountain CLM</title>
-      <link>http://megr.im/things/fountain</link>
-      <pubDate>Mon, 04 Jun 2012 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/fountain</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.barebones.com/support/develop/clm.html&#34; title=&#34;Documentation from Bare Bones Software&#34;&gt;Codeless Language Modules&lt;/a&gt; (CLMs) are plugins for
+</description></item><item><title>Fountain CLM</title><link>http://megr.im/things/fountain/</link><pubDate>Mon, 04 Jun 2012 00:00:00 UTC</pubDate><guid>http://megr.im/things/fountain/</guid><description>&lt;p&gt;&lt;a href=&#34;http://www.barebones.com/support/develop/clm.html&#34; title=&#34;Documentation from Bare Bones Software&#34;&gt;Codeless Language Modules&lt;/a&gt; (CLMs) are plugins for
 &lt;a href=&#34;http://www.barebones.com/products/TextWrangler/&#34; title=&#34;TextWrangler product page on Bare Bones Software&#34;&gt;TextWrangler&lt;/a&gt; and
 &lt;a href=&#34;http://www.barebones.com/products/bbedit/&#34; title=&#34;BBEdit product
 page on Bare Bones Software&#34;&gt;BBEdit&lt;/a&gt; that add syntax highlighting, code
@@ -789,16 +662,7 @@ to be very readable, but they can be easily converted to other formats
 (like PDF and FDX) using
 &lt;a href=&#34;http://fountain.io/apps&#34; title=&#34;Fountain
 apps&#34;&gt;Fountain-compatible applications&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>&#34;Modern Philosophy&#34; in plain text</title>
-      <link>http://megr.im/projects/modphil</link>
-      <pubDate>Mon, 28 May 2012 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/projects/modphil</guid>
-      <description>&lt;p&gt;&lt;em&gt;Modern Philosophy&lt;/em&gt; is a free textbook created by
+</description></item><item><title>&#34;Modern Philosophy&#34; in plain text</title><link>http://megr.im/projects/modphil/</link><pubDate>Mon, 28 May 2012 00:00:00 UTC</pubDate><guid>http://megr.im/projects/modphil/</guid><description>&lt;p&gt;&lt;em&gt;Modern Philosophy&lt;/em&gt; is a free textbook created by
 &lt;a href=&#34;https://filebox.vt.edu/users/ottw/ott.htm&#34; title=&#34;Walter Ott&#39;s
 personal site&#34;&gt;Walter Ott&lt;/a&gt;. It combines public-domain primary sources with
 supplementary material and study questions. Everything not in the
@@ -815,8 +679,4 @@ conversion to other file formats.  Using
 
 &lt;p&gt;This version of &lt;em&gt;Modern Philosophy&lt;/em&gt; is kept in a
 &lt;a href=&#34;https://github.com/grumble/modernphilosophy&#34; title=&#34;GitHub repository&#34;&gt;public repository on GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+</description></item></channel></rss>

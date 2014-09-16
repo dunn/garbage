@@ -1,59 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-      <title>Things on Alex Dunn has no idea what he’s doing </title>
-      <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://megr.im/things/index.xml</link>
-    
-    
-    
-    <updated>Thu, 17 Jul 2014 00:00:00 UTC</updated>
-    
-    <item>
-      <title>The Good Trolle</title>
-      <link>http://megr.im/things/trolle</link>
-      <pubDate>Thu, 17 Jul 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/trolle</guid>
-      <description>&lt;p&gt;The Good Trolle is a new Twitter citizen who serves two complementary roles:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Things on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/things/index.xml/</link><updated>Thu, 17 Jul 2014 00:00:00 UTC</updated><item><title>The Good Trolle</title><link>http://megr.im/things/trolle/</link><pubDate>Thu, 17 Jul 2014 00:00:00 UTC</pubDate><guid>http://megr.im/things/trolle/</guid><description>&lt;p&gt;The Good Trolle is a new Twitter citizen who serves two complementary roles:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;It notifies its battle-ready followers of racists, sexists, homophobes, transphobes, and ableists in need of a good drubbing, and it does this by:&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;allowing anyone overwhelmed by said jerks to tweet at &lt;a href=&#34;https://twitter.com/good_trolle&#34;&gt;@good_trolle&lt;/a&gt; and offload the abuse onto people with the time and energy to shoulder the burden.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Jerry Fodor&#39;s Wittgenstein parody</title>
-      <link>http://megr.im/things/fodor</link>
-      <pubDate>Sun, 20 Apr 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/fodor</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tar.weatherson.org/2007/01/27/foggy-wittgenstein/&#34;&gt;Sometime in the 60s&lt;/a&gt; Michael Frayn wrote a &lt;a href=&#34;http://stevepetersen.net/personal/wittgenstein-fog.html&#34; title=&#34;Fog-like Sensations&#34;&gt;goofy parody&lt;/a&gt; of Ludwig Wittgenstein&amp;rsquo;s &lt;em&gt;Philosophical Investigations&lt;/em&gt;, and around 1970 Jerry Fodor wrote some &amp;ldquo;further addenda.&amp;rdquo;  Fodor&amp;rsquo;s parody isn&amp;rsquo;t really as good, but it still deserves to be better preserved than it is &lt;a href=&#34;http://www.nyu.edu/gsas/dept/philo/faculty/block/miscellaneous/Fodor_Wittgenstein.png&#34; title=&#34;PNG image&#34;&gt;at present&lt;/a&gt;, so I transcribed it here.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Exists.js</title>
-      <link>http://megr.im/things/exists.js</link>
-      <pubDate>Fri, 28 Feb 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/exists.js</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;re a scumbag analytic philosopher like me then this might actually
+</description></item><item><title>Jerry Fodor&#39;s Wittgenstein parody</title><link>http://megr.im/things/fodor/</link><pubDate>Sun, 20 Apr 2014 00:00:00 UTC</pubDate><guid>http://megr.im/things/fodor/</guid><description>&lt;p&gt;&lt;a href=&#34;http://tar.weatherson.org/2007/01/27/foggy-wittgenstein/&#34;&gt;Sometime in the 60s&lt;/a&gt; Michael Frayn wrote a &lt;a href=&#34;http://stevepetersen.net/personal/wittgenstein-fog.html&#34; title=&#34;Fog-like Sensations&#34;&gt;goofy parody&lt;/a&gt; of Ludwig Wittgenstein&amp;rsquo;s &lt;em&gt;Philosophical Investigations&lt;/em&gt;, and around 1970 Jerry Fodor wrote some &amp;ldquo;further addenda.&amp;rdquo;  Fodor&amp;rsquo;s parody isn&amp;rsquo;t really as good, but it still deserves to be better preserved than it is &lt;a href=&#34;http://www.nyu.edu/gsas/dept/philo/faculty/block/miscellaneous/Fodor_Wittgenstein.png&#34; title=&#34;PNG image&#34;&gt;at present&lt;/a&gt;, so I transcribed it here.&lt;/p&gt;
+</description></item><item><title>Exists.js</title><link>http://megr.im/things/exists.js/</link><pubDate>Fri, 28 Feb 2014 00:00:00 UTC</pubDate><guid>http://megr.im/things/exists.js/</guid><description>&lt;p&gt;If you&amp;rsquo;re a scumbag analytic philosopher like me then this might actually
 come in handy, like when your &amp;ldquo;friend&amp;rdquo; suggests that chairs are
 ontologically innocent.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Reading.js</title>
-      <link>http://megr.im/things/reading</link>
-      <pubDate>Thu, 30 Aug 2012 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/reading</guid>
-      <description>&lt;p&gt;Reading.js is a crummy bit of CSS and JavaScript that&amp;rsquo;s supposed to
+</description></item><item><title>Reading.js</title><link>http://megr.im/things/reading/</link><pubDate>Thu, 30 Aug 2012 00:00:00 UTC</pubDate><guid>http://megr.im/things/reading/</guid><description>&lt;p&gt;Reading.js is a crummy bit of CSS and JavaScript that&amp;rsquo;s supposed to
 make it easier to read long documents online.
 (&lt;a href=&#34;modernphilosophy/text.html&#34; title=&#34;HTML version of Modern Philosophy&#34;&gt;Like this one!&lt;/a&gt;)&lt;/p&gt;
 
@@ -64,19 +20,10 @@ page&#34;&gt;pandoc&lt;/a&gt; or by most
 project page&#34;&gt;Markdown&lt;/a&gt;-to-HTML converters&amp;mdash;and gain nifty features like
 keyboard shortcuts, section folding, and color scheme switching:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;http://baruffio.com/reading.js/stylesheets/reading.css&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;http://baruffio.com/reading.js/stylesheets/reading.css&amp;quot;&amp;gt;
 &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://baruffio.com/reading.js/scripts/reading.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fountain CLM</title>
-      <link>http://megr.im/things/fountain</link>
-      <pubDate>Mon, 04 Jun 2012 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/things/fountain</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.barebones.com/support/develop/clm.html&#34; title=&#34;Documentation from Bare Bones Software&#34;&gt;Codeless Language Modules&lt;/a&gt; (CLMs) are plugins for
+</description></item><item><title>Fountain CLM</title><link>http://megr.im/things/fountain/</link><pubDate>Mon, 04 Jun 2012 00:00:00 UTC</pubDate><guid>http://megr.im/things/fountain/</guid><description>&lt;p&gt;&lt;a href=&#34;http://www.barebones.com/support/develop/clm.html&#34; title=&#34;Documentation from Bare Bones Software&#34;&gt;Codeless Language Modules&lt;/a&gt; (CLMs) are plugins for
 &lt;a href=&#34;http://www.barebones.com/products/TextWrangler/&#34; title=&#34;TextWrangler product page on Bare Bones Software&#34;&gt;TextWrangler&lt;/a&gt; and
 &lt;a href=&#34;http://www.barebones.com/products/bbedit/&#34; title=&#34;BBEdit product
 page on Bare Bones Software&#34;&gt;BBEdit&lt;/a&gt; that add syntax highlighting, code
@@ -93,8 +40,4 @@ to be very readable, but they can be easily converted to other formats
 (like PDF and FDX) using
 &lt;a href=&#34;http://fountain.io/apps&#34; title=&#34;Fountain
 apps&#34;&gt;Fountain-compatible applications&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+</description></item></channel></rss>
