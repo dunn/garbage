@@ -1,0 +1,60 @@
+// demystified by ben jeffrey:
+// https://benjeffrey.com/posts/pandoc-syntax-highlighting-css
+// https://github.com/jeffbr13/benjeffrey.com/blob/master/src/scss/_syntax-highlighting-solarized-light.scss
+
+pre,
+code {
+  background-color: $base03;
+  color: $base3;
+  font-family: 'Consolas', 'Input Mono', 'Monaco', monospace;
+  padding: 2px;
+}
+
+// Keyword
+.kw {
+  color: $green;
+}
+// Data Type
+.dt {
+  color: $blue;
+}
+// decimal value, BaseN, Float
+.dv,
+.bn,
+.fl {
+  color: $magenta;
+}
+// Char (?)
+.ch {
+  color: $red;
+}
+// String
+.st {
+  color: $cyan;
+}
+// Comment
+.co {
+  color: $base01;
+}
+// Other
+.ot {
+  color: $yellow;
+}
+// Alert
+.al {
+  color: $orange;
+  font-weight: bold;
+}
+// Function
+.fu {
+  color: $violet;
+}
+// RegionMarker
+.re {
+  color: $base01;
+}
+// Error
+.er {
+  color: $red;
+  font-weight: bold;
+}
