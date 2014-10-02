@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recent Content on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/index.xml/</link><updated>Tue, 30 Sep 2014 00:00:00 UTC</updated><item><title>The Library Genesis API</title><link>http://megr.im/posts/libgen/</link><pubDate>Tue, 30 Sep 2014 00:00:00 UTC</pubDate><guid>http://megr.im/posts/libgen/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recent Content on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/index.xml/</link><updated>Wed, 01 Oct 2014 00:00:00 UTC</updated><item><title>The Library Genesis API</title><link>http://megr.im/posts/libgen/</link><pubDate>Wed, 01 Oct 2014 00:00:00 UTC</pubDate><guid>http://megr.im/posts/libgen/</guid><description>
 
 &lt;p&gt;&lt;a href=&#34;http://libgen.org/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only API
 documentation is
