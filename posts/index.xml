@@ -29,7 +29,7 @@ of &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.org/json.php?ids=1,2&amp;amp;fields=Title,Author,MD5&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;(The api is available at &lt;code&gt;http://gen.lib.rus.ec/json.php&lt;/code&gt; as well.)&lt;/p&gt;
+&lt;p&gt;(The API is available at &lt;code&gt;http://gen.lib.rus.ec/json.php&lt;/code&gt; as well.)&lt;/p&gt;
 
 &lt;p&gt;The above &lt;code&gt;curl&lt;/code&gt; request will return an array of JSON objects:&lt;/p&gt;
 
@@ -195,7 +195,7 @@ returned.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Here&amp;rsquo;s an example.  This query returns 10 random MD5 hashes for texts
-added between 1 May 2013 and 1 Janary 2014:&lt;/p&gt;
+added between 1 May 2013 and 1 January 2014:&lt;/p&gt;
 
 &lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span
 class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.org/json.php?fields=MD5&amp;amp;limit1=10&amp;amp;mode=last&amp;amp;timefirst=2013-05-01&amp;amp;timelast=2014-01-01&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
