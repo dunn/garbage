@@ -1,4 +1,255 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recent Content on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/index.xml/</link><updated>Sun, 31 Aug 2014 00:00:00 UTC</updated><item><title>Twitter bots</title><link>http://megr.im/projects/bots/</link><pubDate>Sun, 31 Aug 2014 00:00:00 UTC</pubDate><guid>http://megr.im/projects/bots/</guid><description>&lt;p&gt;I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here.  Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recent Content on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/index.xml/</link><updated>Tue, 30 Sep 2014 00:00:00 UTC</updated><item><title>The Library Genesis API</title><link>http://megr.im/posts/libgen/</link><pubDate>Tue, 30 Sep 2014 00:00:00 UTC</pubDate><guid>http://megr.im/posts/libgen/</guid><description>
+
+&lt;p&gt;&lt;a href=&#34;http://libgen.org/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only API
+documentation is
+&lt;a href=&#34;http://genofond.org/viewtopic.php?p=39355&#34; title=&#34;The Library Genesis Miner&#39;s Hut&#34;&gt;a forum thread in Russian&lt;/a&gt;.  So this is an English-language
+guide to using the LibGen API.&lt;/p&gt;
+
+&lt;p&gt;(I don&amp;rsquo;t know Russian, and had to read the original thread using
+&lt;a href=&#34;https://translate.google.com/translate?hl=en&amp;amp;sl=auto&amp;amp;tl=en&amp;amp;u=http%3A%2F%2Fgenofond.org%2Fviewtopic.php%3Fp%3D39355&#34;&gt;Google Translate&lt;/a&gt;,
+so corrections and additions are very welcome!)&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;First, some bad news&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;This is not a search API.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The API was apparently written to help LibGen maintainers keep their
+local mirrors up-to-date, which would explain why the API does not
+support the most common use that Library Genesis is put to by the rest
+of us: searching for texts.  You can&amp;rsquo;t (as far as I can tell) submit a
+string and get a list of results based on that string.&lt;/p&gt;
+
+&lt;p&gt;There are two &lt;em&gt;documented&lt;/em&gt; ways to use the API to query the LibGen
+database: by text ID, or by date.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Querying by ID&lt;/h2&gt;
+
+&lt;p&gt;Here&amp;rsquo;s how to retrieve information about the text with the coveted IDs
+of &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.org/json.php?ids=1,2&amp;amp;fields=Title,Author,MD5&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(The api is available at &lt;code&gt;http://gen.lib.rus.ec/json.php&lt;/code&gt; as well.)&lt;/p&gt;
+
+&lt;p&gt;The above &lt;code&gt;curl&lt;/code&gt; request will return an array of JSON objects:&lt;/p&gt;
+
+&lt;pre class=&#34;sourceCode json&#34;&gt;&lt;code class=&#34;sourceCode json&#34;&gt;&lt;span class=&#34;re&#34;&gt;[&lt;/span&gt;
+  &lt;span class=&#34;re&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;Title&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;Handbook of Clinical Drug Data&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;Author&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;Philip Anderson&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;MD5&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;7B2A4D53FDE834E801C26A2BAB7E0240&amp;quot;&lt;/span&gt;
+  &lt;span class=&#34;re&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;re&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;Title&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;Handbook of Herbs and Spices&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;Author&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;K V Peter&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;MD5&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;048EA0496DB0444F873139CD705A07AF&amp;quot;&lt;/span&gt;
+  &lt;span class=&#34;re&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;re&#34;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I used these three fields&amp;mdash;&lt;code&gt;Title&lt;/code&gt;, &lt;code&gt;Author&lt;/code&gt;, and &lt;code&gt;MD5&lt;/code&gt;&amp;mdash;because
+they&amp;rsquo;re all you need in most situations.  You can get the page URL by
+appending the MD5 to &lt;code&gt;http://gen.lib.rus.ec/book/index.php?md5=&lt;/code&gt; or to
+one of the mirrors:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;http://bookzz.org/md5/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://bookfi.org/md5/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can create a download URL by appending the MD5 to &lt;code&gt;http://libgen.org/get?md5=&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are other mirrors whose URLs are based on the text&amp;rsquo;s LibGen ID,
+rather than the MD5:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;http://libgen.net/view.php?id=&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://www.libgen.net/view.php?id=&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://libgen.info/view.php?id=&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://lib.freescienceengineering.org/view.php?id=&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can&amp;rsquo;t get a direct download link for these; you have to go to the
+page for the text and download from there.&lt;/p&gt;
+
+&lt;p&gt;But &lt;code&gt;Title&lt;/code&gt;, &lt;code&gt;Author&lt;/code&gt;, and &lt;code&gt;MD5&lt;/code&gt; are far from the only available
+fields; the full list is below. I haven&amp;rsquo;t figured out what all the
+fields mean, and keep in mind that it&amp;rsquo;s up to the person uploading a
+text to add this metadata, so not all texts are well-annotated.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ID&lt;/code&gt;—the LibGen ID&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Title&lt;/code&gt;—the title of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;VolumeInfo&lt;/code&gt;—the volume number, if the text is part of a multi-volume series&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Series&lt;/code&gt;—the series that the text is part of&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Periodical&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Author&lt;/code&gt;—the author of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Year&lt;/code&gt;—the publication date of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Edition&lt;/code&gt;—the edition of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Publisher&lt;/code&gt;—the publisher of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;City&lt;/code&gt;—the location of the publisher&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Pages&lt;/code&gt;—the number of pages in the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Language&lt;/code&gt;—the language of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Topic&lt;/code&gt;—A number corresponding to the topic of the text; for
+example, 130 is &amp;ldquo;Mathematics/Logic&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Library&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Issue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Identifier&lt;/code&gt;—the text&amp;rsquo;s short and long
+&lt;a href=&#34;https://www.isbn-international.org/content/what-isbn&#34;&gt;International Standard Book Numbers&lt;/a&gt; (not necessarily in that order)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ISSN&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;http://www.issn.org/understanding-the-issn/what-is-an-issn/&#34;&gt;International Standard Serial Number&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ASIN&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;http://www.amazon.com/gp/seller/asin-upc-isbn-info.html&#34;&gt;Amazon Standard Identification Number&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UDC&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Universal_Decimal_Classification&#34; title=&#34;Wikipedia entry&#34;&gt;Universal Decimal Classification&lt;/a&gt; number&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LBC&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DDC&lt;/code&gt;—the text&amp;rsquo;s
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Dewey_Decimal_Classification&#34; title=&#34;Wikipedia entry&#34;&gt;Dewey Decimal Classification&lt;/a&gt; number&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LCC&lt;/code&gt;—the text&amp;rsquo;s
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Library_of_Congress_Classification&#34; title=&#34;Wikipedia entry&#34;&gt;Library of Congress Classification&lt;/a&gt; number&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Doi&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Digital_object_identifier&#34; title=&#34;Wikipedia entry&#34;&gt;Digital Object Identifier&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Googlebookid&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;https://developers.google.com/books/docs/v1/using#ids&#34;&gt;Google Books ID&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OpenLibraryID&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;https://openlibrary.org/dev/docs/api/books&#34;&gt;Open Library ID&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Commentary&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DPI&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Color&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Cleaned&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Orientation&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Paginated&lt;/code&gt;—the text is paginated (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Scanned&lt;/code&gt;—the text is scanned from a physical copy (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Bookmarked&lt;/code&gt;—the text has bookmarks (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Searchable&lt;/code&gt;—the text is searchable (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Filesize&lt;/code&gt;—the size of the file in bytes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Extension&lt;/code&gt;—the extension of the file (&lt;code&gt;.pdf&lt;/code&gt;, &lt;code&gt;.epub&lt;/code&gt;, &lt;code&gt;.mobi&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MD5&lt;/code&gt;—the &lt;a href=&#34;http://www.md5.net&#34;&gt;MD5&lt;/a&gt; hash of the file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CRC32&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;http://www.riccibitti.com/crcguide.htm&#34; title=&#34;A painless guide to CRC error detection algorithms&#34;&gt;CRC32&lt;/a&gt; checksum&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eDonkey&lt;/code&gt;—the file&amp;rsquo;s
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Ed2k_URI_scheme&#34; title=&#34;Wikipedia entry&#34;&gt;eDonkey hash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AICH&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;http://www.emule-project.net/home/perl/help.cgi?l=1&amp;amp;rm=show_topic&amp;amp;topic_id=589&#34;&gt;eMule file hash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SHA1&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/SHA-1&#34; title=&#34;Wikipedia entry&#34;&gt;SHA-1&lt;/a&gt; hash&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TTH&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Merkle_tree#Tiger_tree_hash&#34; title=&#34;Wikipedia entry&#34;&gt;Tiger tree hash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Generic&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Filename&lt;/code&gt;—the file path in the LibGen database, in the form
+&lt;code&gt;directory/file&lt;/code&gt;.  The directory name is the text&amp;rsquo;s LibGen
+ID rounded to the nearest thousand, and the file name is the MD5
+hash in lowercase. (Even though the forward slash is escaped,
+&lt;a href=&#34;https://github.com/lgsoft-developers/libgen/blob/c45f441c7aaa56ae690a6a6503295995a044a76b/util.php&#34; title=&#34;LibGen code on GitHub&#34;&gt;it&amp;rsquo;s not part of the file name&lt;/a&gt;.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Visible&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Locator&lt;/code&gt;—&lt;a href=&#34;https://github.com/lgsoft-developers/libgen/blob/c45f441c7aaa56ae690a6a6503295995a044a76b/librarian/form.php#L187&#34; title=&#34;LibGen code on GitHub&#34;&gt;As far as I can tell&lt;/a&gt;, this is the file path of the original file on the machine of whoever uploaded it.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Local&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TimeAdded&lt;/code&gt;—the date/time when the text was added to the database,
+formatted as &lt;code&gt;YYYY-MM-DD HH:MM:SS&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TimeLastModified&lt;/code&gt;—the date/time when the text&amp;rsquo;s entry in the
+database was edited, formatted as &lt;code&gt;YYYY-MM-DD HH:MM:SS&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Coverurl&lt;/code&gt;—the path to the cover image for the text: the &lt;code&gt;Filename&lt;/code&gt;
+followed by a lowercase letter (there&amp;rsquo;s
+&lt;a href=&#34;https://github.com/lgsoft-developers/libgen/blob/c45f441c7aaa56ae690a6a6503295995a044a76b/book/util.php#L30&#34; title=&#34;LibGen code on GitHub&#34;&gt;a function&lt;/a&gt; to determine the letter for each cover, but
+I don&amp;rsquo;t know enough PHP to understand it).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Searching by date&lt;/h2&gt;
+
+&lt;p&gt;Querying by ID is pretty useless except for internal tasks, so it&amp;rsquo;s
+the ability to search by date that makes the API at all interesting.
+When searching by date, you don&amp;rsquo;t send the &lt;code&gt;id&lt;/code&gt; parameter to the API,
+but instead use some (but not all!) of the parameters below:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mode&lt;/code&gt;—set to &lt;code&gt;last&lt;/code&gt;, &lt;code&gt;modified&lt;/code&gt;, or &lt;code&gt;newer&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timefirst&lt;/code&gt;—a date formatted as &lt;code&gt;YYYY-MM-DD&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timelast&lt;/code&gt;—a date formatted as &lt;code&gt;YYYY-MM-DD&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timenewer&lt;/code&gt;—a time formatted as &lt;code&gt;YYYY-MM-DD%20HH:MM:SS&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;idnewer&lt;/code&gt;—a LibGen ID&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;limit1&lt;/code&gt;—an integer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;limit2&lt;/code&gt;—an integer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Using these parameters allows you to do two things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;retrieve information about a random set of texts from within a
+specified date range, or&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;retrieve information about texts modified after a certain time.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;The grab-bag method&lt;/h3&gt;
+
+&lt;p&gt;The obvious use case for this method is to display a random text or
+set of texts (perhaps for a Twitter bot).  The following parameters
+and values are allowed here:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;mode&lt;/code&gt;—either &lt;code&gt;last&lt;/code&gt; or &lt;code&gt;modified&lt;/code&gt;.  If you use &lt;code&gt;last&lt;/code&gt;, the API will
+match the dates you specify against text&amp;rsquo;s &lt;code&gt;TimeAdded&lt;/code&gt;, if you use
+&lt;code&gt;modified&lt;/code&gt;, it will look at &lt;code&gt;TimeLastModified&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;timefirst&lt;/code&gt;—the API will not return texts before this date (checked
+against either &lt;code&gt;TimeAdded&lt;/code&gt; or &lt;code&gt;TimeLastModified&lt;/code&gt; depending on what
+the &lt;code&gt;mode&lt;/code&gt; is set to).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;timelast&lt;/code&gt; (optional)—the API will not return texts after this date.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;limit1&lt;/code&gt; and &lt;code&gt;limit2&lt;/code&gt; (both optional)—if both of these parameters
+are set, the number of results returned will be the value of
+&lt;code&gt;limit2&lt;/code&gt;, and the set of results will be offset by the value of
+&lt;code&gt;limit1&lt;/code&gt; (not very important here, where the results are random).
+If only &lt;code&gt;limit1&lt;/code&gt; is set, its value is the number of results
+returned.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an example.  This query returns 10 random MD5 hashes for texts
+added between 1 May 2013 and 1 Janary 2014:&lt;/p&gt;
+
+&lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span
+class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.org/json.php?fields=MD5&amp;amp;limit1=10&amp;amp;mode=last&amp;amp;timefirst=2013-05-01&amp;amp;timelast=2014-01-01&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;The &lt;code&gt;newer&lt;/code&gt; method&lt;/h3&gt;
+
+&lt;p&gt;This method, which is literally &lt;em&gt;newer&lt;/em&gt;&amp;mdash;it was added at the beginning
+of 2014—finally allows the API to effectively serve its intended
+purpose: incremental updates from one of the main servers to a
+local mirror.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;mode&lt;/code&gt;—must be set to &lt;code&gt;newer&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;timenewer&lt;/code&gt;—the API will return information on texts &lt;em&gt;modified&lt;/em&gt; (not
+added) after this time, starting with the text closest to the
+specified time.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;idnewer&lt;/code&gt;—the API will not return information on texts with an ID
+lower than the value of &lt;code&gt;idnewer&lt;/code&gt;, even if it was modified after
+&lt;code&gt;timenewer&lt;/code&gt;.  (If you don&amp;rsquo;t care about this parameter you can set it
+to &lt;code&gt;1&lt;/code&gt;, but it is required.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;limit1&lt;/code&gt; and &lt;code&gt;limit2&lt;/code&gt; (optional)—these parameters behave the same as
+they do with the grab-bag method.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You could use this method to display new books, but the grab-bag
+method can do that well enough for most purposes.  I can&amp;rsquo;t think of
+many uses for &lt;code&gt;newer&lt;/code&gt; beyond its original intended one—mirroring
+the main database.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_5&#34;&gt;Are you sure there&amp;rsquo;s no search API?&lt;/h2&gt;
+
+&lt;p&gt;Pretty sure, yeah.  (There appears to be
+&lt;a href=&#34;http://genofond.org/viewtopic.php?p=22423&amp;amp;sid=a2cc032762a2b853b4354d287e4697e6&amp;amp;usg=ALkJrhjEraSeb6V9MMjk1_OCbXy2Ml_B4Q#p22423&#34; title=&#34;Russian forum post&#34;&gt;a search API for Bookfi&lt;/a&gt;, but you need to request an API key from the
+author.)&lt;/p&gt;
+
+&lt;p&gt;But the lack of a search API hasn&amp;rsquo;t stopped people from writing
+scripts to search for and download texts from Library Genesis:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://github.com/anomico/libgen.py&#34; title=&#34;GitHub
+repository&#34;&gt;Python script&lt;/a&gt; by &amp;ldquo;anomico&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;An &lt;a href=&#34;https://github.com/smargh/alfred_libgen&#34; title=&#34;GitHub
+repository&#34;&gt;Alfred workflow&lt;/a&gt; by &lt;a href=&#34;http://hackademic.postach.io&#34;&gt;Stephen Margheim&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://github.com/toddpress/Looky_Booky&#34; title=&#34;GitHub repository&#34;&gt;Chrome extension&lt;/a&gt; by &amp;ldquo;toddpress&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/dunndunndunn&#34; title=&#34;Twitter&#34;&gt;Let me know&lt;/a&gt; if you write
+your own!&lt;/p&gt;
+</description></item><item><title>Twitter bots</title><link>http://megr.im/projects/bots/</link><pubDate>Sun, 31 Aug 2014 00:00:00 UTC</pubDate><guid>http://megr.im/projects/bots/</guid><description>&lt;p&gt;I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here.  Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)&lt;/p&gt;
 </description></item><item><title>The Good Trolle</title><link>http://megr.im/things/trolle/</link><pubDate>Thu, 17 Jul 2014 00:00:00 UTC</pubDate><guid>http://megr.im/things/trolle/</guid><description>&lt;p&gt;The Good Trolle is a new Twitter citizen who serves two complementary roles:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -661,21 +912,4 @@ to be very readable, but they can be easily converted to other formats
 (like PDF and FDX) using
 &lt;a href=&#34;http://fountain.io/apps&#34; title=&#34;Fountain
 apps&#34;&gt;Fountain-compatible applications&lt;/a&gt;.&lt;/p&gt;
-</description></item><item><title>&lt;em&gt;Modern Philosophy&lt;/em&gt; in plain text</title><link>http://megr.im/projects/modphil/</link><pubDate>Mon, 28 May 2012 00:00:00 UTC</pubDate><guid>http://megr.im/projects/modphil/</guid><description>&lt;p&gt;&lt;em&gt;Modern Philosophy&lt;/em&gt; is a free textbook created by
-&lt;a href=&#34;https://filebox.vt.edu/users/ottw/ott.htm&#34; title=&#34;Walter Ott&#39;s
-personal site&#34;&gt;Walter Ott&lt;/a&gt;. It combines public-domain primary sources with
-supplementary material and study questions. Everything not in the
-public domain is licensed under
-&lt;a href=&#34;http://creativecommons.org/licenses/by-nc-sa/3.0/&#34; title=&#34;Creative Commons license page&#34;&gt;CC BY-NC-SA 3.0&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This modified version of the text is written in
-&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34; title=&#34;Markdown
-project page&#34;&gt;Markdown&lt;/a&gt;. Markdown is a plain-text syntax that allows for easy
-conversion to other file formats.  Using
-&lt;a href=&#34;http://johnmacfarlane.net/pandoc/&#34; title=&#34;pandoc project page&#34;&gt;pandoc&lt;/a&gt;,
-&lt;em&gt;Modern Philosophy&lt;/em&gt; can be easily converted to HTML, PDF, EPUB, and
-&lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#options&#34; title=&#34;pandoc options&#34;&gt;many other formats&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This version of &lt;em&gt;Modern Philosophy&lt;/em&gt; is kept in a
-&lt;a href=&#34;https://github.com/grumble/modernphilosophy&#34; title=&#34;GitHub repository&#34;&gt;public repository on GitHub&lt;/a&gt;.&lt;/p&gt;
 </description></item></channel></rss>
