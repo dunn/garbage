@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/posts/index.xml/</link><updated>Wed, 01 Oct 2014 00:00:00 UTC</updated><item><title>The Library Genesis API</title><link>http://megr.im/posts/libgen/</link><pubDate>Wed, 01 Oct 2014 00:00:00 UTC</pubDate><guid>http://megr.im/posts/libgen/</guid><description>
 
-&lt;p&gt;&lt;a href=&#34;http://libgen.org/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only API
+&lt;p&gt;&lt;a href=&#34;http://libgen.org/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only
 documentation is
 &lt;a href=&#34;http://genofond.org/viewtopic.php?p=39355&#34; title=&#34;The Library Genesis Miner&#39;s Hut&#34;&gt;a forum thread in Russian&lt;/a&gt;.  So this is an English-language
 guide to using the LibGen API.&lt;/p&gt;
@@ -48,10 +48,11 @@ of &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt;:&lt;/p&gt;
 
 &lt;p&gt;I used these three fields&amp;mdash;&lt;code&gt;Title&lt;/code&gt;, &lt;code&gt;Author&lt;/code&gt;, and &lt;code&gt;MD5&lt;/code&gt;&amp;mdash;because
 they&amp;rsquo;re all you need in most situations.  You can get the page URL by
-appending the MD5 to &lt;code&gt;http://gen.lib.rus.ec/book/index.php?md5=&lt;/code&gt; or to
+appending the MD5 to &lt;code&gt;http://libgen.org/book/index.php?md5=&lt;/code&gt; or to
 one of the mirrors:&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;http://gen.lib.rus.ec/book/index.php?md5=&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;http://bookzz.org/md5/&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;http://bookfi.org/md5/&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -72,7 +73,7 @@ rather than the MD5:&lt;/p&gt;
 page for the text and download from there.&lt;/p&gt;
 
 &lt;p&gt;But &lt;code&gt;Title&lt;/code&gt;, &lt;code&gt;Author&lt;/code&gt;, and &lt;code&gt;MD5&lt;/code&gt; are far from the only available
-fields; the full list is below. I haven&amp;rsquo;t figured out what all the
+data fields; the full list is below. I haven&amp;rsquo;t figured out what all the
 fields mean, and keep in mind that it&amp;rsquo;s up to the person uploading a
 text to add this metadata, so not all texts are well-annotated.&lt;/p&gt;
 
@@ -90,7 +91,7 @@ text to add this metadata, so not all texts are well-annotated.&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;Pages&lt;/code&gt;—the number of pages in the text&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Language&lt;/code&gt;—the language of the text&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Topic&lt;/code&gt;—A number corresponding to the topic of the text; for
-example, 130 is &amp;ldquo;Mathematics/Logic&amp;rdquo;&lt;/li&gt;
+example, &lt;code&gt;130&lt;/code&gt; is &amp;ldquo;Mathematics/Logic&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Library&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Issue&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Identifier&lt;/code&gt;—the text&amp;rsquo;s short and long
@@ -125,11 +126,11 @@ example, 130 is &amp;ldquo;Mathematics/Logic&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;SHA1&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/SHA-1&#34; title=&#34;Wikipedia entry&#34;&gt;SHA-1&lt;/a&gt; hash&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;TTH&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Merkle_tree#Tiger_tree_hash&#34; title=&#34;Wikipedia entry&#34;&gt;Tiger tree hash&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Generic&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Filename&lt;/code&gt;—the file path in the LibGen database, in the form
-&lt;code&gt;directory/file&lt;/code&gt;.  The directory name is the text&amp;rsquo;s LibGen
-ID rounded to the nearest thousand, and the file name is the MD5
-hash in lowercase. (Even though the forward slash is escaped,
-&lt;a href=&#34;https://github.com/lgsoft-developers/libgen/blob/c45f441c7aaa56ae690a6a6503295995a044a76b/util.php&#34; title=&#34;LibGen code on GitHub&#34;&gt;it&amp;rsquo;s not part of the file name&lt;/a&gt;.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Filename&lt;/code&gt;—the name of the file in the LibGen database, in the form
+&lt;code&gt;directory/MD5&lt;/code&gt;.  The directory name is the text&amp;rsquo;s LibGen ID rounded
+to the nearest thousand, and the MD5 hash is in lowercase. (The
+directory that each file is located in is
+&lt;a href=&#34;https://github.com/lgsoft-developers/libgen/blob/c45f441c7aaa56ae690a6a6503295995a044a76b/util.php#L6&#34; title=&#34;LibGen code on GitHub&#34;&gt;also included in the file name&lt;/a&gt;.)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Visible&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Locator&lt;/code&gt;—&lt;a href=&#34;https://github.com/lgsoft-developers/libgen/blob/c45f441c7aaa56ae690a6a6503295995a044a76b/librarian/form.php#L187&#34; title=&#34;LibGen code on GitHub&#34;&gt;As far as I can tell&lt;/a&gt;, this is the file path of the original file on the machine of whoever uploaded it.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Local&lt;/code&gt;&lt;/li&gt;
@@ -148,7 +149,8 @@ I don&amp;rsquo;t know enough PHP to understand it).&lt;/li&gt;
 &lt;p&gt;Querying by ID is pretty useless except for internal tasks, so it&amp;rsquo;s
 the ability to search by date that makes the API at all interesting.
 When searching by date, you don&amp;rsquo;t send the &lt;code&gt;id&lt;/code&gt; parameter to the API,
-but instead use some (but not all!) of the parameters below:&lt;/p&gt;
+but instead use some of the parameters below (along with any of the
+data fields from above):&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;mode&lt;/code&gt;—set to &lt;code&gt;last&lt;/code&gt;, &lt;code&gt;modified&lt;/code&gt;, or &lt;code&gt;newer&lt;/code&gt;&lt;/li&gt;
