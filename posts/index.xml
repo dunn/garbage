@@ -165,17 +165,20 @@ data fields from above):&lt;/p&gt;
 &lt;p&gt;Using these parameters allows you to do two things:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;retrieve information about a random set of texts from within a
-specified date range, or&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;del&gt;retrieve information about a random set of texts from within a
+specified date range,&lt;/del&gt; (see below) or&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;retrieve information about texts modified after a certain time.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;toc_3&#34;&gt;The grab-bag method&lt;/h3&gt;
 
-&lt;p&gt;The obvious use case for this method is to display a random text or
-set of texts (perhaps for a Twitter bot).  The following parameters
-and values are allowed here:&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;The obvious use case for this method is to display a random text or
+set of texts (perhaps for a Twitter bot).&lt;/del&gt;  &lt;strong&gt;I obviously didn&amp;rsquo;t
+test the API enough,&lt;/strong&gt; because this method is &lt;em&gt;not&lt;/em&gt; random.  I&amp;rsquo;ll look
+into it more when I have the time.&lt;/p&gt;
+
+&lt;p&gt;The following parameters and values are allowed here:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;mode&lt;/code&gt;—either &lt;code&gt;last&lt;/code&gt; or &lt;code&gt;modified&lt;/code&gt;.  If you use &lt;code&gt;last&lt;/code&gt;, the API will
@@ -184,7 +187,9 @@ match the dates you specify against text&amp;rsquo;s &lt;code&gt;TimeAdded&lt;/c
 
 &lt;li&gt;&lt;p&gt;&lt;code&gt;timefirst&lt;/code&gt;—the API will not return texts before this date (checked
 against either &lt;code&gt;TimeAdded&lt;/code&gt; or &lt;code&gt;TimeLastModified&lt;/code&gt; depending on what
-the &lt;code&gt;mode&lt;/code&gt; is set to).&lt;/p&gt;&lt;/li&gt;
+the &lt;code&gt;mode&lt;/code&gt; is set to).  The first books have a &lt;code&gt;TimeAdded&lt;/code&gt; value of
+&lt;code&gt;2009-07-20&lt;/code&gt;, and setting &lt;code&gt;timefirst&lt;/code&gt; to an earlier date will return
+an SQL error from the API.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;code&gt;timelast&lt;/code&gt; (optional)—the API will not return texts after this date.&lt;/p&gt;&lt;/li&gt;
 
@@ -196,7 +201,7 @@ If only &lt;code&gt;limit1&lt;/code&gt; is set, its value is the number of resul
 returned.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Here&amp;rsquo;s an example.  This query returns 10 random MD5 hashes for texts
+&lt;p&gt;Here&amp;rsquo;s an example.  This query returns 10 &lt;del&gt;random&lt;/del&gt; MD5 hashes for texts
 added between 1 May 2013 and 1 January 2014:&lt;/p&gt;
 
 &lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span
