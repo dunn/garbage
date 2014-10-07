@@ -83,7 +83,8 @@ p.browsehappy {
 }
 
 ///// Types
-.about {
+.about,
+.err404 {
 	border-color: $red;
 	background-color: $red;
 	a {
@@ -104,8 +105,7 @@ p.browsehappy {
 		border-bottom-color: $violet;
 	}
 }
-.things,
-.err404 {
+.things {
 	border-color: $violet;
 	background-color: $violet;
 	a {
