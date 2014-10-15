@@ -37,11 +37,7 @@ $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #859900;
 
-//// tricolor scheme
-$ggg: #ebd987;
-$bbb: #87ceeb;
-$rrr: #eb87b7;
-$wwr: white;
+@import "highlighting";
 
 /////////////////////// DECORATIONS ////////////////////////
 html {
@@ -53,7 +49,15 @@ html {
 }
 
 body {
-	color: $base3;
+  font-family: "alber-new-web";
+  color: $base3;
+}
+
+blockquote {
+  font-style: italic;
+  em {
+    font-style: normal;
+  }
 }
 
 img {
@@ -66,67 +70,90 @@ hr {
 }
 
 a {
-	color: $base3;
-	text-decoration: none;
-	border-bottom: .125em dotted;
+  color: $base3;
+  text-decoration: none;
+  border-bottom: .125em dotted;
 }
 
 .page-header,
-.page-footer {
+.page-footer,
+.sub-footer {
   background-color: $base03;
 }
 
+p.browsehappy {
+  text-align: center;
+  color: $red;
+  background-color: $base3;
+  a {
+    color: $cyan;
+  }
+}
+
+.slogan,
+dt,
+footer {
+  font-style: italic;
+}
+
+.slogan {
+  em {
+    font-style: normal;
+  }
+}
+
 ///// Types
-.about {
-	border-color: $red;
-	background-color: $red;
-	a {
-		border-bottom-color: $blue;
-	}
+.about,
+.err404 {
+  border-color: $red;
+  background-color: $red;
+  a {
+    border-bottom-color: $blue;
+  }
 }
 .projects {
-	border-color: $magenta;
-	background-color: $magenta;
-	a {
-		border-bottom-color: $cyan;
-	}
+  border-color: $magenta;
+  background-color: $magenta;
+  a {
+    border-bottom-color: $cyan;
+  }
 }
 .stories {
-	border-color: $orange;
-	background-color: $orange;
-	a {
-		border-bottom-color: $violet;
-	}
+  border-color: $orange;
+  background-color: $orange;
+  a {
+    border-bottom-color: $violet;
+  }
 }
 .things {
-	border-color: $violet;
-	background-color: $violet;
-	a {
-		border-bottom-color: $orange;
-	}
+  border-color: $violet;
+  background-color: $violet;
+  a {
+    border-bottom-color: $orange;
+  }
 }
 .websites {
-	border-color: $blue;
-	background-color: $blue;
-	a {
-		border-bottom-color: $red;
-	}
+  border-color: $blue;
+  background-color: $blue;
+  a {
+    border-bottom-color: $red;
+  }
 }
 .posts {
-	border-color: $cyan;
-	background-color: $cyan;
-	a {
-		border-bottom-color: $magenta;
-	}
+  border-color: $cyan;
+  background-color: $cyan;
+  a {
+    border-bottom-color: $magenta;
+  }
 }
 a:hover {
-	background-color: $base03;
-	border-bottom-color: $base3;
+  background-color: $base03;
+  border-bottom-color: $base3;
 }
 a.reverse:hover {
-	background-color: $base3;
-	border-bottom-color: $base03;
-	color: $base03;
+  background-color: $base3;
+  border-bottom-color: $base03;
+  color: $base03;
 }
 
 //////////////////////////////////////////////////////////////
@@ -144,7 +171,6 @@ main {
 }
 
 article {
-	margin: 0;
 	text-align: left;
 	border: .25em solid;
 	padding-left: 3%;
@@ -156,8 +182,8 @@ article {
 section {
 	text-align: left;
 	border: .25em solid;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin-left: 17%;
+	margin-right: 17%;
 	padding-left: 3%;
 	padding-right: 3%;
 }
@@ -169,13 +195,11 @@ section {
 }
 
 .page-header h1 {
-  padding-top: .1em;
+  font-style: italic;
+  padding: .5em;
 }
 
-.page-header h2 {
-  padding-bottom: .5em;
-}
-
+h1,
 h2,
 h3,
 h4,
@@ -203,10 +227,6 @@ h4 {
 h5,
 h6 {
   font-size: 112.5%;
-}
-
-h1 + h2 {
-  margin-top: -.5em;
 }
 
 /* http://unstoppablerobotninja.com/entry/fluid-images/ */
@@ -242,7 +262,9 @@ hr {
   }
   section {
     width: 80%;
+    margin: 0 auto;
   }
+
   h1 {
     font-size: 225%;
   }
@@ -265,9 +287,6 @@ hr {
 @media screen and (max-width: $break2) {
   body {
     font-size: 14pt;
-  }
-  main footer {
-    margin-left: 1em;
   }
   blockquote {
     margin: 0 1em;

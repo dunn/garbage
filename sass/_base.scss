@@ -1,5 +1,4 @@
 @import "compass";
-@import url(http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic);
 
 /* variables and mixins */
 @mixin hide {
@@ -18,28 +17,4 @@
 // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
- }
-
-body {
-  font-family: "Cabin", Helvetica, 'sans-serif', 'sans serif';
-}
-
-blockquote {
-	//margin: 0;
-    font-style: italic;
-  em {
-    font-style: normal;
-  }
-}
-
-.slogan,
-dt,
-footer {
-  font-style: italic;
-}
-
-.slogan {
-  em {
-    font-style: normal;
-  }
 }

@@ -1,21 +1,267 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-      <title>Posts on Alex Dunn has no idea what he’s doing </title>
-      <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://megr.im/posts/index.xml</link>
-    
-    
-    
-    <updated>Tue, 24 Sep 2013 00:00:00 UTC</updated>
-    
-    <item>
-      <title>Leading a Horse</title>
-      <link>http://megr.im/posts/horse_ebooks</link>
-      <pubDate>Tue, 24 Sep 2013 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/posts/horse_ebooks</guid>
-      <description>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/posts/index.xml/</link><updated>Wed, 01 Oct 2014 00:00:00 UTC</updated><item><title>The Library Genesis API</title><link>http://megr.im/posts/libgen/</link><pubDate>Wed, 01 Oct 2014 00:00:00 UTC</pubDate><guid>http://megr.im/posts/libgen/</guid><description>
+
+&lt;p&gt;&lt;a href=&#34;http://libgen.org/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only
+documentation is
+&lt;a href=&#34;http://genofond.org/viewtopic.php?p=39355&#34; title=&#34;The Library Genesis Miner&#39;s Hut&#34;&gt;a forum thread in Russian&lt;/a&gt;.  So this is an English-language
+guide to using the LibGen API.&lt;/p&gt;
+
+&lt;p&gt;(I don&amp;rsquo;t know Russian, and had to read the original thread using
+&lt;a href=&#34;https://translate.google.com/translate?hl=en&amp;amp;sl=auto&amp;amp;tl=en&amp;amp;u=http%3A%2F%2Fgenofond.org%2Fviewtopic.php%3Fp%3D39355&#34;&gt;Google Translate&lt;/a&gt;,
+so corrections and additions are very welcome!)&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;First, some bad news&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;This is not a search API.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The API was apparently written to help LibGen maintainers keep their
+local mirrors up-to-date, which would explain why the API does not
+support the most common use that Library Genesis is put to by the rest
+of us: searching for texts.  You can&amp;rsquo;t (as far as I can tell) submit a
+string and get a list of results based on that string.&lt;/p&gt;
+
+&lt;p&gt;There are two &lt;em&gt;documented&lt;/em&gt; ways to use the API to query the LibGen
+database: by text ID, or by date.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Querying by ID&lt;/h2&gt;
+
+&lt;p&gt;Here&amp;rsquo;s how to retrieve information about the texts with the coveted
+IDs of &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.org/json.php?ids=1,2&amp;amp;fields=Title,Author,MD5&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(The API is available at &lt;code&gt;http://gen.lib.rus.ec/json.php&lt;/code&gt; as well.)&lt;/p&gt;
+
+&lt;p&gt;The above &lt;code&gt;curl&lt;/code&gt; request will return an array of JSON objects:&lt;/p&gt;
+
+&lt;pre class=&#34;sourceCode json&#34;&gt;&lt;code class=&#34;sourceCode json&#34;&gt;&lt;span class=&#34;re&#34;&gt;[&lt;/span&gt;
+  &lt;span class=&#34;re&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;Title&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;Handbook of Clinical Drug Data&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;Author&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;Philip Anderson&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;MD5&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;7B2A4D53FDE834E801C26A2BAB7E0240&amp;quot;&lt;/span&gt;
+  &lt;span class=&#34;re&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;re&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;Title&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;Handbook of Herbs and Spices&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;Author&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;K V Peter&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;MD5&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;048EA0496DB0444F873139CD705A07AF&amp;quot;&lt;/span&gt;
+  &lt;span class=&#34;re&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;re&#34;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I used these three fields&amp;mdash;&lt;code&gt;Title&lt;/code&gt;, &lt;code&gt;Author&lt;/code&gt;, and &lt;code&gt;MD5&lt;/code&gt;&amp;mdash;because
+they&amp;rsquo;re all you need in most situations.  You can get the page URL by
+appending the MD5 to &lt;code&gt;http://libgen.org/book/index.php?md5=&lt;/code&gt; or to
+one of the mirrors:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;http://gen.lib.rus.ec/book/index.php?md5=&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://bookzz.org/md5/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://bookfi.org/md5/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can create a download URL by appending the MD5 to &lt;code&gt;http://libgen.org/get?md5=&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are other mirrors whose URLs are based on the text&amp;rsquo;s LibGen ID,
+rather than the MD5:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;http://libgen.net/view.php?id=&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://www.libgen.net/view.php?id=&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://libgen.info/view.php?id=&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://lib.freescienceengineering.org/view.php?id=&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can&amp;rsquo;t get a direct download link for these; you have to go to the
+page for the text and download from there.&lt;/p&gt;
+
+&lt;p&gt;But &lt;code&gt;Title&lt;/code&gt;, &lt;code&gt;Author&lt;/code&gt;, and &lt;code&gt;MD5&lt;/code&gt; are far from the only available
+data fields; the full list is below. I haven&amp;rsquo;t figured out what all the
+fields mean, and keep in mind that it&amp;rsquo;s up to the person uploading a
+text to add this metadata, so not all texts are well-annotated.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ID&lt;/code&gt;—the LibGen ID&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Title&lt;/code&gt;—the title of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;VolumeInfo&lt;/code&gt;—the volume number, if the text is part of a multi-volume series&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Series&lt;/code&gt;—the series that the text is part of&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Periodical&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Author&lt;/code&gt;—the author of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Year&lt;/code&gt;—the publication date of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Edition&lt;/code&gt;—the edition of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Publisher&lt;/code&gt;—the publisher of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;City&lt;/code&gt;—the location of the publisher&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Pages&lt;/code&gt;—the number of pages in the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Language&lt;/code&gt;—the language of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Topic&lt;/code&gt;—A number corresponding to the topic of the text; for
+example, &lt;code&gt;130&lt;/code&gt; is &amp;ldquo;Mathematics/Logic&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Library&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Issue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Identifier&lt;/code&gt;—the text&amp;rsquo;s short and long
+&lt;a href=&#34;https://www.isbn-international.org/content/what-isbn&#34;&gt;International Standard Book Numbers&lt;/a&gt; (not necessarily in that order)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ISSN&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;http://www.issn.org/understanding-the-issn/what-is-an-issn/&#34;&gt;International Standard Serial Number&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ASIN&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;http://www.amazon.com/gp/seller/asin-upc-isbn-info.html&#34;&gt;Amazon Standard Identification Number&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UDC&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Universal_Decimal_Classification&#34; title=&#34;Wikipedia entry&#34;&gt;Universal Decimal Classification&lt;/a&gt; number&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LBC&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DDC&lt;/code&gt;—the text&amp;rsquo;s
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Dewey_Decimal_Classification&#34; title=&#34;Wikipedia entry&#34;&gt;Dewey Decimal Classification&lt;/a&gt; number&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LCC&lt;/code&gt;—the text&amp;rsquo;s
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Library_of_Congress_Classification&#34; title=&#34;Wikipedia entry&#34;&gt;Library of Congress Classification&lt;/a&gt; number&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Doi&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Digital_object_identifier&#34; title=&#34;Wikipedia entry&#34;&gt;Digital Object Identifier&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Googlebookid&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;https://developers.google.com/books/docs/v1/using#ids&#34;&gt;Google Books ID&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OpenLibraryID&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;https://openlibrary.org/dev/docs/api/books&#34;&gt;Open Library ID&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Commentary&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DPI&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Color&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Cleaned&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Orientation&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Paginated&lt;/code&gt;—the text is paginated (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Scanned&lt;/code&gt;—the text is scanned from a physical copy (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Bookmarked&lt;/code&gt;—the text has bookmarks (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Searchable&lt;/code&gt;—the text is searchable (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Filesize&lt;/code&gt;—the size of the file in bytes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Extension&lt;/code&gt;—the extension of the file (&lt;code&gt;.pdf&lt;/code&gt;, &lt;code&gt;.epub&lt;/code&gt;, &lt;code&gt;.mobi&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MD5&lt;/code&gt;—the &lt;a href=&#34;http://www.md5.net&#34;&gt;MD5&lt;/a&gt; hash of the file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CRC32&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;http://www.riccibitti.com/crcguide.htm&#34; title=&#34;A painless guide to CRC error detection algorithms&#34;&gt;CRC32&lt;/a&gt; checksum&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eDonkey&lt;/code&gt;—the file&amp;rsquo;s
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Ed2k_URI_scheme&#34; title=&#34;Wikipedia entry&#34;&gt;eDonkey hash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AICH&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;http://www.emule-project.net/home/perl/help.cgi?l=1&amp;amp;rm=show_topic&amp;amp;topic_id=589&#34;&gt;eMule file hash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SHA1&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/SHA-1&#34; title=&#34;Wikipedia entry&#34;&gt;SHA-1&lt;/a&gt; hash&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TTH&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Merkle_tree#Tiger_tree_hash&#34; title=&#34;Wikipedia entry&#34;&gt;Tiger tree hash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Generic&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Filename&lt;/code&gt;—the name of the file in the LibGen database, in the form
+&lt;code&gt;directory/MD5&lt;/code&gt;.  The directory name is the text&amp;rsquo;s LibGen ID rounded
+to the nearest thousand, and the MD5 hash is in lowercase. (The
+directory that each file is located in is
+&lt;a href=&#34;https://github.com/lgsoft-developers/libgen/blob/c45f441c7aaa56ae690a6a6503295995a044a76b/util.php#L6&#34; title=&#34;LibGen code on GitHub&#34;&gt;also included in the file name&lt;/a&gt;.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Visible&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Locator&lt;/code&gt;—&lt;a href=&#34;https://github.com/lgsoft-developers/libgen/blob/c45f441c7aaa56ae690a6a6503295995a044a76b/librarian/form.php#L187&#34; title=&#34;LibGen code on GitHub&#34;&gt;As far as I can tell&lt;/a&gt;, this is the file path of the original file on the machine of whoever uploaded it.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Local&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TimeAdded&lt;/code&gt;—the date/time when the text was added to the database,
+formatted as &lt;code&gt;YYYY-MM-DD HH:MM:SS&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TimeLastModified&lt;/code&gt;—the date/time when the text&amp;rsquo;s entry in the
+database was edited, formatted as &lt;code&gt;YYYY-MM-DD HH:MM:SS&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Coverurl&lt;/code&gt;—the path to the cover image for the text: the &lt;code&gt;Filename&lt;/code&gt;
+followed by a lowercase letter (there&amp;rsquo;s
+&lt;a href=&#34;https://github.com/lgsoft-developers/libgen/blob/c45f441c7aaa56ae690a6a6503295995a044a76b/book/util.php#L30&#34; title=&#34;LibGen code on GitHub&#34;&gt;a function&lt;/a&gt; to determine the letter for each cover, but
+I don&amp;rsquo;t know enough PHP to understand it).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you want to get all fields for a text, use &lt;code&gt;fields=*&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Searching by date&lt;/h2&gt;
+
+&lt;p&gt;Querying by ID is pretty useless except for internal tasks, so it&amp;rsquo;s
+the ability to search by date that makes the API at all interesting.
+When searching by date, you don&amp;rsquo;t send the &lt;code&gt;id&lt;/code&gt; parameter to the API,
+but instead use some of the parameters below (along with any of the
+data fields from above):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mode&lt;/code&gt;—set to &lt;code&gt;last&lt;/code&gt;, &lt;code&gt;modified&lt;/code&gt;, or &lt;code&gt;newer&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timefirst&lt;/code&gt;—a date formatted as &lt;code&gt;YYYY-MM-DD&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timelast&lt;/code&gt;—a date formatted as &lt;code&gt;YYYY-MM-DD&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timenewer&lt;/code&gt;—a time formatted as &lt;code&gt;YYYY-MM-DD%20HH:MM:SS&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;idnewer&lt;/code&gt;—a LibGen ID&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;limit1&lt;/code&gt;—an integer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;limit2&lt;/code&gt;—an integer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Using these parameters allows you to do two things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;del&gt;retrieve information about a random set of texts from within a
+specified date range,&lt;/del&gt; (see below) or&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;retrieve information about texts modified after a certain time.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;The grab-bag method&lt;/h3&gt;
+
+&lt;p&gt;&lt;del&gt;The obvious use case for this method is to display a random text or
+set of texts (perhaps for a Twitter bot).&lt;/del&gt;  &lt;strong&gt;I obviously didn&amp;rsquo;t
+test the API enough,&lt;/strong&gt; because this method is &lt;em&gt;not&lt;/em&gt; random.  I&amp;rsquo;ll look
+into it more when I have the time.&lt;/p&gt;
+
+&lt;p&gt;The following parameters and values are allowed here:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;mode&lt;/code&gt;—either &lt;code&gt;last&lt;/code&gt; or &lt;code&gt;modified&lt;/code&gt;.  If you use &lt;code&gt;last&lt;/code&gt;, the API will
+match the dates you specify against text&amp;rsquo;s &lt;code&gt;TimeAdded&lt;/code&gt;, if you use
+&lt;code&gt;modified&lt;/code&gt;, it will look at &lt;code&gt;TimeLastModified&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;timefirst&lt;/code&gt;—the API will not return texts before this date (checked
+against either &lt;code&gt;TimeAdded&lt;/code&gt; or &lt;code&gt;TimeLastModified&lt;/code&gt; depending on what
+the &lt;code&gt;mode&lt;/code&gt; is set to).  The first books have a &lt;code&gt;TimeAdded&lt;/code&gt; value of
+&lt;code&gt;2009-07-20&lt;/code&gt;, and setting &lt;code&gt;timefirst&lt;/code&gt; to an earlier date will return
+an SQL error from the API.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;timelast&lt;/code&gt; (optional)—the API will not return texts after this date.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;limit1&lt;/code&gt; and &lt;code&gt;limit2&lt;/code&gt; (both optional)—if both of these parameters
+are set, the number of results returned will be the value of
+&lt;code&gt;limit2&lt;/code&gt;, and the set of results will be offset by the value of
+&lt;code&gt;limit1&lt;/code&gt; (not very important here, where the results are random).
+If only &lt;code&gt;limit1&lt;/code&gt; is set, its value is the number of results
+returned.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an example.  This query returns 10 &lt;del&gt;random&lt;/del&gt; MD5 hashes for texts
+added between 1 May 2013 and 1 January 2014:&lt;/p&gt;
+
+&lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span
+class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.org/json.php?fields=MD5&amp;amp;limit1=10&amp;amp;mode=last&amp;amp;timefirst=2013-05-01&amp;amp;timelast=2014-01-01&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;The &lt;code&gt;newer&lt;/code&gt; method&lt;/h3&gt;
+
+&lt;p&gt;This method, which is literally &lt;em&gt;newer&lt;/em&gt;&amp;mdash;it was added at the beginning
+of 2014—finally allows the API to effectively serve its intended
+purpose: incremental updates from one of the main servers to a
+local mirror.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;mode&lt;/code&gt;—must be set to &lt;code&gt;newer&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;timenewer&lt;/code&gt;—the API will return information on texts &lt;em&gt;modified&lt;/em&gt; (not
+added) after this time, starting with the text closest to the
+specified time.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;idnewer&lt;/code&gt;—the API will not return information on texts with an ID
+lower than the value of &lt;code&gt;idnewer&lt;/code&gt;, even if it was modified after
+&lt;code&gt;timenewer&lt;/code&gt;.  (If you don&amp;rsquo;t care about this parameter you can set it
+to &lt;code&gt;1&lt;/code&gt;, but it is required.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;limit1&lt;/code&gt; and &lt;code&gt;limit2&lt;/code&gt; (optional)—these parameters behave the same as
+they do with the grab-bag method.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You could use this method to display new books, but the grab-bag
+method can do that well enough for most purposes.  I can&amp;rsquo;t think of
+many uses for &lt;code&gt;newer&lt;/code&gt; beyond its original intended one—mirroring
+the main database.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_5&#34;&gt;Are you sure there&amp;rsquo;s no search API?&lt;/h2&gt;
+
+&lt;p&gt;Pretty sure, yeah.  (There appears to be
+&lt;a href=&#34;http://genofond.org/viewtopic.php?p=22423&amp;amp;sid=a2cc032762a2b853b4354d287e4697e6&amp;amp;usg=ALkJrhjEraSeb6V9MMjk1_OCbXy2Ml_B4Q#p22423&#34; title=&#34;Russian forum post&#34;&gt;a search API for Bookfi&lt;/a&gt;, but you need to request an API key from the
+author.)&lt;/p&gt;
+
+&lt;p&gt;But the lack of a search API hasn&amp;rsquo;t stopped people from writing
+scripts to search for and download texts from Library Genesis:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://www.npmjs.org/package/libgen&#34; title=&#34;npm project
+page&#34;&gt;Node.js module&lt;/a&gt; by me&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://github.com/anomico/libgen.py&#34; title=&#34;GitHub
+repository&#34;&gt;Python script&lt;/a&gt; by &amp;ldquo;anomico&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;An &lt;a href=&#34;https://github.com/smargh/alfred_libgen&#34; title=&#34;GitHub
+repository&#34;&gt;Alfred workflow&lt;/a&gt; by &lt;a href=&#34;http://hackademic.postach.io&#34;&gt;Stephen Margheim&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://github.com/toddpress/Looky_Booky&#34; title=&#34;GitHub repository&#34;&gt;Chrome extension&lt;/a&gt; by &amp;ldquo;toddpress&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/dunndunndunn&#34; title=&#34;Twitter&#34;&gt;Let me know&lt;/a&gt; if you write
+your own!&lt;/p&gt;
+</description></item><item><title>Leading a Horse</title><link>http://megr.im/posts/horse_ebooks/</link><pubDate>Tue, 24 Sep 2013 00:00:00 UTC</pubDate><guid>http://megr.im/posts/horse_ebooks/</guid><description>
 
 &lt;p&gt;I don&amp;rsquo;t really know why all of a sudden I&amp;rsquo;m so cut up about
 @Horse_ebooks
@@ -39,7 +285,7 @@ fake, and our faith in others
 
 &lt;p&gt;But it&amp;rsquo;s still a shame.&lt;/p&gt;
 
-&lt;h1 id=&#34;toc_0&#34;&gt;What&amp;rsquo;s wrong with finding two men in a horse suit&lt;/h1&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;What&amp;rsquo;s wrong with finding two men in a horse suit&lt;/h2&gt;
 
 &lt;p&gt;I went back to
 &lt;a href=&#34;http://dansinker.com/post/62183207705/eulogy-for-a-horse&#34; title=&#34;Eulogy for a horse&#34;&gt;Dan Sinker&amp;rsquo;s piece&lt;/a&gt; and this struck me as important (as important as
@@ -94,24 +340,15 @@ fools?&#34;&gt;&amp;quot;got funnier&amp;quot;&lt;/a&gt; in September of 2011,
 suddenly seem preferable, actually better, because they&amp;rsquo;re &lt;em&gt;real&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;Nothing: I am not taught to make any thing&lt;/p&gt;&amp;mdash; Horse ebooks (@Horse_ebooks) &lt;a href=&#34;https://twitter.com/Horse_ebooks/statuses/49625817868804097&#34;&gt;March 21, 2011&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Dudebros as a sublime expression of the absurd, or: proving Shanley&#39;s point without realizing it</title>
-      <link>http://megr.im/posts/dudebros</link>
-      <pubDate>Tue, 03 Sep 2013 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/posts/dudebros</guid>
-      <description>&lt;p&gt;Today &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote a
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description></item><item><title>Dudebros as a sublime expression of the absurd, or: proving Shanley&#39;s point without realizing it</title><link>http://megr.im/posts/dudebros/</link><pubDate>Tue, 03 Sep 2013 00:00:00 UTC</pubDate><guid>http://megr.im/posts/dudebros/</guid><description>&lt;p&gt;Today &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote a
 &lt;a href=&#34;https://medium.com/about-work/82978662b2d6&#34; title=&#34;Things I
 Never, Ever Want To Hear Again&#34;&gt;great piece&lt;/a&gt; that was made even greater because of
 the people on Twitter who rose to the challenge of proving her points
 for her.&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;And right on cue, Dudebros &lt;a href=&#34;https://twitter.com/leashless&#34;&gt;@leashless&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/chrisbeach&#34;&gt;@chrisbeach&lt;/a&gt; and others are now literally doing the &lt;em&gt;exact thing&lt;/em&gt; &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote that Dudebros do.&lt;/p&gt;&amp;mdash; Faruk Ateş (@KuraFire) &lt;a href=&#34;https://twitter.com/KuraFire/statuses/375027715818004482&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -132,10 +369,11 @@ angry.&lt;/p&gt;
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;Men with anger issues like this are called assholes
     &lt;a href=&#34;https://t.co/kihKzHZDS0&#34;&gt;&lt;a href=&#34;https://t.co/kihKzHZDS0&#34;&gt;https://t.co/kihKzHZDS0&lt;/a&gt;
     &lt;/a&gt; Women with these kinds of anger issues can hide behind Feminism.&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375000489999360000&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;.&lt;a href=&#34;https://twitter.com/thomas_lord&#34;&gt;@thomas_lord&lt;/a&gt; &lt;a href=&#34;https://twitter.com/pawzilla&#34;&gt;@pawzilla&lt;/a&gt; &lt;a href=&#34;https://twitter.com/metaAnnelies&#34;&gt;@metaAnnelies&lt;/a&gt; Gupta&amp;#39;s seen many good men take real personal damage from women with personal issues crying Feminism.&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375006955372167168&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -153,10 +391,11 @@ discrediting her.&lt;/p&gt;
 &lt;p&gt;Dudebros:&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;What I&amp;#39;d &lt;em&gt;LOVE&lt;/em&gt; to see is a non-disempowering, non-asshole way to say &amp;quot;hey your personal anger is interfering with your effectiveness&amp;quot;&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375010456361906176&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;I&amp;#39;m looking for something that could be said, in a time of conflict, to alert somebody to a place where they&amp;#39;re hurting themselves in anger.&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375014010128580608&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -176,13 +415,14 @@ fundamental misunderstanding of the problem.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Dudebros:&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;.&lt;a href=&#34;https://twitter.com/alexstapleton&#34;&gt;@alexstapleton&lt;/a&gt; No, I&amp;#39;m saying this is a person with an anger problem channelling their anger into a socially acceptable (if abusive) form.&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375001937713713152&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/pawzilla&#34;&gt;@pawzilla&lt;/a&gt; I&amp;#39;m interested in gender-blind integration in tech. Not pitting men vs. women as militant feminists like &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; do&lt;/p&gt;&amp;mdash; Chris Beach (@chrisbeach) &lt;a href=&#34;https://twitter.com/chrisbeach/statuses/375011527348461568&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/alexstapleton&#34;&gt;@alexstapleton&lt;/a&gt; &lt;a href=&#34;https://twitter.com/leashless&#34;&gt;@leashless&lt;/a&gt; I have to say that although I generally agree with &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; I stopped reading her stuff because of all the vitriol&lt;/p&gt;&amp;mdash; Russ Garrett (@russss) &lt;a href=&#34;https://twitter.com/russss/statuses/375002543429939201&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -201,10 +441,10 @@ whatsoever for your words and actions.&lt;/p&gt;
 &lt;p&gt;Dudebros:&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/exiledsurfer&#34;&gt;@exiledsurfer&lt;/a&gt; &lt;a href=&#34;https://twitter.com/Grimeandreason&#34;&gt;@Grimeandreason&lt;/a&gt; &lt;a href=&#34;https://twitter.com/pawzilla&#34;&gt;@pawzilla&lt;/a&gt; &lt;a href=&#34;https://twitter.com/metaAnnelies&#34;&gt;@metaAnnelies&lt;/a&gt; Note that my guru was a woman: I&amp;#39;ve lived and worked under absolue female powers&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375011180567207936&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/exiledsurfer&#34;&gt;@exiledsurfer&lt;/a&gt; &lt;a href=&#34;https://twitter.com/Grimeandreason&#34;&gt;@Grimeandreason&lt;/a&gt; &lt;a href=&#34;https://twitter.com/pawzilla&#34;&gt;@pawzilla&lt;/a&gt; &lt;a href=&#34;https://twitter.com/metaAnnelies&#34;&gt;@metaAnnelies&lt;/a&gt; &amp;quot;my guru was a woman&amp;quot; doesn&amp;#39;t mean much to most non-Hindus but it&amp;#39;s &lt;em&gt;huge&lt;/em&gt; in my world&lt;/p&gt;&amp;mdash; Vinay Gupta (@leashless) &lt;a href=&#34;https://twitter.com/leashless/statuses/375011319688081408&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -224,16 +464,20 @@ it does about my writing.&lt;/p&gt;
 &lt;p&gt;Dudebros:&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/alexstapleton&#34;&gt;@alexstapleton&lt;/a&gt; do you enjoy being called a &amp;quot;rapist&amp;quot;? I didn&amp;#39;t. It&amp;#39;s an absurd post&lt;/p&gt;&amp;mdash; Chris Beach (@chrisbeach) &lt;a href=&#34;https://twitter.com/chrisbeach/statuses/375011748660908032&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/leashless&#34;&gt;@leashless&lt;/a&gt; &lt;a href=&#34;https://twitter.com/alexstapleton&#34;&gt;@alexstapleton&lt;/a&gt; It&amp;#39;s an uncontrolled, blanket-accusative, contradictory rant from &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; that does nothing for her cause&lt;/p&gt;&amp;mdash; Chris Beach (@chrisbeach) &lt;a href=&#34;https://twitter.com/chrisbeach/statuses/375008653616881665&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;Dear &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt;, when you use hateful sweeping generalizations to get others to stop making hateful sweeping generalizations. You&amp;#39;ve given up.&lt;/p&gt;&amp;mdash; Cody Brown (@CodyBrown) &lt;a href=&#34;https://twitter.com/CodyBrown/statuses/375030607450865664&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; &lt;a href=&#34;https://twitter.com/eevee&#34;&gt;@eevee&lt;/a&gt; It is quite vitriolic, and that accusatory, aggressive tone doesn&amp;#39;t help, especially in the &amp;quot;not about you&amp;quot; section.&lt;/p&gt;&amp;mdash; kshade (@kshade_hyaena) &lt;a href=&#34;https://twitter.com/kshade_hyaena/statuses/375013650940977152&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -253,19 +497,11 @@ getting better every day.&lt;/p&gt;
 &lt;p&gt;Dudebros:&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; just looks a bit attention-seeking, particularly your enjoyment of the response. If you cared about the cause, you&amp;#39;d write better&lt;/p&gt;&amp;mdash; Chris Beach (@chrisbeach) &lt;a href=&#34;https://twitter.com/chrisbeach/statuses/375009796455669760&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Good work today, everyone.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Cultural Appropriation at Lucidity</title>
-      <link>http://megr.im/posts/lucidity</link>
-      <pubDate>Fri, 26 Apr 2013 00:00:00 UTC</pubDate>
-      
-      <guid>http://megr.im/posts/lucidity</guid>
-      <description>
+</description></item><item><title>Cultural Appropriation at Lucidity</title><link>http://megr.im/posts/lucidity/</link><pubDate>Fri, 26 Apr 2013 00:00:00 UTC</pubDate><guid>http://megr.im/posts/lucidity/</guid><description>
 
 &lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt; (1 August 2013): Jonah Haas has published
   &lt;a href=&#34;http://lucidityfestival.com/reframing-the-cultural-appropriation-conversation-towards-synergy-co-learning-and-peace/&#34; title=&#34;Reframing the cultural appropriation conversation towards synergy,
@@ -279,7 +515,7 @@ firm grasp on what &amp;lsquo;cultural appropriation&amp;rsquo; means, and so th
 see what the big deal is or why they should make changes to their
 festival.&lt;/p&gt;
 
-&lt;h1 id=&#34;toc_0&#34;&gt;Who did what now?&lt;/h1&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Who did what now?&lt;/h2&gt;
 
 &lt;p&gt;Lucidity Festival takes place in the
 &lt;a href=&#34;http://www.countyofsb.org/parks/parks05.aspx?id=9378&#34; title=&#34;County of Santa Barbara Parks Division&#34;&gt;Live Oak campground&lt;/a&gt; in Santa Ynez and is
@@ -335,7 +571,7 @@ on these &amp;ldquo;totems&amp;rdquo;:&lt;/p&gt;
 &lt;img src=&#34;/img/lucidity2013_header.jpg&#34; alt=&#34;Welp.&#34; /&gt;&lt;figcaption&gt;Welp.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;h1 id=&#34;toc_1&#34;&gt;Why is this a problem?&lt;/h1&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Why is this a problem?&lt;/h2&gt;
 
 &lt;p&gt;This is cultural appropriation of the worst sort.  Lucidity Festival
 is taking traditions of Indigenous tribes of the Pacific Northwest out
@@ -392,7 +628,8 @@ ignorant individuals callously mashing together random aspects of
 different minority cultures while exoticizing and demeaning them.&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;What&amp;rsquo;s your favorite mythological/fantastical/imaginative creature?&lt;/p&gt;&amp;mdash; Lucidity Festival (@LucidityFest) &lt;a href=&#34;https://twitter.com/LucidityFest/status/284096417188966400&#34;&gt;December 27, 2012&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
+charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;What Lucidity is doing here is lumping Indigenous tribes together with
 mythological, fantastical, and imaginative &amp;ldquo;creatures&amp;rdquo;.  And,
@@ -451,7 +688,7 @@ course.)&lt;/p&gt;
 &lt;em&gt;system&lt;/em&gt; of cultural appropriation that is &lt;em&gt;actively harmful&lt;/em&gt; to
 Indigenous communities.&lt;/p&gt;
 
-&lt;h1 id=&#34;toc_2&#34;&gt;What does Lucidity have to say about all this?&lt;/h1&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;What does Lucidity have to say about all this?&lt;/h2&gt;
 
 &lt;p&gt;Given that the organizers of Lucidity Festival engage in and promote
 unacceptable acts of cultural appropriation, it&amp;rsquo;s not surprising that
@@ -608,11 +845,7 @@ Lucidity is perpetuating racism against Indigenous peoples.
 &lt;em&gt;Because they&amp;rsquo;re a tribe too.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;How do you know this isn&amp;rsquo;t a dream?&lt;/p&gt;&amp;mdash; Lucidity Festival (@LucidityFest) &lt;a href=&#34;https://twitter.com/LucidityFest/status/277652871057641472&#34;&gt;December 9, 2012&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/p&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Oh, if only it was.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+</description></item></channel></rss>
