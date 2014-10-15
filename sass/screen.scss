@@ -50,6 +50,7 @@ html {
 
 body {
   font-family: "alber-new-web";
+  color: $base3;
 }
 
 blockquote {
@@ -69,9 +70,9 @@ hr {
 }
 
 a {
-	color: $base3;
-	text-decoration: none;
-	border-bottom: .125em dotted;
+  color: $base3;
+  text-decoration: none;
+  border-bottom: .125em dotted;
 }
 
 .page-header,
@@ -104,55 +105,55 @@ footer {
 ///// Types
 .about,
 .err404 {
-	border-color: $red;
-	background-color: $red;
-	a {
-		border-bottom-color: $blue;
-	}
+  border-color: $red;
+  background-color: $red;
+  a {
+    border-bottom-color: $blue;
+  }
 }
 .projects {
-	border-color: $magenta;
-	background-color: $magenta;
-	a {
-		border-bottom-color: $cyan;
-	}
+  border-color: $magenta;
+  background-color: $magenta;
+  a {
+    border-bottom-color: $cyan;
+  }
 }
 .stories {
-	border-color: $orange;
-	background-color: $orange;
-	a {
-		border-bottom-color: $violet;
-	}
+  border-color: $orange;
+  background-color: $orange;
+  a {
+    border-bottom-color: $violet;
+  }
 }
 .things {
-	border-color: $violet;
-	background-color: $violet;
-	a {
-		border-bottom-color: $orange;
-	}
+  border-color: $violet;
+  background-color: $violet;
+  a {
+    border-bottom-color: $orange;
+  }
 }
 .websites {
-	border-color: $blue;
-	background-color: $blue;
-	a {
-		border-bottom-color: $red;
-	}
+  border-color: $blue;
+  background-color: $blue;
+  a {
+    border-bottom-color: $red;
+  }
 }
 .posts {
-	border-color: $cyan;
-	background-color: $cyan;
-	a {
-		border-bottom-color: $magenta;
-	}
+  border-color: $cyan;
+  background-color: $cyan;
+  a {
+    border-bottom-color: $magenta;
+  }
 }
 a:hover {
-	background-color: $base03;
-	border-bottom-color: $base3;
+  background-color: $base03;
+  border-bottom-color: $base3;
 }
 a.reverse:hover {
-	background-color: $base3;
-	border-bottom-color: $base03;
-	color: $base03;
+  background-color: $base3;
+  border-bottom-color: $base03;
+  color: $base03;
 }
 
 //////////////////////////////////////////////////////////////

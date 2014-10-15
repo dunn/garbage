@@ -1,23 +1,38 @@
 @charset "UTF-8";
 @import "base";
 
+//
+// EmojiSymbols Font (c)blockworks - Kenichi Kaneko
+// http://emojisymbols.com/
+//
+@font-face {
+  font-family: "EmojiSymbols";
+  src: url('/fonts/EmojiSymbols-Regular.woff') format('woff');
+  text-decoration: none;
+  font-style: normal;
+}
+
 ///////////////
 // VARIABLES
 ///////////////
 $bg: #fffdfc;
 $fg: #3a383a;
+$break0: 1000px;
 $break1: 900px;
 $break2: 600px;
 
 body {
   color: $fg;
   background-color: $bg;
+  font-size: 14pt;
 }
 
 // hide gross boxes when chrome can't render emoji
 *::before,
 *::after {
-  color: $bg;
+  font-family: "EmojiSymbols";
+  font-size: 18pt;
+//  color: $bg;
 }
 
 ///// FONT
@@ -61,7 +76,7 @@ body {
     padding-right: .5em;
     list-style-type: none;
     p::after {
-      content: " ☔️";
+      content: " 🌂";
     }
   }
 }
@@ -73,7 +88,7 @@ body {
     padding-left: .5em;
     list-style-type: none;
     p::before {
-      content: "☁️ ";
+      content: "☁ ";
     }
   }
 }
@@ -92,7 +107,7 @@ footer {
 
 ///// EMOJI
 #foi::before {
-  content: "📚 ";
+  content: "📖 ";
 }
 #phil::before {
   content: "🏰 ";
@@ -104,7 +119,14 @@ footer {
   content: "🙋 ";
 }
 #gvb::before {
-  content: "🌳 ";
+  content: "🌲 ";
+}
+
+@media screen and (max-width: $break0){
+  .history {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
 }
 
 @media screen and (max-width: $break1){
