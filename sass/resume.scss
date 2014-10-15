@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import "base";
+
+///////////////
+// VARIABLES
+///////////////
+$bg: #fffdfc;
+$fg: #3a383a;
+$break1: 900px;
+$break2: 600px;
+
+body {
+  color: $fg;
+  background-color: $bg;
+}
+
+// hide gross boxes when chrome can't render emoji
+*::before,
+*::after {
+  color: $bg;
+}
+
+///// FONT
+body {
+  font-family: "prenton","Helvetica",sans-serif;
+}
+
+///////////////////////
+// LAYOUT
+///////////////////////
+
+.title {
+  text-align: center;
+}
+
+.about {
+  padding-left: 30%;
+  padding-right: 30%;
+}
+.about,
+.showcase,
+.employment {
+  clear: both;
+}
+
+.info {
+  float: left;
+  width: 50%;
+  ul {
+    -webkit-padding-start: 0;
+    -moz-padding-start: 0;
+    padding-start: 0;
+  }
+}
+.contact {
+  text-align: right;
+  padding-left: 4em;
+  padding-right: 2em;
+  ul,
+  li {
+    padding-right: .5em;
+    list-style-type: none;
+    p::after {
+      content: " ☔️";
+    }
+  }
+}
+.skills {
+  padding-left: 2em;
+  padding-right: 4em;
+  ul,
+  li {
+    padding-left: .5em;
+    list-style-type: none;
+    p::before {
+      content: "☁️ ";
+    }
+  }
+}
+.history {
+  padding-top: 1em;
+  padding-left: 15em;
+  padding-right: 15em;
+}
+
+footer {
+  padding: 2em;
+
+  text-align: center;
+  font-style: italic;
+}
+
+///// EMOJI
+#foi::before {
+  content: "📚 ";
+}
+#phil::before {
+  content: "🏰 ";
+}
+#reed::before {
+  content: "🎪 ";
+}
+#oh::before {
+  content: "🙋 ";
+}
+#gvb::before {
+  content: "🌳 ";
+}
+
+@media screen and (max-width: $break1){
+  .history {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .contact {
+    padding-left: 2em;
+    padding-right: 1em;
+  }
+  .skills {
+    padding-left: 1em;
+    padding-right: 2em;
+  }
+}
+@media screen and (max-width: $break2) {
+  .about,
+  .history {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .info {
+    float: none;
+    width: 95%;
+  }
+}

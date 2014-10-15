@@ -18,26 +18,3 @@
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
-
-body {
-  font-family: "alber-new-web";
-}
-
-blockquote {
-  font-style: italic;
-  em {
-    font-style: normal;
-  }
-}
-
-.slogan,
-dt,
-footer {
-  font-style: italic;
-}
-
-.slogan {
-  em {
-    font-style: normal;
-  }
-}
