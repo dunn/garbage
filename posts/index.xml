@@ -24,8 +24,8 @@ database: by text ID, or by date.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_1&#34;&gt;Querying by ID&lt;/h2&gt;
 
-&lt;p&gt;Here&amp;rsquo;s how to retrieve information about the text with the coveted IDs
-of &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how to retrieve information about the texts with the coveted
+IDs of &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.org/json.php?ids=1,2&amp;amp;fields=Title,Author,MD5&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
@@ -144,6 +144,8 @@ followed by a lowercase letter (there&amp;rsquo;s
 I don&amp;rsquo;t know enough PHP to understand it).&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;If you want to get all fields for a text, use &lt;code&gt;fields=*&lt;/code&gt;.&lt;/p&gt;
+
 &lt;h2 id=&#34;toc_2&#34;&gt;Searching by date&lt;/h2&gt;
 
 &lt;p&gt;Querying by ID is pretty useless except for internal tasks, so it&amp;rsquo;s
@@ -245,6 +247,9 @@ author.)&lt;/p&gt;
 scripts to search for and download texts from Library Genesis:&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://www.npmjs.org/package/libgen&#34; title=&#34;npm project
+page&#34;&gt;Node.js module&lt;/a&gt; by me&lt;/p&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://github.com/anomico/libgen.py&#34; title=&#34;GitHub
 repository&#34;&gt;Python script&lt;/a&gt; by &amp;ldquo;anomico&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
 
