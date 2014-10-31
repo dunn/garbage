@@ -1,4 +1,275 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/posts/index.xml/</link><updated>Wed, 01 Oct 2014 00:00:00 UTC</updated><item><title>The Library Genesis API</title><link>http://megr.im/posts/libgen/</link><pubDate>Wed, 01 Oct 2014 00:00:00 UTC</pubDate><guid>http://megr.im/posts/libgen/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/posts/index.xml/</link><updated>Thu, 30 Oct 2014 00:00:00 UTC</updated><item><title>How to Add Needless Complexity to Your Life</title><link>http://megr.im/posts/email/</link><pubDate>Thu, 30 Oct 2014 00:00:00 UTC</pubDate><guid>http://megr.im/posts/email/</guid><description>
+
+&lt;p&gt;I used Apple Mail forever until recently, when my Exchange account
+starting causing it to blow itself up.  Instead of installing
+Thunderbird and moving on with my life, I decided it was a good idea
+to start being a Serious Email User, and so I installed the Serious
+Email Client &lt;a href=&#34;http://www.mutt.org&#34;&gt;mutt&lt;/a&gt;.  But since this is a piece
+of Serious Software, there wasn&amp;rsquo;t any easy-to-find, good documentation
+focused on actually &lt;em&gt;sending and receiving email&lt;/em&gt; as opposed to
+Installing and Configuring mutt.  (Even
+&lt;a href=&#34;http://curvedthoughts.com/blog/email-using-getmail-msmtp-mutt/&#34; title=&#34;Manage email using getmail, msmtp, and mutt&#34;&gt;the hard-to-find ones&lt;/a&gt; didn&amp;rsquo;t go in-depth
+enough, and weren&amp;rsquo;t written for OS X.)  So this my attempt to get
+everything necessary—and nothing more—written down in one place.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;mutt is just for reading email&lt;/h2&gt;
+
+&lt;p&gt;The program mutt was not originally designed to do the actual sending
+and receiving of email.  It can do that now, but it was built as a way
+to view local mail and to compose messages (except not really—you do
+the actual writing in your &lt;code&gt;$EDITOR&lt;/code&gt;).  Mail is fetched from a mail
+server using another program—I&amp;rsquo;ll be using
+&lt;a href=&#34;http://pyropus.ca/software/getmail/&#34;&gt;getmail&lt;/a&gt;.  Mail is sent using
+yet another program—&lt;a href=&#34;http://msmtp.sourceforge.net&#34;&gt;msmtp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And there&amp;rsquo;s no point in having mutt if you&amp;rsquo;ve got nothing to read, so
+before we even bother installing mutt we&amp;rsquo;re going to set up getmail.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;you get mail with getmail&lt;/h2&gt;
+
+&lt;p&gt;The easiest way to install getmail is with &lt;a href=&#34;http://brew.sh&#34; title=&#34;The
+missing package manager for OS X&#34;&gt;Homebrew&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;brew install getmail
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The official
+&lt;a href=&#34;http://pyropus.ca/software/getmail/configuration.html&#34;&gt;configuration documentation&lt;/a&gt;
+is not always very clear, but it is comprehensive.  So we&amp;rsquo;ll try to
+simplify it here, with some help from
+&lt;a href=&#34;http://curvedthoughts.com/blog/email-using-getmail-msmtp-mutt/&#34; title=&#34;Manage email using getmail, msmtp, and mutt&#34;&gt;the blogosphere&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;First set up the config directory, with restricted permissions for
+Serious Security:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;mkdir -m 700 ~/.getmail
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In that folder you&amp;rsquo;ll need to set up a config file for each email
+account you want to retrieve messages from.  If you just have one,
+name the file &lt;code&gt;getmailrc&lt;/code&gt;, which is what getmail looks for by
+default.  The examples below are for setting up a Gmail account, so
+I named the below config file &lt;code&gt;gmailrc&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;[retriever]
+type = SimpleIMAPSSLRetriever
+server = imap.gmail.com
+port = 993
+mailboxes = ALL
+username = gmail-address
+ssl_version = tlsv1
+
+[destination]
+type = Maildir
+path = ~/Mail/gmail/
+
+[options]
+message_log = ~/.getmail/gmail.log
+read_all = false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The most common alternative to &lt;code&gt;SimpleIMAPSSLRetriever&lt;/code&gt; is probably
+&lt;code&gt;SimplePOP3SSLRetriever&lt;/code&gt;, but there are
+&lt;a href=&#34;http://pyropus.ca/software/getmail/configuration.html#conf-retriever&#34;&gt;lots of types supported by getmail&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you only want to download your inbox, don&amp;rsquo;t specify &lt;code&gt;mailboxes&lt;/code&gt;.
+If you want to download a subset of your mailboxes, replace &lt;code&gt;mailboxes
+= ALL&lt;/code&gt; with a list of desired mailboxes in the following format:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mailboxes = (&amp;quot;INBOX&amp;quot;, &amp;quot;INBOX.spam&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;getmail&amp;rsquo;s &lt;code&gt;ssl_version&lt;/code&gt;
+&lt;a href=&#34;http://pyropus.ca/software/getmail/configuration.html#retriever-ssl-extra&#34;&gt;defaults to SSLv23&lt;/a&gt;,
+which needs to be overridden since it allows SSLv3, which is now
+&lt;a href=&#34;http://poodlebleed.com&#34;&gt;known to be vulnerable&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Replace &lt;code&gt;gmail-address&lt;/code&gt; with your full Gmail email address, then
+create a Maildir directory structure in &lt;code&gt;~Mail/gmail&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;mkdir -m 700 -p ~/Mail/gmail/{cur,new,tmp}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(getmail supports
+&lt;a href=&#34;http://qmail.org/qmail-manual-html/man5/mbox.html&#34;&gt;mbox&lt;/a&gt; in addition
+to Maildir; I don&amp;rsquo;t really know the relative strengths and weaknesses
+but I went with Maildir ¯\_(ツ)_/¯.)&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;[options]&lt;/code&gt; are not required, but &lt;code&gt;read_all = false&lt;/code&gt; is a very
+good idea (especially with &lt;code&gt;mailboxes = ALL&lt;/code&gt;) because otherwise
+getmail will download all your mail every time you run it.&lt;/p&gt;
+
+&lt;p&gt;You can specify &lt;code&gt;password&lt;/code&gt; in your config file, but then it&amp;rsquo;s sitting
+there in plain text and that&amp;rsquo;s Bad.  So instead, add the password to
+Keychain Access:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;security add-internet-password -a &#39;gmail-address&#39; -s &#39;imap.gmail.com&#39; -r imap -P 993 -w app-specific-password
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Replace &lt;code&gt;gmail-address&lt;/code&gt; again with your full Gmail email address, and
+&lt;code&gt;app-specific-password&lt;/code&gt; with a
+&lt;a href=&#34;https://support.google.com/accounts/answer/185833&#34; title=&#34;Google Support&#34;&gt;Google App Password&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; if your password has characters like &lt;code&gt;$&lt;/code&gt; that shells
+ treat specially, make sure to put single quotes around the whole
+ password.&lt;/p&gt;
+
+&lt;p&gt;Then run getmail, with the &lt;code&gt;--rcfile&lt;/code&gt; flag if you have config files
+that aren&amp;rsquo;t named &lt;code&gt;getmailrc&lt;/code&gt; (you can use the flag multiple times):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;getmail --rcfile=gmailrc --rcfile=otheraccount
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add that command to your
+&lt;a href=&#34;https://help.ubuntu.com/community/CronHowto&#34;&gt;cron jobs&lt;/a&gt; or use
+&lt;a href=&#34;http://nathangrigg.net/2012/07/schedule-jobs-using-launchd/&#34;&gt;Apple&amp;rsquo;s &lt;code&gt;launchd&lt;/code&gt;&lt;/a&gt;
+to run it regularly.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;&lt;em&gt;then&lt;/em&gt; you install mutt&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;brew install mutt --with-gpgme --with-confirm-attachment-patch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;--with-gpgme&lt;/code&gt; flag enables
+&lt;a href=&#34;https://www.gnupg.org/related_software/gpgme/&#34;&gt;GPGME (GnuPG Made Easy)&lt;/a&gt;,
+which is apparently
+&lt;a href=&#34;http://henrytodd.org/notes/2014/simpler-gnupg-mutt-config-with-gpgme/&#34;&gt;the right way to do encryption with mutt&lt;/a&gt;.
+The &lt;code&gt;--with-confirm-attachment-patch&lt;/code&gt; flag causes mutt to warn you
+before sending a message with &amp;ldquo;attach&amp;rdquo; in the body but no attachment.
+Both of these flags are optional, and there are other flags you might
+want to add; see &lt;code&gt;brew info mutt&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The only setting you &lt;em&gt;have&lt;/em&gt; to add to your mutt configuration file (by
+default, &lt;code&gt;~/.muttrc&lt;/code&gt;) is &lt;code&gt;set mbox_type=Maildir&lt;/code&gt; (or &lt;code&gt;set
+mbox_type=mbox&lt;/code&gt; as the case may be).  You&amp;rsquo;ll probably want to specify
+the location of your Gmail folder, though:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;set mbox_type=Maildir
+set folder = &amp;quot;~/Mail/gmail/&amp;quot;
+set spoolfile = &amp;quot;~/Mail/gmail/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Fine-tuning your configuration and getting comfortable with the
+program isn&amp;rsquo;t what this post is about; take a look at
+&lt;a href=&#34;http://curvedthoughts.com/blog/email-using-getmail-msmtp-mutt/&#34; title=&#34;Manage email using getmail, msmtp, and mutt&#34;&gt;sample &lt;code&gt;.muttrc&lt;/code&gt; files&lt;/a&gt; and the list of
+&lt;a href=&#34;http://www.mutt.org/doc/manual/manual-6.html#functions&#34;&gt;mutt commands&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I will mention one customization that I had to come up with for
+reading HTML emails on OS X.  It&amp;rsquo;s easy enough to
+&lt;a href=&#34;http://www.debian-administration.org/article/75/Reading_HTML_email_with_Mutt&#34; title=&#34;Debian Administration: Reading HTML email with Mutt&#34;&gt;pass HTML emails and HTML attachments to a text-based browser&lt;/a&gt; like lynx or
+w3m, but when I get &lt;a href=&#34;http://tinyletter.com/todayintabs&#34;&gt;Today in Tabs&lt;/a&gt;
+I want to be able to &lt;em&gt;open the tabs&lt;/em&gt; in Safari or whatever real
+browser I usually use.  You can
+&lt;a href=&#34;http://superuser.com/questions/422692/open-current-page-in-w3m-in-firefox&#34;&gt;pass links from w3m to Firefox&lt;/a&gt;
+if you&amp;rsquo;re using Linux, but on OS X you&amp;rsquo;d have to be using w3m from
+within emacs to be able to do that.
+&lt;a href=&#34;http://hints.macworld.com/article.php?story=20051122200920326&#34;&gt;Piping the HTML directly to Safari&lt;/a&gt;
+doesn&amp;rsquo;t work either, because the temporary file that mutt creates has
+the &lt;code&gt;.txt&lt;/code&gt; extension, so Safari doesn&amp;rsquo;t render the HTML.  My solution
+is to add this to your &lt;code&gt;.muttrc&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;macro pager \cb &amp;lt;pipe-entry&amp;gt;&#39;cat &amp;gt; ~/Desktop/.tmp.html; open ~/Desktop/.tmp.html&#39;&amp;lt;enter&amp;gt; &#39;open email in default browser&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When you hit &lt;code&gt;^b&lt;/code&gt; (control-b) while viewing an HTML message or
+attachment, what that does is spit the HTML into an invisible file on
+the Desktop (overwriting the file from the last time you did this),
+and &lt;em&gt;then&lt;/em&gt; opening it in your default browser.&lt;/p&gt;
+
+&lt;p&gt;(I wouldn&amp;rsquo;t have figured this out if not for
+&lt;a href=&#34;http://mutt.blackfish.org.uk/following-links/&#34; title=&#34;my first mutt&#34;&gt;Bruno Postle&amp;rsquo;s page on following links&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;and send mail with msmtp&lt;/h2&gt;
+
+&lt;p&gt;By now you know the drill:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;brew install msmtp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then set up your
+&lt;a href=&#34;http://msmtp.sourceforge.net/doc/msmtp.html#Configuration-files&#34;&gt;configuration file&lt;/a&gt;,
+with permissions set to &lt;code&gt;600&lt;/code&gt;, at &lt;code&gt;~/.msmtprc&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;defaults
+tls on
+tls_starttls on
+tls_trust_file [see below]
+logfile ~/Mail/msmtp.log
+
+account gmail-address
+host smtp.gmail.com
+port 587
+protocol smtp
+auth on
+from gmail-address
+user gmail-address
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;OS X doesn&amp;rsquo;t have the &lt;code&gt;/etc/ssl/certs/ca-certificates.crt&lt;/code&gt; file that
+some Linux systems do.  All our certificates are in the Keychain
+Access application; so we need to export them:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Open Keychain Access (&lt;code&gt;open -a /Applications/Utilities/Keychain\
+Access.app/&lt;/code&gt;).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;From the &amp;ldquo;Keychains&amp;rdquo; column, select &amp;ldquo;System Roots.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Select All, then go to File → Export Items&amp;hellip; (&lt;code&gt;⇧⌘E&lt;/code&gt;).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Save the &lt;code&gt;.pem&lt;/code&gt; file wherever, then set &lt;code&gt;tls_trust_file&lt;/code&gt; to the
+path to it (for example, &lt;code&gt;~/Mail/certs/Certificates.pem&lt;/code&gt;).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Then return to your &lt;code&gt;.muttrc&lt;/code&gt; and add: &lt;code&gt;set sendmail = &amp;quot;/usr/local/bin/msmtp&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Add another Keychain entry:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;security add-internet-password -a &#39;gmail-address&#39; -s &#39;smtp.gmail.com&#39; -r smtp -P 587 -w app-specific-password
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Again, replace &lt;code&gt;gmail-address&lt;/code&gt; with your full Gmail email
+address, and &lt;code&gt;app-specific-password&lt;/code&gt; with a
+&lt;a href=&#34;https://support.google.com/accounts/answer/185833&#34; title=&#34;Google Support&#34;&gt;Google App Password&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;yay&lt;/h2&gt;
+
+&lt;p&gt;At this point you should be able to send and receive email using mutt!
+Wooooww.  Now you can dick around with further niceties:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Encrypt your emails.  If you already have GPG installed,
+&lt;a href=&#34;http://henrytodd.org/notes/2014/simpler-gnupg-mutt-config-with-gpgme/&#34;&gt;following these instructions&lt;/a&gt;
+will probably work.  Otherwise &lt;code&gt;brew install gnupg gpg-agent&lt;/code&gt; and
+&lt;a href=&#34;https://wiki.archlinux.org/index.php/Gnupg&#34;&gt;get them set up&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;(If you start mutt and get the error message &lt;em&gt;&amp;ldquo;Using GPGME backend,
+although no gpg-agent is running,&amp;rdquo;&lt;/em&gt; gpg-agent may be
+&lt;a href=&#34;http://lists.gnupg.org/pipermail/gnupg-users/2007-May/031024.html&#34;&gt;running in a different shell session&lt;/a&gt;—this
+might occur if you&amp;rsquo;re using a terminal multiplexer like screen or
+tmux, or if you&amp;rsquo;re using the
+&lt;a href=&#34;https://gpgtools.org&#34;&gt;GPGTools&lt;/a&gt;-supplied gpg-agent.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;brew install lbdb&lt;/code&gt; and create &lt;code&gt;~/.lbdbrc&lt;/code&gt; with the following lines
+to link Contacts.app to mutt:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;METHODS=&amp;quot;m_muttalias m_osx_addressbook&amp;quot;
+MUTT_DIRECTORY=&amp;quot;$HOME/.mutt&amp;quot;
+MUTTALIAS_FILES=&amp;quot;.muttrc .mail_aliases muttrc aliases&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then add &lt;code&gt;set query_command=&amp;quot;/usr/local/bin/lbdbq &#39;%s&#39;&amp;quot;&lt;/code&gt; to your
+&lt;code&gt;.muttrc&lt;/code&gt;, and use &lt;code&gt;^t&lt;/code&gt; (control-t) to auto-complete addresses.
+(This is adapted from
+&lt;a href=&#34;http://hints.macworld.com/article.php?story=20041024163030501&#34;&gt;bluehz&amp;rsquo;s instructions&lt;/a&gt;.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.emacswiki.org/emacs/MuttInEmacs&#34;&gt;Set up emacs as your message editor&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Contact me
+(&lt;a href=&#34;http://pgp.mit.edu/pks/lookup?op=get&amp;amp;search=0xFCEC4680ECF924D9&#34;&gt;here&amp;rsquo;s my public key!&lt;/a&gt;)
+with feedback. Or yell at me &lt;a href=&#34;https://twitter.com/dunndunndunn&#34;&gt;on Twitter&lt;/a&gt;.&lt;/p&gt;
+</description></item><item><title>The Library Genesis API</title><link>http://megr.im/posts/libgen/</link><pubDate>Wed, 01 Oct 2014 00:00:00 UTC</pubDate><guid>http://megr.im/posts/libgen/</guid><description>
 
 &lt;p&gt;&lt;a href=&#34;http://libgen.org/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only
 documentation is
