@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/projects/index.xml/</link><updated>Sun, 31 Aug 2014 00:00:00 UTC</updated><item><title>Twitter bots</title><link>http://megr.im/projects/bots/</link><pubDate>Sun, 31 Aug 2014 00:00:00 UTC</pubDate><guid>http://megr.im/projects/bots/</guid><description>&lt;p&gt;I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here.  Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/projects/index.xml/</link><updated>Wed, 05 Nov 2014 00:00:00 UTC</updated><item><title>libgen.js</title><link>http://megr.im/projects/libgen.js/</link><pubDate>Wed, 05 Nov 2014 00:00:00 UTC</pubDate><guid>http://megr.im/projects/libgen.js/</guid><description>&lt;p&gt;&lt;code&gt;libgen&lt;/code&gt; is a &lt;a href=&#34;http://nodejs.org&#34;&gt;Node.js&lt;/a&gt; wrapper for the
+&lt;a href=&#34;/posts/libgen/&#34;&gt;Library Genesis API&lt;/a&gt;, with search added on top of
+it. Install it in the root folder of your project with &lt;code&gt;npm install
+libgen&lt;/code&gt;, then &lt;code&gt;require&lt;/code&gt; it where it&amp;rsquo;s needed:&lt;/p&gt;
+
+&lt;pre class=&#34;sourceCode javascript&#34;&gt;&lt;code class=&#34;sourceCode javascript&#34;&gt;&lt;span class=&#34;kw&#34;&gt;var&lt;/span&gt; libgen = &lt;span class=&#34;fu&#34;&gt;require&lt;/span&gt;(&lt;span class=&#34;st&#34;&gt;&amp;#39;libgen&amp;#39;&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Your application then has access to
+&lt;a href=&#34;https://github.com/grumble/libgen.js#usage-searching&#34; title=&#34;README&#34;&gt;search&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/grumble/libgen.js#usage-random-texts&#34; title=&#34;README&#34;&gt;random texts&lt;/a&gt;, and
+&lt;a href=&#34;https://github.com/grumble/libgen.js#libgen&#34; title=&#34;README&#34;&gt;other methods&lt;/a&gt;.&lt;/p&gt;
+</description></item><item><title>Twitter bots</title><link>http://megr.im/projects/bots/</link><pubDate>Sun, 31 Aug 2014 00:00:00 UTC</pubDate><guid>http://megr.im/projects/bots/</guid><description>&lt;p&gt;I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here.  Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)&lt;/p&gt;
 </description></item><item><title>Santa Barbara Bullshit</title><link>http://megr.im/projects/bullshit/</link><pubDate>Tue, 11 Jun 2013 00:00:00 UTC</pubDate><guid>http://megr.im/projects/bullshit/</guid><description>&lt;p&gt;Santa Barbara is full of Serious People with Serious Problems.  If
 they aren&amp;rsquo;t heroically defending the city&amp;rsquo;s Mediterranean
 architecture, or battling against City Council&amp;rsquo;s perpetual War on

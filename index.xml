@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recent Content on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/index.xml/</link><updated>Thu, 30 Oct 2014 00:00:00 UTC</updated><item><title>How to Add Needless Complexity to Your Life</title><link>http://megr.im/posts/email/</link><pubDate>Thu, 30 Oct 2014 00:00:00 UTC</pubDate><guid>http://megr.im/posts/email/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recent Content on Alex Dunn has no idea what he’s doing </title><generator uri="https://hugo.spf13.com">Hugo</generator><link>http://megr.im/index.xml/</link><updated>Wed, 05 Nov 2014 00:00:00 UTC</updated><item><title>libgen.js</title><link>http://megr.im/projects/libgen.js/</link><pubDate>Wed, 05 Nov 2014 00:00:00 UTC</pubDate><guid>http://megr.im/projects/libgen.js/</guid><description>&lt;p&gt;&lt;code&gt;libgen&lt;/code&gt; is a &lt;a href=&#34;http://nodejs.org&#34;&gt;Node.js&lt;/a&gt; wrapper for the
+&lt;a href=&#34;/posts/libgen/&#34;&gt;Library Genesis API&lt;/a&gt;, with search added on top of
+it. Install it in the root folder of your project with &lt;code&gt;npm install
+libgen&lt;/code&gt;, then &lt;code&gt;require&lt;/code&gt; it where it&amp;rsquo;s needed:&lt;/p&gt;
+
+&lt;pre class=&#34;sourceCode javascript&#34;&gt;&lt;code class=&#34;sourceCode javascript&#34;&gt;&lt;span class=&#34;kw&#34;&gt;var&lt;/span&gt; libgen = &lt;span class=&#34;fu&#34;&gt;require&lt;/span&gt;(&lt;span class=&#34;st&#34;&gt;&amp;#39;libgen&amp;#39;&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Your application then has access to
+&lt;a href=&#34;https://github.com/grumble/libgen.js#usage-searching&#34; title=&#34;README&#34;&gt;search&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/grumble/libgen.js#usage-random-texts&#34; title=&#34;README&#34;&gt;random texts&lt;/a&gt;, and
+&lt;a href=&#34;https://github.com/grumble/libgen.js#libgen&#34; title=&#34;README&#34;&gt;other methods&lt;/a&gt;.&lt;/p&gt;
+</description></item><item><title>How to Add Needless Complexity to Your Life</title><link>http://megr.im/posts/email/</link><pubDate>Thu, 30 Oct 2014 00:00:00 UTC</pubDate><guid>http://megr.im/posts/email/</guid><description>
 
 &lt;p&gt;I used Apple Mail forever until recently, when my Exchange account
 starting causing it to blow itself up.  Instead of installing
@@ -85,7 +96,7 @@ which needs to be overridden since it allows SSLv3, which is now
 &lt;a href=&#34;http://poodlebleed.com&#34;&gt;known to be vulnerable&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Replace &lt;code&gt;gmail-address&lt;/code&gt; with your full Gmail email address, then
-create a Maildir directory structure in &lt;code&gt;~Mail/gmail&lt;/code&gt;:&lt;/p&gt;
+create a Maildir directory structure in &lt;code&gt;~/Mail/gmail&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;mkdir -m 700 -p ~/Mail/gmail/{cur,new,tmp}
 &lt;/code&gt;&lt;/pre&gt;
@@ -151,7 +162,8 @@ set spoolfile = &amp;quot;~/Mail/gmail/&amp;quot;
 
 &lt;p&gt;Fine-tuning your configuration and getting comfortable with the
 program isn&amp;rsquo;t what this post is about; take a look at
-&lt;a href=&#34;http://curvedthoughts.com/blog/email-using-getmail-msmtp-mutt/&#34; title=&#34;Manage email using getmail, msmtp, and mutt&#34;&gt;sample &lt;code&gt;.muttrc&lt;/code&gt; files&lt;/a&gt; and the list of
+&lt;a href=&#34;http://curvedthoughts.com/blog/email-using-getmail-msmtp-mutt/&#34; title=&#34;Manage email using getmail, msmtp, and mutt&#34;&gt;sample &lt;code&gt;.muttrc&lt;/code&gt; files&lt;/a&gt;, Steve Losh&amp;rsquo;s
+&lt;a href=&#34;http://stevelosh.com/blog/2012/10/the-homely-mutt/&#34; title=&#34;The Homely Mutt&#34;&gt;excellent guide&lt;/a&gt; and the list of
 &lt;a href=&#34;http://www.mutt.org/doc/manual/manual-6.html#functions&#34;&gt;mutt commands&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I will mention one customization that I had to come up with for
@@ -361,8 +373,7 @@ text to add this metadata, so not all texts are well-annotated.&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;City&lt;/code&gt;—the location of the publisher&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Pages&lt;/code&gt;—the number of pages in the text&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Language&lt;/code&gt;—the language of the text&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Topic&lt;/code&gt;—A number corresponding to the topic of the text; for
-example, &lt;code&gt;130&lt;/code&gt; is &amp;ldquo;Mathematics/Logic&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Topic&lt;/code&gt;—A number corresponding to the topic of the text; for example, &lt;code&gt;130&lt;/code&gt; is &amp;ldquo;Mathematics/Logic&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Library&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Issue&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Identifier&lt;/code&gt;—the text&amp;rsquo;s short and long
@@ -1170,12 +1181,4 @@ keyboard shortcuts, section folding, and color scheme switching:&lt;/p&gt;
 
 &lt;pre class=&#34;sourceCode html&#34;&gt;&lt;code class=&#34;sourceCode html&#34;&gt;&lt;span class=&#34;kw&#34;&gt;&amp;lt;link&lt;/span&gt;&lt;span class=&#34;ot&#34;&gt; rel=&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;span class=&#34;ot&#34;&gt; href=&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;http://baruffio.com/reading.js/stylesheets/reading.css&amp;quot;&lt;/span&gt; &lt;span class=&#34;kw&#34;&gt;/&amp;gt;&lt;/span&gt;
 &lt;span class=&#34;kw&#34;&gt;&amp;lt;script&lt;/span&gt;&lt;span class=&#34;ot&#34;&gt; type=&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&#34;ot&#34;&gt; src=&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;http://baruffio.com/reading.js/scripts/reading.min.js&amp;quot;&lt;/span&gt;&lt;span class=&#34;kw&#34;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-</description></item><item><title>Students for Justice in Palestine at UC Berkeley</title><link>http://megr.im/websites/sjp/</link><pubDate>Wed, 08 Aug 2012 00:00:00 UTC</pubDate><guid>http://megr.im/websites/sjp/</guid><description>&lt;p&gt;&lt;a href=&#34;http://calsjp.org/?page_id=455&#34; title=&#34;About CalSJP&#34;&gt;The Berkeley chapter of Students for Justice in Palestine is&lt;/a&gt; &amp;ldquo;a group of students, faculty, and community members
-working together at the University of California, Berkeley, in
-solidarity with the struggle of the indigenous Palestinian people
-against apartheid and occupation.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;In July of 2012, I redesigned their website,
-&lt;a href=&#34;http://calsjp.org&#34; title=&#34;CalSJP website&#34;&gt;http://calsjp.org&lt;/a&gt;, making it
-more accessible (especially for mobile devices) and more maintainable.&lt;/p&gt;
 </description></item></channel></rss>
