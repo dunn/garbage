@@ -105,10 +105,13 @@ footer {
 }
 
 ///// EMOJI
+#philweb::before {
+  content: "🌐 ";
+}
 #foi::before {
   content: "📖 ";
 }
-#phil::before {
+#ucsb::before {
   content: "🏰 ";
 }
 #reed::before {
