@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Dunn has no idea what he’s doing</title><link>http://megr.im/</link><description>Recent content on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 05 Nov 2014 00:00:00 UTC</lastBuildDate><atom:link href="http://megr.im/index.xml" rel="self" type="application/rss+xml"/><item><title>libgen.js</title><link>http://megr.im/projects/libgen.js/</link><pubDate>Wed, 05 Nov 2014 00:00:00 UTC</pubDate><guid>http://megr.im/projects/libgen.js/</guid><description>&lt;p&gt;&lt;code&gt;libgen&lt;/code&gt; is a &lt;a href=&#34;http://nodejs.org&#34;&gt;Node.js&lt;/a&gt; wrapper for the
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Dunn has no idea what he’s doing</title><link>http://megr.im/</link><description>Recent content on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 02 Dec 2014 00:00:00 UTC</lastBuildDate><atom:link href="http://megr.im/index.xml" rel="self" type="application/rss+xml"/><item><title>UCSB Philosophy</title><link>http://megr.im/websites/ucsb/</link><pubDate>Tue, 02 Dec 2014 00:00:00 UTC</pubDate><guid>http://megr.im/websites/ucsb/</guid><description>&lt;p&gt;The University of California, Santa Barbara has a Philosophy
+department, and the Philosophy department has a website. In 2014 I
+rewrote the website from the ground up (twice!), making it modern,
+responsive, and accessible.&lt;/p&gt;
+</description></item><item><title>libgen.js</title><link>http://megr.im/projects/libgen.js/</link><pubDate>Wed, 05 Nov 2014 00:00:00 UTC</pubDate><guid>http://megr.im/projects/libgen.js/</guid><description>&lt;p&gt;&lt;code&gt;libgen&lt;/code&gt; is a &lt;a href=&#34;http://nodejs.org&#34;&gt;Node.js&lt;/a&gt; wrapper for the
 &lt;a href=&#34;/posts/libgen/&#34;&gt;Library Genesis API&lt;/a&gt;, with search added on top of
 it. Install it in the root folder of your project with &lt;code&gt;npm install
 libgen&lt;/code&gt;, then &lt;code&gt;require&lt;/code&gt; it where it&amp;rsquo;s needed:&lt;/p&gt;
@@ -560,8 +564,6 @@ about &lt;em&gt;Harry Potter,&lt;/em&gt; after all these years.&lt;/p&gt;
 </description></item><item><title>Exists.js</title><link>http://megr.im/things/exists.js/</link><pubDate>Fri, 28 Feb 2014 00:00:00 UTC</pubDate><guid>http://megr.im/things/exists.js/</guid><description>&lt;p&gt;If you&amp;rsquo;re a scumbag analytic philosopher like me then this might actually
 come in handy, like when your &amp;ldquo;friend&amp;rdquo; suggests that chairs are
 ontologically innocent.&lt;/p&gt;
-</description></item><item><title>UCSB Philosophy</title><link>http://megr.im/websites/ucsb/</link><pubDate>Sun, 26 Jan 2014 00:00:00 UTC</pubDate><guid>http://megr.im/websites/ucsb/</guid><description>&lt;p&gt;The University of California, Santa Barbara has a Philosophy department, and the Philosophy
-department has a website. In 2014 I rewrote the website from the ground up, making it responsive, accessible, and maintainable.&lt;/p&gt;
 </description></item><item><title>Leading a Horse</title><link>http://megr.im/posts/horse_ebooks/</link><pubDate>Tue, 24 Sep 2013 00:00:00 UTC</pubDate><guid>http://megr.im/posts/horse_ebooks/</guid><description>
 
 &lt;p&gt;I don&amp;rsquo;t really know why all of a sudden I&amp;rsquo;m so cut up about
