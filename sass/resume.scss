@@ -26,12 +26,10 @@ body {
   font-size: 14pt;
 }
 
-// hide gross boxes when chrome can't render emoji
 *::before,
 *::after {
   font-family: "EmojiSymbols";
   font-size: 18pt;
-//  color: $bg;
 }
 
 ///// FONT
