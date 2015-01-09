@@ -169,7 +169,7 @@ doesn&amp;rsquo;t work either, because the temporary file that mutt creates has
 the &lt;code&gt;.txt&lt;/code&gt; extension, so Safari doesn&amp;rsquo;t render the HTML.  My solution
 is to add this to your &lt;code&gt;.muttrc&lt;/code&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;macro pager \cb &amp;lt;pipe-entry&amp;gt;&#39;cat &amp;gt; ~/Desktop/.tmp.html; open ~/Desktop/.tmp.html&#39;&amp;lt;enter&amp;gt; &#39;open email in default browser&#39;
+&lt;pre&gt;&lt;code&gt;macro pager \cb &amp;lt;pipe-entry&amp;gt;&#39;cat &amp;gt; /tmp/mutt_mail.html; open /tmp/mutt_mail.html&#39;&amp;lt;enter&amp;gt; &#39;open email in default browser&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;When you hit &lt;code&gt;^b&lt;/code&gt; (control-b) while viewing an HTML message or
@@ -272,7 +272,7 @@ MUTTALIAS_FILES=&amp;quot;.muttrc .mail_aliases muttrc aliases&amp;quot;
 with feedback. Or yell at me &lt;a href=&#34;https://twitter.com/dunndunndunn&#34;&gt;on Twitter&lt;/a&gt;.&lt;/p&gt;
 </description></item><item><title>The Library Genesis API</title><link>http://megr.im/posts/libgen/</link><pubDate>Wed, 01 Oct 2014 00:00:00 UTC</pubDate><guid>http://megr.im/posts/libgen/</guid><description>
 
-&lt;p&gt;&lt;a href=&#34;http://libgen.org/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only
+&lt;p&gt;&lt;a href=&#34;http://libgen.in/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only
 documentation is
 &lt;a href=&#34;http://genofond.org/viewtopic.php?p=39355&#34; title=&#34;The Library Genesis Miner&#39;s Hut&#34;&gt;a forum thread in Russian&lt;/a&gt;.  So this is an English-language
 guide to using the LibGen API.&lt;/p&gt;
@@ -299,7 +299,7 @@ database: by text ID, or by date.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s how to retrieve information about the texts with the coveted
 IDs of &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt;:&lt;/p&gt;
 
-&lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.org/json.php?ids=1,2&amp;amp;fields=Title,Author,MD5&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.in/json.php?ids=1,2&amp;amp;fields=Title,Author,MD5&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;(The API is available at &lt;code&gt;http://gen.lib.rus.ec/json.php&lt;/code&gt; as well.)&lt;/p&gt;
 
@@ -320,7 +320,7 @@ IDs of &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt;:&lt;/p&gt;
 
 &lt;p&gt;I used these three fields&amp;mdash;&lt;code&gt;Title&lt;/code&gt;, &lt;code&gt;Author&lt;/code&gt;, and &lt;code&gt;MD5&lt;/code&gt;&amp;mdash;because
 they&amp;rsquo;re all you need in most situations.  You can get the page URL by
-appending the MD5 to &lt;code&gt;http://libgen.org/book/index.php?md5=&lt;/code&gt; or to
+appending the MD5 to &lt;code&gt;http://libgen.in/book/index.php?md5=&lt;/code&gt; or to
 one of the mirrors:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -329,7 +329,7 @@ one of the mirrors:&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;http://bookfi.org/md5/&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You can create a download URL by appending the MD5 to &lt;code&gt;http://libgen.org/get.php?md5=&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can create a download URL by appending the MD5 to &lt;code&gt;http://libgen.in/get.php?md5=&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;There are other mirrors whose URLs are based on the text&amp;rsquo;s LibGen ID,
 rather than the MD5:&lt;/p&gt;
@@ -478,7 +478,7 @@ returned.&lt;/p&gt;&lt;/li&gt;
 added between 1 May 2013 and 1 January 2014:&lt;/p&gt;
 
 &lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span
-class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.org/json.php?fields=MD5&amp;amp;limit1=10&amp;amp;mode=last&amp;amp;timefirst=2013-05-01&amp;amp;timelast=2014-01-01&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.in/json.php?fields=MD5&amp;amp;limit1=10&amp;amp;mode=last&amp;amp;timefirst=2013-05-01&amp;amp;timelast=2014-01-01&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;the-newer-method:5c7ae2f4da537e5bd1d343cce911b329&#34;&gt;The &lt;code&gt;newer&lt;/code&gt; method&lt;/h3&gt;
 
