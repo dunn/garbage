@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Dunn has no idea what he’s doing</title><link>http://megr.im/</link><description>Recent content on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 02 Dec 2014 00:00:00 UTC</lastBuildDate><atom:link href="http://megr.im/index.xml" rel="self" type="application/rss+xml"/><item><title>UCSB Philosophy</title><link>http://megr.im/websites/ucsb/</link><pubDate>Tue, 02 Dec 2014 00:00:00 UTC</pubDate><guid>http://megr.im/websites/ucsb/</guid><description>&lt;p&gt;The University of California, Santa Barbara has a Philosophy
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Dunn has no idea what he’s doing</title><link>http://garbage.world/</link><description>Recent content on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 02 Dec 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://garbage.world/index.xml" rel="self" type="application/rss+xml"/><item><title>UCSB Philosophy</title><link>http://garbage.world/websites/ucsb/</link><pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/websites/ucsb/</guid><description>&lt;p&gt;The University of California, Santa Barbara has a Philosophy
 department, and the Philosophy department has a website. In 2014 I
 rewrote the website from the ground up (twice!), making it modern,
 responsive, and accessible.&lt;/p&gt;
-</description></item><item><title>libgen.js</title><link>http://megr.im/projects/libgen.js/</link><pubDate>Wed, 05 Nov 2014 00:00:00 UTC</pubDate><guid>http://megr.im/projects/libgen.js/</guid><description>&lt;p&gt;&lt;code&gt;libgen&lt;/code&gt; is a &lt;a href=&#34;http://nodejs.org&#34;&gt;Node.js&lt;/a&gt; wrapper for the
-&lt;a href=&#34;http://megr.im/posts/libgen/&#34;&gt;Library Genesis API&lt;/a&gt;, with search added on top of
+</description></item><item><title>libgen.js</title><link>http://garbage.world/projects/libgen.js/</link><pubDate>Wed, 05 Nov 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/libgen.js/</guid><description>&lt;p&gt;&lt;code&gt;libgen&lt;/code&gt; is a &lt;a href=&#34;http://nodejs.org&#34;&gt;Node.js&lt;/a&gt; wrapper for the
+&lt;a href=&#34;http://garbage.world/posts/libgen/&#34;&gt;Library Genesis API&lt;/a&gt;, with search added on top of
 it. Install it in the root folder of your project with &lt;code&gt;npm install
 libgen&lt;/code&gt;, then &lt;code&gt;require&lt;/code&gt; it where it&amp;rsquo;s needed:&lt;/p&gt;
 
@@ -13,7 +13,7 @@ libgen&lt;/code&gt;, then &lt;code&gt;require&lt;/code&gt; it where it&amp;rsquo
 &lt;a href=&#34;https://github.com/grumble/libgen.js#usage-searching&#34; title=&#34;README&#34;&gt;search&lt;/a&gt;,
 &lt;a href=&#34;https://github.com/grumble/libgen.js#usage-random-texts&#34; title=&#34;README&#34;&gt;random texts&lt;/a&gt;, and
 &lt;a href=&#34;https://github.com/grumble/libgen.js#libgen&#34; title=&#34;README&#34;&gt;other methods&lt;/a&gt;.&lt;/p&gt;
-</description></item><item><title>How to Add Needless Complexity to Your Life</title><link>http://megr.im/posts/email/</link><pubDate>Thu, 30 Oct 2014 00:00:00 UTC</pubDate><guid>http://megr.im/posts/email/</guid><description>
+</description></item><item><title>How to Add Needless Complexity to Your Life</title><link>http://garbage.world/posts/email/</link><pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/email/</guid><description>
 
 &lt;p&gt;I used Apple Mail forever until recently, when my Exchange account
 starting causing it to blow itself up.  Instead of installing
@@ -285,7 +285,7 @@ MUTTALIAS_FILES=&amp;quot;.muttrc .mail_aliases muttrc aliases&amp;quot;
 &lt;p&gt;Contact me
 (&lt;a href=&#34;http://pgp.mit.edu/pks/lookup?op=get&amp;amp;search=0xFCEC4680ECF924D9&#34;&gt;here&amp;rsquo;s my public key!&lt;/a&gt;)
 with feedback. Or yell at me &lt;a href=&#34;https://twitter.com/dunndunndunn&#34;&gt;on Twitter&lt;/a&gt;.&lt;/p&gt;
-</description></item><item><title>The Library Genesis API</title><link>http://megr.im/posts/libgen/</link><pubDate>Wed, 01 Oct 2014 00:00:00 UTC</pubDate><guid>http://megr.im/posts/libgen/</guid><description>
+</description></item><item><title>The Library Genesis API</title><link>http://garbage.world/posts/libgen/</link><pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/libgen/</guid><description>
 
 &lt;p&gt;&lt;a href=&#34;http://libgen.in/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only
 documentation is
@@ -547,24 +547,24 @@ repository&#34;&gt;Alfred workflow&lt;/a&gt; by &lt;a href=&#34;http://hackademi
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/dunndunndunn&#34; title=&#34;Twitter&#34;&gt;Let me know&lt;/a&gt; if you write
 your own!&lt;/p&gt;
-</description></item><item><title>Twitter bots</title><link>http://megr.im/projects/bots/</link><pubDate>Sun, 31 Aug 2014 00:00:00 UTC</pubDate><guid>http://megr.im/projects/bots/</guid><description>&lt;p&gt;I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here.  Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)&lt;/p&gt;
-</description></item><item><title>The Good Trolle</title><link>http://megr.im/things/trolle/</link><pubDate>Thu, 17 Jul 2014 00:00:00 UTC</pubDate><guid>http://megr.im/things/trolle/</guid><description>&lt;p&gt;The Good Trolle is a new Twitter citizen who serves two complementary roles:&lt;/p&gt;
+</description></item><item><title>Twitter bots</title><link>http://garbage.world/projects/bots/</link><pubDate>Sun, 31 Aug 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/bots/</guid><description>&lt;p&gt;I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here.  Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)&lt;/p&gt;
+</description></item><item><title>The Good Trolle</title><link>http://garbage.world/things/trolle/</link><pubDate>Thu, 17 Jul 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/trolle/</guid><description>&lt;p&gt;The Good Trolle is a new Twitter citizen who serves two complementary roles:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;It notifies its battle-ready followers of racists, sexists, homophobes, transphobes, and ableists in need of a good drubbing, and it does this by:&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;allowing anyone overwhelmed by said jerks to tweet at &lt;a href=&#34;https://twitter.com/good_trolle&#34;&gt;@good_trolle&lt;/a&gt; and offload the abuse onto people with the time and energy to shoulder the burden.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</description></item><item><title>Baruffio</title><link>http://megr.im/websites/baruffio/</link><pubDate>Mon, 05 May 2014 00:00:00 UTC</pubDate><guid>http://megr.im/websites/baruffio/</guid><description>&lt;p&gt;&lt;em&gt;Baruffio&lt;/em&gt; is a blog for people who take silly things way too
+</description></item><item><title>Baruffio</title><link>http://garbage.world/websites/baruffio/</link><pubDate>Mon, 05 May 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/websites/baruffio/</guid><description>&lt;p&gt;&lt;em&gt;Baruffio&lt;/em&gt; is a blog for people who take silly things way too
 seriously. It&amp;rsquo;s where you can read ludicrously in-depth analyses of a
 single spell. It&amp;rsquo;s where the only argument against a conspiracy
 theory is that it&amp;rsquo;s not consistent. It&amp;rsquo;s where we&amp;rsquo;re still talking
 about &lt;em&gt;Harry Potter,&lt;/em&gt; after all these years.&lt;/p&gt;
-</description></item><item><title>Jerry Fodor&#39;s Wittgenstein parody</title><link>http://megr.im/things/fodor/</link><pubDate>Sun, 20 Apr 2014 00:00:00 UTC</pubDate><guid>http://megr.im/things/fodor/</guid><description>&lt;p&gt;&lt;a href=&#34;http://tar.weatherson.org/2007/01/27/foggy-wittgenstein/&#34;&gt;Sometime in the 60s&lt;/a&gt; Michael Frayn wrote a &lt;a href=&#34;http://stevepetersen.net/personal/wittgenstein-fog.html&#34; title=&#34;Fog-like Sensations&#34;&gt;goofy parody&lt;/a&gt; of Ludwig Wittgenstein&amp;rsquo;s &lt;em&gt;Philosophical Investigations&lt;/em&gt;, and around 1970 Jerry Fodor wrote some &amp;ldquo;further addenda.&amp;rdquo;  Fodor&amp;rsquo;s parody isn&amp;rsquo;t really as good, but it still deserves to be better preserved than it is &lt;a href=&#34;http://www.nyu.edu/gsas/dept/philo/faculty/block/miscellaneous/Fodor_Wittgenstein.png&#34; title=&#34;PNG image&#34;&gt;at present&lt;/a&gt;, so I transcribed it here.&lt;/p&gt;
-</description></item><item><title>Exists.js</title><link>http://megr.im/things/exists.js/</link><pubDate>Fri, 28 Feb 2014 00:00:00 UTC</pubDate><guid>http://megr.im/things/exists.js/</guid><description>&lt;p&gt;If you&amp;rsquo;re a scumbag analytic philosopher like me then this might actually
+</description></item><item><title>Jerry Fodor&#39;s Wittgenstein parody</title><link>http://garbage.world/things/fodor/</link><pubDate>Sun, 20 Apr 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/fodor/</guid><description>&lt;p&gt;&lt;a href=&#34;http://tar.weatherson.org/2007/01/27/foggy-wittgenstein/&#34;&gt;Sometime in the 60s&lt;/a&gt; Michael Frayn wrote a &lt;a href=&#34;http://stevepetersen.net/personal/wittgenstein-fog.html&#34; title=&#34;Fog-like Sensations&#34;&gt;goofy parody&lt;/a&gt; of Ludwig Wittgenstein&amp;rsquo;s &lt;em&gt;Philosophical Investigations&lt;/em&gt;, and around 1970 Jerry Fodor wrote some &amp;ldquo;further addenda.&amp;rdquo;  Fodor&amp;rsquo;s parody isn&amp;rsquo;t really as good, but it still deserves to be better preserved than it is &lt;a href=&#34;http://www.nyu.edu/gsas/dept/philo/faculty/block/miscellaneous/Fodor_Wittgenstein.png&#34; title=&#34;PNG image&#34;&gt;at present&lt;/a&gt;, so I transcribed it here.&lt;/p&gt;
+</description></item><item><title>Exists.js</title><link>http://garbage.world/things/exists.js/</link><pubDate>Fri, 28 Feb 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/exists.js/</guid><description>&lt;p&gt;If you&amp;rsquo;re a scumbag analytic philosopher like me then this might actually
 come in handy, like when your &amp;ldquo;friend&amp;rdquo; suggests that chairs are
 ontologically innocent.&lt;/p&gt;
-</description></item><item><title>Leading a Horse</title><link>http://megr.im/posts/horse_ebooks/</link><pubDate>Tue, 24 Sep 2013 00:00:00 UTC</pubDate><guid>http://megr.im/posts/horse_ebooks/</guid><description>
+</description></item><item><title>Leading a Horse</title><link>http://garbage.world/posts/horse_ebooks/</link><pubDate>Tue, 24 Sep 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/horse_ebooks/</guid><description>
 
 &lt;p&gt;I don&amp;rsquo;t really know why all of a sudden I&amp;rsquo;m so cut up about
 @Horse_ebooks
@@ -644,7 +644,7 @@ suddenly seem preferable, actually better, because they&amp;rsquo;re &lt;em&gt;r
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;Nothing: I am not taught to make any thing&lt;/p&gt;&amp;mdash; Horse ebooks (@Horse_ebooks) &lt;a href=&#34;https://twitter.com/Horse_ebooks/statuses/49625817868804097&#34;&gt;March 21, 2011&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-</description></item><item><title>Dudebros as a sublime expression of the absurd, or: proving Shanley&#39;s point without realizing it</title><link>http://megr.im/posts/dudebros/</link><pubDate>Tue, 03 Sep 2013 00:00:00 UTC</pubDate><guid>http://megr.im/posts/dudebros/</guid><description>&lt;p&gt;Today &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote a
+</description></item><item><title>Dudebros as a sublime expression of the absurd, or: proving Shanley&#39;s point without realizing it</title><link>http://garbage.world/posts/dudebros/</link><pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/dudebros/</guid><description>&lt;p&gt;Today &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote a
 &lt;a href=&#34;https://medium.com/about-work/82978662b2d6&#34; title=&#34;Things I
 Never, Ever Want To Hear Again&#34;&gt;great piece&lt;/a&gt; that was made even greater because of
 the people on Twitter who rose to the challenge of proving her points
@@ -804,7 +804,7 @@ getting better every day.&lt;/p&gt;
 charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Good work today, everyone.&lt;/p&gt;
-</description></item><item><title>Santa Barbara Bullshit</title><link>http://megr.im/projects/bullshit/</link><pubDate>Tue, 11 Jun 2013 00:00:00 UTC</pubDate><guid>http://megr.im/projects/bullshit/</guid><description>&lt;p&gt;Santa Barbara is full of Serious People with Serious Problems.  If
+</description></item><item><title>Santa Barbara Bullshit</title><link>http://garbage.world/projects/bullshit/</link><pubDate>Tue, 11 Jun 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/bullshit/</guid><description>&lt;p&gt;Santa Barbara is full of Serious People with Serious Problems.  If
 they aren&amp;rsquo;t heroically defending the city&amp;rsquo;s Mediterranean
 architecture, or battling against City Council&amp;rsquo;s perpetual War on
 Cars, they are fretting about the lack of civility shown by today&amp;rsquo;s
@@ -813,7 +813,7 @@ continued existence.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Santa Barbara Bullshit&lt;/em&gt; treats all these concerns with the deadly
 earnestness they deserve.&lt;/p&gt;
-</description></item><item><title>The Daily Nonsense</title><link>http://megr.im/projects/nonsense/</link><pubDate>Sat, 27 Apr 2013 00:00:00 UTC</pubDate><guid>http://megr.im/projects/nonsense/</guid><description>&lt;p&gt;I am delighted to announce the launch of &lt;em&gt;The Daily Nonsense&lt;/em&gt;, the
+</description></item><item><title>The Daily Nonsense</title><link>http://garbage.world/projects/nonsense/</link><pubDate>Sat, 27 Apr 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/nonsense/</guid><description>&lt;p&gt;I am delighted to announce the launch of &lt;em&gt;The Daily Nonsense&lt;/em&gt;, the
 only campus publication at UCSB with any moral compass at all.  Upon
 learning of our existence, a group of campus Republicans went back in
 time and started something called
@@ -823,7 +823,7 @@ SITE&#34;&gt;&amp;ldquo;The Daily Nexus&amp;rdquo;&lt;/a&gt; in an attempt to un
 
 &lt;p&gt;(Please direct all complaints to
 &lt;a href=&#34;https://twitter.com/thedailynexus&#34;&gt;our social media intern&lt;/a&gt;.)&lt;/p&gt;
-</description></item><item><title>Cultural Appropriation at Lucidity</title><link>http://megr.im/posts/lucidity/</link><pubDate>Fri, 26 Apr 2013 00:00:00 UTC</pubDate><guid>http://megr.im/posts/lucidity/</guid><description>
+</description></item><item><title>Cultural Appropriation at Lucidity</title><link>http://garbage.world/posts/lucidity/</link><pubDate>Fri, 26 Apr 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/lucidity/</guid><description>
 
 &lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt; (1 August 2013): Jonah Haas has published
   &lt;a href=&#34;http://lucidityfestival.com/reframing-the-cultural-appropriation-conversation-towards-synergy-co-learning-and-peace/&#34; title=&#34;Reframing the cultural appropriation conversation towards synergy,
@@ -989,7 +989,7 @@ Indigenous societies as a single, static, &lt;em&gt;dead&lt;/em&gt; culture that
 raided freely.  (Someone &lt;em&gt;did&lt;/em&gt; post the Adrienne K. article just
 quoted on
 &lt;a href=&#34;https://www.facebook.com/LucidityFestival/posts/492878357426014&#34; title=&#34;1 April 2013 at 10:22am&#34;&gt;Lucidity&amp;rsquo;s Facebook page&lt;/a&gt;, but unfortunately
-&lt;a href=&#34;http://megr.im/img/fb_reminder.png&#34;&gt;nobody liked it&lt;/a&gt;.)
+&lt;a href=&#34;http://garbage.world/img/fb_reminder.png&#34;&gt;nobody liked it&lt;/a&gt;.)
 &lt;a href=&#34;http://lucidityfestival.tumblr.com/post/45085724562/lumamoonlight-lucidity-festival-by-zipporah&#34; title=&#34;Tumblr&#34;&gt;Headdresses&lt;/a&gt; were
 &lt;a href=&#34;http://www.flickr.com/photos/46479192@N00/7109987025/&#34; title=&#34;Flickr&#34;&gt;worn&lt;/a&gt;
 last
@@ -1170,7 +1170,7 @@ Lucidity is perpetuating racism against Indigenous peoples.
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Oh, if only it was.&lt;/p&gt;
-</description></item><item><title>Reading.js</title><link>http://megr.im/things/reading/</link><pubDate>Thu, 30 Aug 2012 00:00:00 UTC</pubDate><guid>http://megr.im/things/reading/</guid><description>&lt;p&gt;Reading.js is a crummy bit of CSS and JavaScript that&amp;rsquo;s supposed to
+</description></item><item><title>Reading.js</title><link>http://garbage.world/things/reading/</link><pubDate>Thu, 30 Aug 2012 00:00:00 +0000</pubDate><guid>http://garbage.world/things/reading/</guid><description>&lt;p&gt;Reading.js is a crummy bit of CSS and JavaScript that&amp;rsquo;s supposed to
 make it easier to read long documents online.
 (&lt;a href=&#34;modernphilosophy/text.html&#34; title=&#34;HTML version of Modern Philosophy&#34;&gt;Like this one!&lt;/a&gt;)&lt;/p&gt;
 
