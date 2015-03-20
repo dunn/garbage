@@ -147,6 +147,13 @@ the location of your Gmail folder, though:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;set mbox_type=Maildir
 set folder = &amp;quot;~/Mail/gmail/&amp;quot;
 set spoolfile = &amp;quot;~/Mail/gmail/&amp;quot;
+set record = &amp;quot;~/Mail/gmail/sent/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;sent&lt;/code&gt; folder is technically another Maildir box, so you&amp;rsquo;ll need
+to populate it with the same three folders:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;mkdir -m 700 -p ~/Mail/gmail/sent/{cur,new,tmp}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Fine-tuning your configuration and getting comfortable with the
