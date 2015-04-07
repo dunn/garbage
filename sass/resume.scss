@@ -87,6 +87,11 @@ body {
     p::before {
       content: "☁ ";
     }
+    ul li {
+      p::before {
+        content: "❄ ";
+      }
+    }
   }
 }
 .history {
