@@ -73,7 +73,7 @@ body {
     padding-right: .5em;
     list-style-type: none;
     p::after {
-      content: " 🌂";
+      content: " 📯";
     }
   }
 }
@@ -85,11 +85,11 @@ body {
     padding-left: .5em;
     list-style-type: none;
     p::before {
-      content: "☁ ";
+      content: "🌲 ";
     }
     ul li {
       p::before {
-        content: "❄ ";
+        content: "🍃 ";
       }
     }
   }
@@ -124,7 +124,7 @@ footer {
   content: "🙋 ";
 }
 #gvb::before {
-  content: "🌲 ";
+  content: "🌳 ";
 }
 
 @media screen and (max-width: $break0){
