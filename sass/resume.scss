@@ -116,6 +116,9 @@ footer {
 }
 
 ///// EMOJI
+#sjp::before {
+  content: "📢 ";
+}
 #map::before {
   content: "🔭 ";
 }
