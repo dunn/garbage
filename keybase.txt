@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/dunn
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://garbage.world
+  * I am dunn (https://keybase.io/dunn) on keybase.
+  * I have a public key with fingerprint ADFD DCE0 4C90 D696 7216  552B FCEC 4680 ECF9 24D9
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "adfddce04c90d6967216552bfcec4680ecf924d9",
+            "host": "keybase.io",
+            "key_id": "fcec4680ecf924d9",
+            "kid": "01010bae1f58236c32b7d4764ebd46bc317e233edd1e5a2163e26bc4e4546c9af31f0a",
+            "uid": "ecec4693a14911d68614e27c888f1c19",
+            "username": "dunn"
+        },
+        "service": {
+            "hostname": "garbage.world",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1434856814,
+    "expire_in": 157680000,
+    "prev": "0ba33fa82f028d221d18f6ce53905cd2acc5696675994f4b23523fe08f247cf6",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owFtUllIVUEYPte06FYS7UULTT5YmtxZznaJ0NKMFjPiVip5PWdmzvVgnXM7dzGT
+dozSrMiCjAoipCCFImiDwKJCEgqhBwt6imyDiAppE5sj9tbMwzDf/33fP/8//8lJ
+Y6Rg4NiBH1/OPt3VH+h9sNyUIoeXphuB6bIGEG4EdXzksGwnxr24ZztJEAYGsxij
+PESoHmKKrqgIKrKMTItyShQtxKmlI8J0kA9q3YSvEDamkeAFtiswcYnaTKD/4deN
+BEJQbNPg0JI1hBWKkakyoiqEm4woJsVQ5QhjzhjksiGyY44ETDiRiUJ1w8LQChnC
+LjVix0fy6NiARIeQKZoCCUcq1TTNghT6eVMJ7jnGDi7YLOU4YE8+EEjaptwv369i
+NBozPNOI8YJ619vOhDDuuUmXuttFqDaZjId9ZbIh7lPruRkdNYmatsNED4Ugzb2E
+7TogDAWTJm3fFRJMNFnRIMkHfFfc9njU9hmyKrojlp+Gp/3GmAbGlqEhK4Q0hhBk
+ULMUymWsh2TKkEGpLD5EUWVdJxYxEZYRtnhIsxBRqaUAv6ydjgvCqnimEROWCTvm
+GMmUx8Ge4NHA3EwpEJTGZmX4YyAFx0/+NxztpeN+ZUzOqVrQeSRTKsneNjT4e17W
+7vX1d3PLY7+Wrbo3IF80V095e7m6SOftqf0VYLCl9Ou0sg+BbR2sJfJ5VvOWwvOv
+u4YvlbUN7G21WmFTW9+nc9HWvEpJ6t307XZX56nTHTeePOss71lYdnxJCm6tKinu
+roiMw1iPtFVUd+acfBWInnl/h5agXKkvI1lzu3TuoembvzXtm/742LXuIytf5IOh
+xY/SU+zK1PzqB386cs7Pbrh/v+pj+80FD0E0a2Vp5YcNB99cKO6h3d9r8Jp1sUdF
+K2pjRRMiz6f27P3JJnZdb7k6PNjY219oz9TdvEXZ+zfNUfMG4MvglRMb38241Zyx
+9i8=
+=hDeL
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dunn
+
+==================================================================
