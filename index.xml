@@ -195,9 +195,8 @@ is to add this to your &lt;code&gt;.muttrc&lt;/code&gt;:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;When you hit &lt;code&gt;^b&lt;/code&gt; (control-b) while viewing an HTML message or
-attachment, what that does is spit the HTML into an invisible file on
-the Desktop (overwriting the file from the last time you did this),
-and &lt;em&gt;then&lt;/em&gt; opening it in your default browser.&lt;/p&gt;
+attachment, what that does is spit the HTML into a temporary file,
+then open it in your default browser.&lt;/p&gt;
 
 &lt;p&gt;(I wouldn&amp;rsquo;t have figured this out if not for
 &lt;a href=&#34;http://mutt.blackfish.org.uk/following-links/&#34; title=&#34;my first mutt&#34;&gt;Bruno Postle&amp;rsquo;s page on following links&lt;/a&gt;.)&lt;/p&gt;
