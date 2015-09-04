@@ -1,8 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Dunn has no idea what he’s doing</title><link>http://garbage.world/</link><description>Recent content on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 02 Dec 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://garbage.world/index.xml" rel="self" type="application/rss+xml"/><item><title>UCSB Philosophy</title><link>http://garbage.world/websites/ucsb/</link><pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/websites/ucsb/</guid><description>&lt;p&gt;The University of California, Santa Barbara has a Philosophy
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Dunn has no idea what he’s doing</title><link>http://garbage.world/</link><description>Recent content on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 03 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://garbage.world/index.xml" rel="self" type="application/rss+xml"/><item><title>company-emoji.el</title><link>http://garbage.world/things/company-emoji/</link><pubDate>Thu, 03 Sep 2015 00:00:00 +0000</pubDate><guid>http://garbage.world/things/company-emoji/</guid><description>&lt;p&gt;If you use Emacs, you’re a big ’ol nerd.  But you can still pretend to
+be cool by using emoji like the teens and moms do.  All it takes is
+&lt;a href=&#34;https://company-mode.github.io&#34;&gt;company-mode&lt;/a&gt; and &lt;code&gt;company-emoji.el&lt;/code&gt;.
+Install them both (using
+&lt;a href=&#34;https://github.com/milkypostman/melpa&#34;&gt;MELPA&lt;/a&gt; or
+&lt;a href=&#34;https://github.com/Homebrew/homebrew-emacs&#34;&gt;Homebrew&lt;/a&gt; or manually),
+then add something like this to your &lt;code&gt;emacs.el&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre class=&#34;elisp&#34;&gt;&lt;code&gt;(require &amp;#39;company-emoji)
+(add-hook &amp;#39;markdown-mode-hook &amp;#39;company-mode)
+(add-hook &amp;#39;markdown-mode-hook &amp;#39;company-emoji-init)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then B💥💥M.&lt;/p&gt;
+</description></item><item><title>UCSB Philosophy</title><link>http://garbage.world/websites/ucsb/</link><pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/websites/ucsb/</guid><description>&lt;p&gt;The University of California, Santa Barbara has a Philosophy
 department, and the Philosophy department has a website. In 2014 I
 rewrote the website from the ground up (twice!), making it modern,
 responsive, and accessible.&lt;/p&gt;
-</description></item><item><title>libgen.js</title><link>http://garbage.world/projects/libgen.js/</link><pubDate>Wed, 05 Nov 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/libgen.js/</guid><description>&lt;p&gt;&lt;code&gt;libgen&lt;/code&gt; is a &lt;a href=&#34;http://nodejs.org&#34;&gt;Node.js&lt;/a&gt; wrapper for the
+</description></item><item><title>libgen.js</title><link>http://garbage.world/things/libgen.js/</link><pubDate>Wed, 05 Nov 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/libgen.js/</guid><description>&lt;p&gt;&lt;code&gt;libgen&lt;/code&gt; is a &lt;a href=&#34;http://nodejs.org&#34;&gt;Node.js&lt;/a&gt; wrapper for the
 &lt;a href=&#34;http://garbage.world/posts/libgen/&#34;&gt;Library Genesis API&lt;/a&gt;, with search added on top of
 it. Install it in the root folder of your project with &lt;code&gt;npm install
 libgen&lt;/code&gt;, then &lt;code&gt;require&lt;/code&gt; it where it&amp;rsquo;s needed:&lt;/p&gt;
@@ -10,9 +23,9 @@ libgen&lt;/code&gt;, then &lt;code&gt;require&lt;/code&gt; it where it&amp;rsquo
 &lt;pre class=&#34;sourceCode javascript&#34;&gt;&lt;code class=&#34;sourceCode javascript&#34;&gt;&lt;span class=&#34;kw&#34;&gt;var&lt;/span&gt; libgen = &lt;span class=&#34;fu&#34;&gt;require&lt;/span&gt;(&lt;span class=&#34;st&#34;&gt;&amp;#39;libgen&amp;#39;&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Your application then has access to
-&lt;a href=&#34;https://github.com/grumble/libgen.js#usage-searching&#34; title=&#34;README&#34;&gt;search&lt;/a&gt;,
-&lt;a href=&#34;https://github.com/grumble/libgen.js#usage-random-texts&#34; title=&#34;README&#34;&gt;random texts&lt;/a&gt;, and
-&lt;a href=&#34;https://github.com/grumble/libgen.js#libgen&#34; title=&#34;README&#34;&gt;other methods&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://github.com/dunn/libgen.js#usage-searching&#34; title=&#34;README&#34;&gt;search&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/dunn/libgen.js#usage-random-texts&#34; title=&#34;README&#34;&gt;random texts&lt;/a&gt;, and
+&lt;a href=&#34;https://github.com/dunn/libgen.js#libgen&#34; title=&#34;README&#34;&gt;other methods&lt;/a&gt;.&lt;/p&gt;
 </description></item><item><title>How to Add Needless Complexity to Your Life</title><link>http://garbage.world/posts/email/</link><pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/email/</guid><description>
 
 &lt;p&gt;I used Apple Mail forever until recently, when my Exchange account
@@ -1176,17 +1189,4 @@ Lucidity is perpetuating racism against Indigenous peoples.
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Oh, if only it was.&lt;/p&gt;
-</description></item><item><title>Reading.js</title><link>http://garbage.world/things/reading/</link><pubDate>Thu, 30 Aug 2012 00:00:00 +0000</pubDate><guid>http://garbage.world/things/reading/</guid><description>&lt;p&gt;Reading.js is a crummy bit of CSS and JavaScript that&amp;rsquo;s supposed to
-make it easier to read long documents online.
-(&lt;a href=&#34;modernphilosophy/text.html&#34; title=&#34;HTML version of Modern Philosophy&#34;&gt;Like this one!&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;Include two lines in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of a plain HTML file&amp;mdash;the kind
-produced by &lt;a href=&#34;http://johnmacfarlane.net/pandoc/&#34; title=&#34;pandoc project
-page&#34;&gt;pandoc&lt;/a&gt; or by most
-&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34; title=&#34;Markdown
-project page&#34;&gt;Markdown&lt;/a&gt;-to-HTML converters&amp;mdash;and gain nifty features like
-keyboard shortcuts, section folding, and color scheme switching:&lt;/p&gt;
-
-&lt;pre class=&#34;sourceCode html&#34;&gt;&lt;code class=&#34;sourceCode html&#34;&gt;&lt;span class=&#34;kw&#34;&gt;&amp;lt;link&lt;/span&gt;&lt;span class=&#34;ot&#34;&gt; rel=&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;span class=&#34;ot&#34;&gt; href=&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;http://baruffio.com/reading.js/stylesheets/reading.css&amp;quot;&lt;/span&gt; &lt;span class=&#34;kw&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;kw&#34;&gt;&amp;lt;script&lt;/span&gt;&lt;span class=&#34;ot&#34;&gt; type=&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&#34;ot&#34;&gt; src=&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;http://baruffio.com/reading.js/scripts/reading.min.js&amp;quot;&lt;/span&gt;&lt;span class=&#34;kw&#34;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 </description></item></channel></rss>

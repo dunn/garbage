@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Things on Alex Dunn has no idea what he’s doing</title><link>http://garbage.world/things/</link><description>Recent content in Things on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 17 Jul 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://garbage.world/things/index.xml" rel="self" type="application/rss+xml"/><item><title>The Good Trolle</title><link>http://garbage.world/things/trolle/</link><pubDate>Thu, 17 Jul 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/trolle/</guid><description>&lt;p&gt;The Good Trolle is a new Twitter citizen who serves two complementary roles:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Things on Alex Dunn has no idea what he’s doing</title><link>http://garbage.world/things/</link><description>Recent content in Things on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 03 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://garbage.world/things/index.xml" rel="self" type="application/rss+xml"/><item><title>company-emoji.el</title><link>http://garbage.world/things/company-emoji/</link><pubDate>Thu, 03 Sep 2015 00:00:00 +0000</pubDate><guid>http://garbage.world/things/company-emoji/</guid><description>&lt;p&gt;If you use Emacs, you’re a big ’ol nerd.  But you can still pretend to
+be cool by using emoji like the teens and moms do.  All it takes is
+&lt;a href=&#34;https://company-mode.github.io&#34;&gt;company-mode&lt;/a&gt; and &lt;code&gt;company-emoji.el&lt;/code&gt;.
+Install them both (using
+&lt;a href=&#34;https://github.com/milkypostman/melpa&#34;&gt;MELPA&lt;/a&gt; or
+&lt;a href=&#34;https://github.com/Homebrew/homebrew-emacs&#34;&gt;Homebrew&lt;/a&gt; or manually),
+then add something like this to your &lt;code&gt;emacs.el&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre class=&#34;elisp&#34;&gt;&lt;code&gt;(require &amp;#39;company-emoji)
+(add-hook &amp;#39;markdown-mode-hook &amp;#39;company-mode)
+(add-hook &amp;#39;markdown-mode-hook &amp;#39;company-emoji-init)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then B💥💥M.&lt;/p&gt;
+</description></item><item><title>libgen.js</title><link>http://garbage.world/things/libgen.js/</link><pubDate>Wed, 05 Nov 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/libgen.js/</guid><description>&lt;p&gt;&lt;code&gt;libgen&lt;/code&gt; is a &lt;a href=&#34;http://nodejs.org&#34;&gt;Node.js&lt;/a&gt; wrapper for the
+&lt;a href=&#34;http://garbage.world/posts/libgen/&#34;&gt;Library Genesis API&lt;/a&gt;, with search added on top of
+it. Install it in the root folder of your project with &lt;code&gt;npm install
+libgen&lt;/code&gt;, then &lt;code&gt;require&lt;/code&gt; it where it&amp;rsquo;s needed:&lt;/p&gt;
+
+&lt;pre class=&#34;sourceCode javascript&#34;&gt;&lt;code class=&#34;sourceCode javascript&#34;&gt;&lt;span class=&#34;kw&#34;&gt;var&lt;/span&gt; libgen = &lt;span class=&#34;fu&#34;&gt;require&lt;/span&gt;(&lt;span class=&#34;st&#34;&gt;&amp;#39;libgen&amp;#39;&lt;/span&gt;);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Your application then has access to
+&lt;a href=&#34;https://github.com/dunn/libgen.js#usage-searching&#34; title=&#34;README&#34;&gt;search&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/dunn/libgen.js#usage-random-texts&#34; title=&#34;README&#34;&gt;random texts&lt;/a&gt;, and
+&lt;a href=&#34;https://github.com/dunn/libgen.js#libgen&#34; title=&#34;README&#34;&gt;other methods&lt;/a&gt;.&lt;/p&gt;
+</description></item><item><title>The Good Trolle</title><link>http://garbage.world/things/trolle/</link><pubDate>Thu, 17 Jul 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/trolle/</guid><description>&lt;p&gt;The Good Trolle is a new Twitter citizen who serves two complementary roles:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;It notifies its battle-ready followers of racists, sexists, homophobes, transphobes, and ableists in need of a good drubbing, and it does this by:&lt;/p&gt;&lt;/li&gt;
