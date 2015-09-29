@@ -7,8 +7,7 @@ Install them both (using
 then add something like this to your &lt;code&gt;emacs.el&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre class=&#34;elisp&#34;&gt;&lt;code&gt;(require &amp;#39;company-emoji)
-(add-hook &amp;#39;markdown-mode-hook &amp;#39;company-mode)
-(add-hook &amp;#39;markdown-mode-hook &amp;#39;company-emoji-init)&lt;/code&gt;&lt;/pre&gt;
+(add-to-list &amp;#39;company-backends &amp;#39;company-emoji)&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Then B💥💥M.&lt;/p&gt;
 </description></item><item><title>libgen.js</title><link>http://garbage.world/things/libgen.js/</link><pubDate>Wed, 05 Nov 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/libgen.js/</guid><description>&lt;p&gt;&lt;code&gt;libgen&lt;/code&gt; is a &lt;a href=&#34;http://nodejs.org&#34;&gt;Node.js&lt;/a&gt; wrapper for the
