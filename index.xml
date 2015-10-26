@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Dunn has no idea what he’s doing</title><link>http://garbage.world/</link><description>Recent content on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 10 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://garbage.world/index.xml" rel="self" type="application/rss+xml"/><item><title>Not Svbtle</title><link>http://garbage.world/projects/svbtle/</link><pubDate>Thu, 10 Sep 2015 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/svbtle/</guid><description>&lt;p&gt;I spent three years in the Philosophy Department at UCSB, and used my
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Dunn has no idea what he’s doing</title><link>http://garbage.world/</link><description>Recent content on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 26 Oct 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://garbage.world/index.xml" rel="self" type="application/rss+xml"/><item><title>homebrew-emacs</title><link>http://garbage.world/projects/homebrew-emacs/</link><pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/homebrew-emacs/</guid><description>&lt;p&gt;&lt;a href=&#34;http://brew.sh&#34;&gt;Homebrew&lt;/a&gt; is an OS X package manager primarily
+focused on installing command-line tools, but you can import external
+collections of package formulae called
+&lt;a href=&#34;https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Interesting-Taps-%26-Branches.md&#34;&gt;“taps”&lt;/a&gt;.
+I forked &lt;a href=&#34;https://github.com/edavis&#34;&gt;Eric Davis’&lt;/a&gt; tap of Emacs
+packages and expanded it, and I now use it instead of &lt;code&gt;package.el&lt;/code&gt; and
+&lt;a href=&#34;http://melpa.org&#34;&gt;MELPA&lt;/a&gt;.  It still doesn’t have as many packages as
+MELPA does, but &lt;a href=&#34;https://github.com/Homebrew/homebrew-emacs/blob/master/CONTRIBUTING.md&#34;&gt;you can help fix that!&lt;/a&gt;&lt;/p&gt;
+</description></item><item><title>Not Svbtle</title><link>http://garbage.world/projects/svbtle/</link><pubDate>Thu, 10 Sep 2015 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/svbtle/</guid><description>&lt;p&gt;I spent three years in the Philosophy Department at UCSB, and used my
 Svbtle blog to write about the &lt;del&gt;highs and&lt;/del&gt; lows of academic
 philosophy, on such subjects as racism, sexism, ableism, and that
 famous law professor we all know who sends threats of legal action to
@@ -836,14 +844,4 @@ continued existence.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Santa Barbara Bullshit&lt;/em&gt; treats all these concerns with the deadly
 earnestness they deserve.&lt;/p&gt;
-</description></item><item><title>The Daily Nonsense</title><link>http://garbage.world/projects/nonsense/</link><pubDate>Sat, 27 Apr 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/nonsense/</guid><description>&lt;p&gt;I am delighted to announce the launch of &lt;em&gt;The Daily Nonsense&lt;/em&gt;, the
-only campus publication at UCSB with any moral compass at all.  Upon
-learning of our existence, a group of campus Republicans went back in
-time and started something called
-&lt;a href=&#34;http://dailynexus.com/&#34; title=&#34;WARNING WARNING FAKE
-SITE&#34;&gt;&amp;ldquo;The Daily Nexus&amp;rdquo;&lt;/a&gt; in an attempt to undermine our credibility. Support the
-&lt;em&gt;Nonsense&lt;/em&gt; and recognize the &lt;em&gt;Nexus&lt;/em&gt; for the cabal of hacks they are!&lt;/p&gt;
-
-&lt;p&gt;(Please direct all complaints to
-&lt;a href=&#34;https://twitter.com/thedailynexus&#34;&gt;our social media intern&lt;/a&gt;.)&lt;/p&gt;
 </description></item></channel></rss>
