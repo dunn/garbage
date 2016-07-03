@@ -12,7 +12,7 @@ Installing and Configuring mutt.  (Even
 enough, and weren&amp;rsquo;t written for OS X.)  So this my attempt to get
 everything necessary—and nothing more—written down in one place.&lt;/p&gt;
 
-&lt;h2 id=&#34;mutt-is-just-for-reading-email:8cbe6fdacc355e0e29b05b303dd46e82&#34;&gt;mutt is just for reading email&lt;/h2&gt;
+&lt;h2 id=&#34;mutt-is-just-for-reading-email&#34;&gt;mutt is just for reading email&lt;/h2&gt;
 
 &lt;p&gt;The program mutt was not originally designed to do the actual sending
 and receiving of email.  It can do that now, but it was built as a way
@@ -25,7 +25,7 @@ yet another program—&lt;a href=&#34;http://msmtp.sourceforge.net&#34;&gt;msmtp
 &lt;p&gt;And there&amp;rsquo;s no point in having mutt if you&amp;rsquo;ve got nothing to read, so
 before we even bother installing mutt we&amp;rsquo;re going to set up getmail.&lt;/p&gt;
 
-&lt;h2 id=&#34;you-get-mail-with-getmail:8cbe6fdacc355e0e29b05b303dd46e82&#34;&gt;you get mail with getmail&lt;/h2&gt;
+&lt;h2 id=&#34;you-get-mail-with-getmail&#34;&gt;you get mail with getmail&lt;/h2&gt;
 
 &lt;p&gt;The easiest way to install getmail is with &lt;a href=&#34;http://brew.sh&#34; title=&#34;The
 missing package manager for OS X&#34;&gt;Homebrew&lt;/a&gt;:&lt;/p&gt;
@@ -125,7 +125,7 @@ that aren&amp;rsquo;t named &lt;code&gt;getmailrc&lt;/code&gt; (you can use the 
 &lt;a href=&#34;http://nathangrigg.net/2012/07/schedule-jobs-using-launchd/&#34;&gt;Apple&amp;rsquo;s &lt;code&gt;launchd&lt;/code&gt;&lt;/a&gt;
 to run it regularly.&lt;/p&gt;
 
-&lt;h2 id=&#34;then-you-install-mutt:8cbe6fdacc355e0e29b05b303dd46e82&#34;&gt;&lt;em&gt;then&lt;/em&gt; you install mutt&lt;/h2&gt;
+&lt;h2 id=&#34;then-you-install-mutt&#34;&gt;&lt;em&gt;then&lt;/em&gt; you install mutt&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;brew install mutt --with-gpgme --with-confirm-attachment-patch
 &lt;/code&gt;&lt;/pre&gt;
@@ -186,7 +186,7 @@ then open it in your default browser.&lt;/p&gt;
 &lt;p&gt;(I wouldn&amp;rsquo;t have figured this out if not for
 &lt;a href=&#34;http://mutt.blackfish.org.uk/following-links/&#34; title=&#34;my first mutt&#34;&gt;Bruno Postle&amp;rsquo;s page on following links&lt;/a&gt;.)&lt;/p&gt;
 
-&lt;h2 id=&#34;and-send-mail-with-msmtp:8cbe6fdacc355e0e29b05b303dd46e82&#34;&gt;and send mail with msmtp&lt;/h2&gt;
+&lt;h2 id=&#34;and-send-mail-with-msmtp&#34;&gt;and send mail with msmtp&lt;/h2&gt;
 
 &lt;p&gt;By now you know the drill:&lt;/p&gt;
 
@@ -239,7 +239,7 @@ path to it (for example, &lt;code&gt;~/Mail/certs/Certificates.pem&lt;/code&gt;)
 address, and &lt;code&gt;app-specific-password&lt;/code&gt; with a
 &lt;a href=&#34;https://support.google.com/accounts/answer/185833&#34; title=&#34;Google Support&#34;&gt;Google App Password&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;yay:8cbe6fdacc355e0e29b05b303dd46e82&#34;&gt;yay&lt;/h2&gt;
+&lt;h2 id=&#34;yay&#34;&gt;yay&lt;/h2&gt;
 
 &lt;p&gt;At this point you should be able to send and receive email using mutt!
 Wooooww.  Now you can dick around with further niceties:&lt;/p&gt;
@@ -287,7 +287,7 @@ guide to using the LibGen API.&lt;/p&gt;
 &lt;a href=&#34;https://translate.google.com/translate?hl=en&amp;amp;sl=auto&amp;amp;tl=en&amp;amp;u=http%3A%2F%2Fgenofond.org%2Fviewtopic.php%3Fp%3D39355&#34;&gt;Google Translate&lt;/a&gt;,
 so corrections and additions are very welcome!)&lt;/p&gt;
 
-&lt;h2 id=&#34;first-some-bad-news:5c7ae2f4da537e5bd1d343cce911b329&#34;&gt;First, some bad news&lt;/h2&gt;
+&lt;h2 id=&#34;first-some-bad-news&#34;&gt;First, some bad news&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;This is not a search API.&lt;/em&gt;&lt;/p&gt;
 
@@ -300,7 +300,7 @@ string and get a list of results based on that string.&lt;/p&gt;
 &lt;p&gt;There are two &lt;em&gt;documented&lt;/em&gt; ways to use the API to query the LibGen
 database: by text ID, or by date.&lt;/p&gt;
 
-&lt;h2 id=&#34;querying-by-id:5c7ae2f4da537e5bd1d343cce911b329&#34;&gt;Querying by ID&lt;/h2&gt;
+&lt;h2 id=&#34;querying-by-id&#34;&gt;Querying by ID&lt;/h2&gt;
 
 &lt;p&gt;Here&amp;rsquo;s how to retrieve information about the texts with the coveted
 IDs of &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt;:&lt;/p&gt;
@@ -423,7 +423,7 @@ I don&amp;rsquo;t know enough PHP to understand it).&lt;/li&gt;
 
 &lt;p&gt;If you want to get all fields for a text, use &lt;code&gt;fields=*&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;searching-by-date:5c7ae2f4da537e5bd1d343cce911b329&#34;&gt;Searching by date&lt;/h2&gt;
+&lt;h2 id=&#34;searching-by-date&#34;&gt;Searching by date&lt;/h2&gt;
 
 &lt;p&gt;Querying by ID is pretty useless except for internal tasks, so it&amp;rsquo;s
 the ability to search by date that makes the API at all interesting.
@@ -450,7 +450,7 @@ specified date range,&lt;/del&gt; (see below) or&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;retrieve information about texts modified after a certain time.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;the-grab-bag-method:5c7ae2f4da537e5bd1d343cce911b329&#34;&gt;The grab-bag method&lt;/h3&gt;
+&lt;h3 id=&#34;the-grab-bag-method&#34;&gt;The grab-bag method&lt;/h3&gt;
 
 &lt;p&gt;&lt;del&gt;The obvious use case for this method is to display a random text or
 set of texts (perhaps for a Twitter bot).&lt;/del&gt;  &lt;strong&gt;I obviously didn&amp;rsquo;t
@@ -486,7 +486,7 @@ added between 1 May 2013 and 1 January 2014:&lt;/p&gt;
 &lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span
 class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.in/json.php?fields=MD5&amp;amp;limit1=10&amp;amp;mode=last&amp;amp;timefirst=2013-05-01&amp;amp;timelast=2014-01-01&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;the-newer-method:5c7ae2f4da537e5bd1d343cce911b329&#34;&gt;The &lt;code&gt;newer&lt;/code&gt; method&lt;/h3&gt;
+&lt;h3 id=&#34;the-newer-method&#34;&gt;The &lt;code&gt;newer&lt;/code&gt; method&lt;/h3&gt;
 
 &lt;p&gt;This method, which is literally &lt;em&gt;newer&lt;/em&gt;&amp;mdash;it was added at the beginning
 of 2014—finally allows the API to effectively serve its intended
@@ -514,7 +514,7 @@ method can do that well enough for most purposes.  I can&amp;rsquo;t think of
 many uses for &lt;code&gt;newer&lt;/code&gt; beyond its original intended one—mirroring
 the main database.&lt;/p&gt;
 
-&lt;h2 id=&#34;are-you-sure-there-s-no-search-api:5c7ae2f4da537e5bd1d343cce911b329&#34;&gt;Are you sure there&amp;rsquo;s no search API?&lt;/h2&gt;
+&lt;h2 id=&#34;are-you-sure-there-s-no-search-api&#34;&gt;Are you sure there&amp;rsquo;s no search API?&lt;/h2&gt;
 
 &lt;p&gt;Pretty sure, yeah.  (There appears to be
 &lt;a href=&#34;http://genofond.org/viewtopic.php?p=22423&amp;amp;sid=a2cc032762a2b853b4354d287e4697e6&amp;amp;usg=ALkJrhjEraSeb6V9MMjk1_OCbXy2Ml_B4Q#p22423&#34; title=&#34;Russian forum post&#34;&gt;a search API for Bookfi&lt;/a&gt;, but you need to request an API key from the
@@ -562,7 +562,7 @@ fake, and our faith in others
 
 &lt;p&gt;But it&amp;rsquo;s still a shame.&lt;/p&gt;
 
-&lt;h2 id=&#34;what-s-wrong-with-finding-two-men-in-a-horse-suit:3362abfcdb4c5213700b3e0a0129b085&#34;&gt;What&amp;rsquo;s wrong with finding two men in a horse suit&lt;/h2&gt;
+&lt;h2 id=&#34;what-s-wrong-with-finding-two-men-in-a-horse-suit&#34;&gt;What&amp;rsquo;s wrong with finding two men in a horse suit&lt;/h2&gt;
 
 &lt;p&gt;I went back to
 &lt;a href=&#34;http://dansinker.com/post/62183207705/eulogy-for-a-horse&#34; title=&#34;Eulogy for a horse&#34;&gt;Dan Sinker&amp;rsquo;s piece&lt;/a&gt; and this struck me as important (as important as
@@ -792,7 +792,7 @@ firm grasp on what &amp;lsquo;cultural appropriation&amp;rsquo; means, and so th
 see what the big deal is or why they should make changes to their
 festival.&lt;/p&gt;
 
-&lt;h2 id=&#34;who-did-what-now:d58e3e3a837667f79b8d679c49ac5e2b&#34;&gt;Who did what now?&lt;/h2&gt;
+&lt;h2 id=&#34;who-did-what-now&#34;&gt;Who did what now?&lt;/h2&gt;
 
 &lt;p&gt;Lucidity Festival takes place in the
 &lt;a href=&#34;http://www.countyofsb.org/parks/parks05.aspx?id=9378&#34; title=&#34;County of Santa Barbara Parks Division&#34;&gt;Live Oak campground&lt;/a&gt; in Santa Ynez and is
@@ -848,7 +848,7 @@ on these &amp;ldquo;totems&amp;rdquo;:&lt;/p&gt;
 &lt;img src=&#34;http://garbage.world/img/lucidity2013_header.jpg&#34; alt=&#34;Welp.&#34; /&gt;&lt;figcaption&gt;Welp.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;h2 id=&#34;why-is-this-a-problem:d58e3e3a837667f79b8d679c49ac5e2b&#34;&gt;Why is this a problem?&lt;/h2&gt;
+&lt;h2 id=&#34;why-is-this-a-problem&#34;&gt;Why is this a problem?&lt;/h2&gt;
 
 &lt;p&gt;This is cultural appropriation of the worst sort.  Lucidity Festival
 is taking traditions of Indigenous tribes of the Pacific Northwest out
@@ -965,7 +965,7 @@ course.)&lt;/p&gt;
 &lt;em&gt;system&lt;/em&gt; of cultural appropriation that is &lt;em&gt;actively harmful&lt;/em&gt; to
 Indigenous communities.&lt;/p&gt;
 
-&lt;h2 id=&#34;what-does-lucidity-have-to-say-about-all-this:d58e3e3a837667f79b8d679c49ac5e2b&#34;&gt;What does Lucidity have to say about all this?&lt;/h2&gt;
+&lt;h2 id=&#34;what-does-lucidity-have-to-say-about-all-this&#34;&gt;What does Lucidity have to say about all this?&lt;/h2&gt;
 
 &lt;p&gt;Given that the organizers of Lucidity Festival engage in and promote
 unacceptable acts of cultural appropriation, it&amp;rsquo;s not surprising that
