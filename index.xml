@@ -325,7 +325,7 @@ MUTTALIAS_FILES=&amp;quot;.muttrc .mail_aliases muttrc aliases&amp;quot;
 with feedback. Or yell at me &lt;a href=&#34;https://twitter.com/dunndunndunn&#34;&gt;on Twitter&lt;/a&gt;.&lt;/p&gt;
 </description></item><item><title>The Library Genesis API</title><link>http://garbage.world/posts/libgen/</link><pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/libgen/</guid><description>
 
-&lt;p&gt;&lt;a href=&#34;http://libgen.in/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only
+&lt;p&gt;&lt;a href=&#34;http://libgen.io/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only
 documentation is
 &lt;a href=&#34;http://genofond.org/viewtopic.php?p=39355&#34; title=&#34;The Library Genesis Miner&#39;s Hut&#34;&gt;a forum thread in Russian&lt;/a&gt;.  So this is an English-language
 guide to using the LibGen API.&lt;/p&gt;
@@ -352,7 +352,7 @@ database: by text ID, or by date.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s how to retrieve information about the texts with the coveted
 IDs of &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt;:&lt;/p&gt;
 
-&lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.in/json.php?ids=1,2&amp;amp;fields=Title,Author,MD5&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.io/json.php?ids=1,2&amp;amp;fields=Title,Author,MD5&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;(The API is available at &lt;code&gt;http://gen.lib.rus.ec/json.php&lt;/code&gt; as well.)&lt;/p&gt;
 
@@ -360,20 +360,20 @@ IDs of &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre class=&#34;sourceCode json&#34;&gt;&lt;code class=&#34;sourceCode json&#34;&gt;&lt;span class=&#34;re&#34;&gt;[&lt;/span&gt;
   &lt;span class=&#34;re&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;kw&#34;&gt;&amp;quot;Title&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;Handbook of Clinical Drug Data&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
-    &lt;span class=&#34;kw&#34;&gt;&amp;quot;Author&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;Philip Anderson&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
-    &lt;span class=&#34;kw&#34;&gt;&amp;quot;MD5&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;7B2A4D53FDE834E801C26A2BAB7E0240&amp;quot;&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;Handbook of Clinical Drug Data&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;author&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;Philip Anderson&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;md5&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;7B2A4D53FDE834E801C26A2BAB7E0240&amp;quot;&lt;/span&gt;
   &lt;span class=&#34;re&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
   &lt;span class=&#34;re&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;kw&#34;&gt;&amp;quot;Title&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;Handbook of Herbs and Spices&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
-    &lt;span class=&#34;kw&#34;&gt;&amp;quot;Author&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;K V Peter&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
-    &lt;span class=&#34;kw&#34;&gt;&amp;quot;MD5&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;048EA0496DB0444F873139CD705A07AF&amp;quot;&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;Handbook of Herbs and Spices&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;author&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;K V Peter&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;kw&#34;&gt;&amp;quot;md5&amp;quot;&lt;/span&gt;&lt;span class=&#34;re&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;st&#34;&gt;&amp;quot;048EA0496DB0444F873139CD705A07AF&amp;quot;&lt;/span&gt;
   &lt;span class=&#34;re&#34;&gt;}&lt;/span&gt;
 &lt;span class=&#34;re&#34;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;I used these three fields&amp;mdash;&lt;code&gt;Title&lt;/code&gt;, &lt;code&gt;Author&lt;/code&gt;, and &lt;code&gt;MD5&lt;/code&gt;&amp;mdash;because
+&lt;p&gt;I used these three fields&amp;mdash;&lt;code&gt;title&lt;/code&gt;, &lt;code&gt;author&lt;/code&gt;, and &lt;code&gt;md5&lt;/code&gt;&amp;mdash;because
 they&amp;rsquo;re all you need in most situations.  You can get the page URL by
-appending the MD5 to &lt;code&gt;http://libgen.in/book/index.php?md5=&lt;/code&gt; or to
+appending the MD5 to &lt;code&gt;http://libgen.io/book/index.php?md5=&lt;/code&gt; or to
 one of the mirrors:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -382,7 +382,7 @@ one of the mirrors:&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;http://bookfi.org/md5/&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You can create a download URL by appending the MD5 to &lt;code&gt;http://libgen.in/get.php?md5=&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can create a download URL by appending the MD5 to &lt;code&gt;http://libgen.io/get.php?md5=&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;There are other mirrors whose URLs are based on the text&amp;rsquo;s LibGen ID,
 rather than the MD5:&lt;/p&gt;
@@ -390,79 +390,79 @@ rather than the MD5:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;http://libgen.net/view.php?id=&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;http://www.libgen.net/view.php?id=&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;http://libgen.info/view.php?id=&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://libgen.iofo/view.php?id=&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;http://lib.freescienceengineering.org/view.php?id=&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;You can&amp;rsquo;t get a direct download link for these; you have to go to the
 page for the text and download from there.&lt;/p&gt;
 
-&lt;p&gt;But &lt;code&gt;Title&lt;/code&gt;, &lt;code&gt;Author&lt;/code&gt;, and &lt;code&gt;MD5&lt;/code&gt; are far from the only available
+&lt;p&gt;But &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;author&lt;/code&gt;, and &lt;code&gt;md5&lt;/code&gt; are far from the only available
 data fields; the full list is below. I haven&amp;rsquo;t figured out what all the
 fields mean, and keep in mind that it&amp;rsquo;s up to the person uploading a
 text to add this metadata, so not all texts are well-annotated.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ID&lt;/code&gt;—the LibGen ID&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Title&lt;/code&gt;—the title of the text&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;VolumeInfo&lt;/code&gt;—the volume number, if the text is part of a multi-volume series&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Series&lt;/code&gt;—the series that the text is part of&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Periodical&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Author&lt;/code&gt;—the author of the text&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Year&lt;/code&gt;—the publication date of the text&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Edition&lt;/code&gt;—the edition of the text&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Publisher&lt;/code&gt;—the publisher of the text&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;City&lt;/code&gt;—the location of the publisher&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Pages&lt;/code&gt;—the number of pages in the text&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Language&lt;/code&gt;—the language of the text&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Topic&lt;/code&gt;—A number corresponding to the topic of the text; for example, &lt;code&gt;130&lt;/code&gt; is &amp;ldquo;Mathematics/Logic&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Library&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Issue&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Identifier&lt;/code&gt;—the text&amp;rsquo;s short and long
+&lt;li&gt;&lt;code&gt;id&lt;/code&gt;—the LibGen ID&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;title&lt;/code&gt;—the title of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;volumeinfo&lt;/code&gt;—the volume number, if the text is part of a multi-volume series&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;series&lt;/code&gt;—the series that the text is part of&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;periodical&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;author&lt;/code&gt;—the author of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;year&lt;/code&gt;—the publication date of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;edition&lt;/code&gt;—the edition of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;publisher&lt;/code&gt;—the publisher of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;city&lt;/code&gt;—the location of the publisher&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pages&lt;/code&gt;—the number of pages in the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;language&lt;/code&gt;—the language of the text&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;topic&lt;/code&gt;—A number corresponding to the topic of the text; for example, &lt;code&gt;130&lt;/code&gt; is &amp;ldquo;Mathematics/Logic&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;library&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;issue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;identifier&lt;/code&gt;—the text&amp;rsquo;s short and long
 &lt;a href=&#34;https://www.isbn-international.org/content/what-isbn&#34;&gt;International Standard Book Numbers&lt;/a&gt; (not necessarily in that order)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ISSN&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;http://www.issn.org/understanding-the-issn/what-is-an-issn/&#34;&gt;International Standard Serial Number&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ASIN&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;http://www.amazon.com/gp/seller/asin-upc-isbn-info.html&#34;&gt;Amazon Standard Identification Number&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;UDC&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Universal_Decimal_Classification&#34; title=&#34;Wikipedia entry&#34;&gt;Universal Decimal Classification&lt;/a&gt; number&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;LBC&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;DDC&lt;/code&gt;—the text&amp;rsquo;s
+&lt;li&gt;&lt;code&gt;issn&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;http://www.issn.org/understanding-the-issn/what-is-an-issn/&#34;&gt;International Standard Serial Number&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;asin&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;http://www.amazon.com/gp/seller/asin-upc-isbn-info.html&#34;&gt;Amazon Standard Identification Number&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;udc&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Universal_Decimal_Classification&#34; title=&#34;Wikipedia entry&#34;&gt;Universal Decimal Classification&lt;/a&gt; number&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lbc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ddc&lt;/code&gt;—the text&amp;rsquo;s
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Dewey_Decimal_Classification&#34; title=&#34;Wikipedia entry&#34;&gt;Dewey Decimal Classification&lt;/a&gt; number&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;LCC&lt;/code&gt;—the text&amp;rsquo;s
+&lt;li&gt;&lt;code&gt;lcc&lt;/code&gt;—the text&amp;rsquo;s
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Library_of_Congress_Classification&#34; title=&#34;Wikipedia entry&#34;&gt;Library of Congress Classification&lt;/a&gt; number&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Doi&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Digital_object_identifier&#34; title=&#34;Wikipedia entry&#34;&gt;Digital Object Identifier&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Googlebookid&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;https://developers.google.com/books/docs/v1/using#ids&#34;&gt;Google Books ID&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OpenLibraryID&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;https://openlibrary.org/dev/docs/api/books&#34;&gt;Open Library ID&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Commentary&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;DPI&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Color&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Cleaned&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Orientation&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Paginated&lt;/code&gt;—the text is paginated (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Scanned&lt;/code&gt;—the text is scanned from a physical copy (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Bookmarked&lt;/code&gt;—the text has bookmarks (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Searchable&lt;/code&gt;—the text is searchable (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Filesize&lt;/code&gt;—the size of the file in bytes&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Extension&lt;/code&gt;—the extension of the file (&lt;code&gt;.pdf&lt;/code&gt;, &lt;code&gt;.epub&lt;/code&gt;, &lt;code&gt;.mobi&lt;/code&gt;, etc.)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;MD5&lt;/code&gt;—the &lt;a href=&#34;http://www.md5.net&#34;&gt;MD5&lt;/a&gt; hash of the file&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;CRC32&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;http://www.riccibitti.com/crcguide.htm&#34; title=&#34;A painless guide to CRC error detection algorithms&#34;&gt;CRC32&lt;/a&gt; checksum&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;eDonkey&lt;/code&gt;—the file&amp;rsquo;s
+&lt;li&gt;&lt;code&gt;doi&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Digital_object_identifier&#34; title=&#34;Wikipedia entry&#34;&gt;Digital Object Identifier&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;googlebookid&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;https://developers.google.com/books/docs/v1/using#ids&#34;&gt;Google Books ID&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;openlibraryid&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;https://openlibrary.org/dev/docs/api/books&#34;&gt;Open Library ID&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;commentary&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dpi&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;color&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cleaned&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;orientation&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;paginated&lt;/code&gt;—the text is paginated (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scanned&lt;/code&gt;—the text is scanned from a physical copy (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bookmarked&lt;/code&gt;—the text has bookmarks (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;searchable&lt;/code&gt;—the text is searchable (&lt;code&gt;1&lt;/code&gt;) or not (&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filesize&lt;/code&gt;—the size of the file in bytes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;extension&lt;/code&gt;—the extension of the file (&lt;code&gt;.pdf&lt;/code&gt;, &lt;code&gt;.epub&lt;/code&gt;, &lt;code&gt;.mobi&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;md5&lt;/code&gt;—the &lt;a href=&#34;http://www.md5.net&#34;&gt;MD5&lt;/a&gt; hash of the file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;crc32&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;http://www.riccibitti.com/crcguide.htm&#34; title=&#34;A painless guide to CRC error detection algorithms&#34;&gt;CRC32&lt;/a&gt; checksum&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;edonkey&lt;/code&gt;—the file&amp;rsquo;s
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Ed2k_URI_scheme&#34; title=&#34;Wikipedia entry&#34;&gt;eDonkey hash&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AICH&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;http://www.emule-project.net/home/perl/help.cgi?l=1&amp;amp;rm=show_topic&amp;amp;topic_id=589&#34;&gt;eMule file hash&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;SHA1&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/SHA-1&#34; title=&#34;Wikipedia entry&#34;&gt;SHA-1&lt;/a&gt; hash&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TTH&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Merkle_tree#Tiger_tree_hash&#34; title=&#34;Wikipedia entry&#34;&gt;Tiger tree hash&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Generic&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Filename&lt;/code&gt;—the name of the file in the LibGen database, in the form
-&lt;code&gt;directory/MD5&lt;/code&gt;.  The directory name is the text&amp;rsquo;s LibGen ID rounded
+&lt;li&gt;&lt;code&gt;aich&lt;/code&gt;—the text&amp;rsquo;s &lt;a href=&#34;http://www.emule-project.net/home/perl/help.cgi?l=1&amp;amp;rm=show_topic&amp;amp;topic_id=589&#34;&gt;eMule file hash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sha1&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/SHA-1&#34; title=&#34;Wikipedia entry&#34;&gt;SHA-1&lt;/a&gt; hash&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tth&lt;/code&gt;—the file&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Merkle_tree#Tiger_tree_hash&#34; title=&#34;Wikipedia entry&#34;&gt;Tiger tree hash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;generic&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filename&lt;/code&gt;—the name of the file in the LibGen database, in the form
+&lt;code&gt;directory/md5&lt;/code&gt;.  The directory name is the text&amp;rsquo;s LibGen ID rounded
 to the nearest thousand, and the MD5 hash is in lowercase. (The
 directory that each file is located in is
 &lt;a href=&#34;https://github.com/lgsoft-developers/libgen/blob/c45f441c7aaa56ae690a6a6503295995a044a76b/util.php#L6&#34; title=&#34;LibGen code on GitHub&#34;&gt;also included in the file name&lt;/a&gt;.)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Visible&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Locator&lt;/code&gt;—&lt;a href=&#34;https://github.com/lgsoft-developers/libgen/blob/c45f441c7aaa56ae690a6a6503295995a044a76b/librarian/form.php#L187&#34; title=&#34;LibGen code on GitHub&#34;&gt;As far as I can tell&lt;/a&gt;, this is the file path of the original file on the machine of whoever uploaded it.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Local&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TimeAdded&lt;/code&gt;—the date/time when the text was added to the database,
+&lt;li&gt;&lt;code&gt;visible&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locator&lt;/code&gt;—&lt;a href=&#34;https://github.com/lgsoft-developers/libgen/blob/c45f441c7aaa56ae690a6a6503295995a044a76b/librarian/form.php#L187&#34; title=&#34;LibGen code on GitHub&#34;&gt;As far as I can tell&lt;/a&gt;, this is the file path of the original file on the machine of whoever uploaded it.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;local&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timeadded&lt;/code&gt;—the date/time when the text was added to the database,
 formatted as &lt;code&gt;YYYY-MM-DD HH:MM:SS&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TimeLastModified&lt;/code&gt;—the date/time when the text&amp;rsquo;s entry in the
+&lt;li&gt;&lt;code&gt;timelastmodified&lt;/code&gt;—the date/time when the text&amp;rsquo;s entry in the
 database was edited, formatted as &lt;code&gt;YYYY-MM-DD HH:MM:SS&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Coverurl&lt;/code&gt;—the path to the cover image for the text: the &lt;code&gt;Filename&lt;/code&gt;
+&lt;li&gt;&lt;code&gt;coverurl&lt;/code&gt;—the path to the cover image for the text: the &lt;code&gt;filename&lt;/code&gt;
 followed by a lowercase letter (there&amp;rsquo;s
 &lt;a href=&#34;https://github.com/lgsoft-developers/libgen/blob/c45f441c7aaa56ae690a6a6503295995a044a76b/book/util.php#L30&#34; title=&#34;LibGen code on GitHub&#34;&gt;a function&lt;/a&gt; to determine the letter for each cover, but
 I don&amp;rsquo;t know enough PHP to understand it).&lt;/li&gt;
@@ -508,11 +508,11 @@ into it more when I have the time.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;mode&lt;/code&gt;—either &lt;code&gt;last&lt;/code&gt; or &lt;code&gt;modified&lt;/code&gt;.  If you use &lt;code&gt;last&lt;/code&gt;, the API will
-match the dates you specify against text&amp;rsquo;s &lt;code&gt;TimeAdded&lt;/code&gt;, if you use
-&lt;code&gt;modified&lt;/code&gt;, it will look at &lt;code&gt;TimeLastModified&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+match the dates you specify against text&amp;rsquo;s &lt;code&gt;timeadded&lt;/code&gt;; if you use
+&lt;code&gt;modified&lt;/code&gt;, it will look at &lt;code&gt;timelastmodified&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;code&gt;timefirst&lt;/code&gt;—the API will not return texts before this date (checked
-against either &lt;code&gt;TimeAdded&lt;/code&gt; or &lt;code&gt;TimeLastModified&lt;/code&gt; depending on what
+against either &lt;code&gt;timeadded&lt;/code&gt; or &lt;code&gt;timelastmodified&lt;/code&gt; depending on what
 the &lt;code&gt;mode&lt;/code&gt; is set to).  The first books have a &lt;code&gt;TimeAdded&lt;/code&gt; value of
 &lt;code&gt;2009-07-20&lt;/code&gt;, and setting &lt;code&gt;timefirst&lt;/code&gt; to an earlier date will return
 an SQL error from the API.&lt;/p&gt;&lt;/li&gt;
@@ -531,7 +531,7 @@ returned.&lt;/p&gt;&lt;/li&gt;
 added between 1 May 2013 and 1 January 2014:&lt;/p&gt;
 
 &lt;pre class=&#34;sourceCode shell&#34;&gt;&lt;code class=&#34;sourceCode shell&#34;&gt;&lt;span
-class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.in/json.php?fields=MD5&amp;amp;limit1=10&amp;amp;mode=last&amp;amp;timefirst=2013-05-01&amp;amp;timelast=2014-01-01&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+class=&#34;fu&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;st&#34;&gt;&amp;#39;http://libgen.io/json.php?fields=MD5&amp;amp;limit1=10&amp;amp;mode=last&amp;amp;timefirst=2013-05-01&amp;amp;timelast=2014-01-01&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;the-newer-method&#34;&gt;The &lt;code&gt;newer&lt;/code&gt; method&lt;/h3&gt;
 
