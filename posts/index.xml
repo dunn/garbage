@@ -57,7 +57,7 @@ server = imap.gmail.com
 port = 993
 mailboxes = ALL
 username = gmail-address
-ssl_version = tlsv1
+ssl_version = tlsv1_2
 
 [destination]
 type = Maildir
