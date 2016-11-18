@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "base";
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
 
 // ==============
 // DIMENSIONS
@@ -49,7 +50,7 @@ html {
 }
 
 body {
-  font-family: "alber-new-web";
+  font-family: "Hammersmith One", 'Lucida Grande', sans-serif;
   color: $base3;
 }
 

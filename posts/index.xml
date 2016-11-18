@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Alex Dunn has no idea what he’s doing</title><link>http://garbage.world/posts/</link><description>Recent content in Posts on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 30 Oct 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://garbage.world/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Add Needless Complexity to Your Life</title><link>http://garbage.world/posts/email/</link><pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/email/</guid><description>
-
-&lt;p&gt;I used Apple Mail forever until recently, when my Exchange account
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts-rsses on Alex Dunn has no idea what he’s doing</title><link>http://garbage.world/posts/index.xml</link><description>Recent content in Posts-rsses on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 30 Oct 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://garbage.world/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Add Needless Complexity to Your Life</title><link>http://garbage.world/posts/email/</link><pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/email/</guid><description>&lt;p&gt;I used Apple Mail forever until recently, when my Exchange account
 starting causing it to blow itself up.  Instead of installing
 Thunderbird and moving on with my life, I decided it was a good idea
 to start being a Serious Email User, and so I installed the Serious
@@ -11,6 +9,8 @@ Installing and Configuring mutt.  (Even
 &lt;a href=&#34;http://curvedthoughts.com/blog/email-using-getmail-msmtp-mutt/&#34; title=&#34;Manage email using getmail, msmtp, and mutt&#34;&gt;the hard-to-find ones&lt;/a&gt; didn&amp;rsquo;t go in-depth
 enough, and weren&amp;rsquo;t written for OS X.)  So this my attempt to get
 everything necessary—and nothing more—written down in one place.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;mutt-is-just-for-reading-email&#34;&gt;mutt is just for reading email&lt;/h2&gt;
 
@@ -275,10 +275,7 @@ MUTTALIAS_FILES=&amp;quot;.muttrc .mail_aliases muttrc aliases&amp;quot;
 
 &lt;p&gt;Contact me
 (&lt;a href=&#34;http://pgp.mit.edu/pks/lookup?op=get&amp;amp;search=0xFCEC4680ECF924D9&#34;&gt;here&amp;rsquo;s my public key!&lt;/a&gt;)
-with feedback. Or yell at me &lt;a href=&#34;https://twitter.com/dunndunndunn&#34;&gt;on Twitter&lt;/a&gt;.&lt;/p&gt;
-</description></item><item><title>The Library Genesis API</title><link>http://garbage.world/posts/libgen/</link><pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/libgen/</guid><description>
-
-&lt;p&gt;&lt;a href=&#34;http://libgen.io/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only
+with feedback. Or yell at me &lt;a href=&#34;https://twitter.com/dunndunndunn&#34;&gt;on Twitter&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>The Library Genesis API</title><link>http://garbage.world/posts/libgen/</link><pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/libgen/</guid><description>&lt;p&gt;&lt;a href=&#34;http://libgen.io/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only
 documentation is
 &lt;a href=&#34;http://genofond.org/viewtopic.php?p=39355&#34; title=&#34;The Library Genesis Miner&#39;s Hut&#34;&gt;a forum thread in Russian&lt;/a&gt;.  So this is an English-language
 guide to using the LibGen API.&lt;/p&gt;
@@ -286,6 +283,8 @@ guide to using the LibGen API.&lt;/p&gt;
 &lt;p&gt;(I don&amp;rsquo;t know Russian, and had to read the original thread using
 &lt;a href=&#34;https://translate.google.com/translate?hl=en&amp;amp;sl=auto&amp;amp;tl=en&amp;amp;u=http%3A%2F%2Fgenofond.org%2Fviewtopic.php%3Fp%3D39355&#34;&gt;Google Translate&lt;/a&gt;,
 so corrections and additions are very welcome!)&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;first-some-bad-news&#34;&gt;First, some bad news&lt;/h2&gt;
 
@@ -537,10 +536,7 @@ repository&#34;&gt;Alfred workflow&lt;/a&gt; by &lt;a href=&#34;http://hackademi
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/dunndunndunn&#34; title=&#34;Twitter&#34;&gt;Let me know&lt;/a&gt; if you write
-your own!&lt;/p&gt;
-</description></item><item><title>Leading a Horse</title><link>http://garbage.world/posts/horse_ebooks/</link><pubDate>Tue, 24 Sep 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/horse_ebooks/</guid><description>
-
-&lt;p&gt;I don&amp;rsquo;t really know why all of a sudden I&amp;rsquo;m so cut up about
+your own!&lt;/p&gt;</description></item><item><title>Leading a Horse</title><link>http://garbage.world/posts/horse_ebooks/</link><pubDate>Tue, 24 Sep 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/horse_ebooks/</guid><description>&lt;p&gt;I don&amp;rsquo;t really know why all of a sudden I&amp;rsquo;m so cut up about
 @Horse_ebooks
 &lt;a href=&#34;http://bits.blogs.nytimes.com/2013/09/24/the-human-behind-a-favorite-spambot-horse_ebooks/&#34; title=&#34;Jenna Wortham: The Human Behind a Favorite Spambot, Horse_eBooks&#34;&gt;not being real&lt;/a&gt;.
 (Yes, in this context a spambot algorithm is real while a person
@@ -550,6 +546,8 @@ I thought it was a bit over-dramatic, but then I started talking about
 the whole affair with other people and their grief seeped into me or
 something and now I&amp;rsquo;m actually pretty upset about a spambot account on
 Twitter turning out to be something other than a spambot.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Of course there are plenty of people who don&amp;rsquo;t care; either they claim
 to have known it wasn&amp;rsquo;t real since 2011 (granted,
@@ -617,12 +615,13 @@ fools?&#34;&gt;&amp;quot;got funnier&amp;quot;&lt;/a&gt; in September of 2011,
 suddenly seem preferable, actually better, because they&amp;rsquo;re &lt;em&gt;real&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;Nothing: I am not taught to make any thing&lt;/p&gt;&amp;mdash; Horse ebooks (@Horse_ebooks) &lt;a href=&#34;https://twitter.com/Horse_ebooks/statuses/49625817868804097&#34;&gt;March 21, 2011&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-</description></item><item><title>Dudebros as a sublime expression of the absurd, or: proving Shanley&#39;s point without realizing it</title><link>http://garbage.world/posts/dudebros/</link><pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/dudebros/</guid><description>&lt;p&gt;Today &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote a
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;</description></item><item><title>Dudebros as a sublime expression of the absurd, or: proving Shanley&#39;s point without realizing it</title><link>http://garbage.world/posts/dudebros/</link><pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/dudebros/</guid><description>&lt;p&gt;Today &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote a
 &lt;a href=&#34;https://medium.com/about-work/82978662b2d6&#34; title=&#34;Things I
 Never, Ever Want To Hear Again&#34;&gt;great piece&lt;/a&gt; that was made even greater because of
 the people on Twitter who rose to the challenge of proving her points
 for her.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;And right on cue, Dudebros &lt;a href=&#34;https://twitter.com/leashless&#34;&gt;@leashless&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/chrisbeach&#34;&gt;@chrisbeach&lt;/a&gt; and others are now literally doing the &lt;em&gt;exact thing&lt;/em&gt; &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote that Dudebros do.&lt;/p&gt;&amp;mdash; Faruk Ateş (@KuraFire) &lt;a href=&#34;https://twitter.com/KuraFire/statuses/375027715818004482&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
@@ -777,10 +776,7 @@ getting better every day.&lt;/p&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
 charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Good work today, everyone.&lt;/p&gt;
-</description></item><item><title>Cultural Appropriation at Lucidity</title><link>http://garbage.world/posts/lucidity/</link><pubDate>Fri, 26 Apr 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/lucidity/</guid><description>
-
-&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt; (1 August 2013): Jonah Haas has published
+&lt;p&gt;Good work today, everyone.&lt;/p&gt;</description></item><item><title>Cultural Appropriation at Lucidity</title><link>http://garbage.world/posts/lucidity/</link><pubDate>Fri, 26 Apr 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/lucidity/</guid><description>&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt; (1 August 2013): Jonah Haas has published
   &lt;a href=&#34;http://lucidityfestival.com/reframing-the-cultural-appropriation-conversation-towards-synergy-co-learning-and-peace/&#34; title=&#34;Reframing the cultural appropriation conversation towards synergy,
   co-learning, and peace&#34;&gt;a reply on the Lucidity blog&lt;/a&gt;&lt;/p&gt;
 
@@ -791,6 +787,8 @@ appropriation.  Unfortunately, the organizers don&amp;rsquo;t seem to have a
 firm grasp on what &amp;lsquo;cultural appropriation&amp;rsquo; means, and so they don&amp;rsquo;t
 see what the big deal is or why they should make changes to their
 festival.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;who-did-what-now&#34;&gt;Who did what now?&lt;/h2&gt;
 
@@ -1124,5 +1122,4 @@ Lucidity is perpetuating racism against Indigenous peoples.
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;How do you know this isn&amp;rsquo;t a dream?&lt;/p&gt;&amp;mdash; Lucidity Festival (@LucidityFest) &lt;a href=&#34;https://twitter.com/LucidityFest/status/277652871057641472&#34;&gt;December 9, 2012&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Oh, if only it was.&lt;/p&gt;
-</description></item></channel></rss>
+&lt;p&gt;Oh, if only it was.&lt;/p&gt;</description></item></channel></rss>

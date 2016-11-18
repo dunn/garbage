@@ -1,4 +1,5 @@
 @import "compass";
+@import "normalize";
 
 /* variables and mixins */
 @mixin hide {
@@ -8,9 +9,6 @@
   /* http://css-tricks.com/snippets/css/accessibilityseo-friendly-css-hiding/ */
   top: -999px;
 }
-
-// _normalize.scss
-@import "normalize";
 
 /////// stuff for print and screen
 /* apply a natural box layout model to all elements */

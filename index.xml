@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Dunn has no idea what he’s doing</title><link>http://garbage.world/</link><description>Recent content on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 03 Jul 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://garbage.world/index.xml" rel="self" type="application/rss+xml"/><item><title>WordPreSSL</title><link>http://garbage.world/things/wordpressl/</link><pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate><guid>http://garbage.world/things/wordpressl/</guid><description>&lt;p&gt;This is an &lt;a href=&#34;https://docs.ansible.com/&#34; title=&#34;Documentation&#34;&gt;Ansible&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alex Dunn has no idea what he’s doing</title><link>http://garbage.world/index.xml</link><description>Recent content on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 03 Jul 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://garbage.world/index.xml" rel="self" type="application/rss+xml"/><item><title>WordPreSSL</title><link>http://garbage.world/things/wordpressl/</link><pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate><guid>http://garbage.world/things/wordpressl/</guid><description>&lt;p&gt;This is an &lt;a href=&#34;https://docs.ansible.com/&#34; title=&#34;Documentation&#34;&gt;Ansible&lt;/a&gt;
 playbook for provisioning a CentOS server with an SSL-enabled
 WordPress installation.  The original motivation was to be able to
 quickly set up websites for friends and associates in the spirit of
@@ -34,7 +34,7 @@ then add something like this to your &lt;code&gt;emacs.el&lt;/code&gt;:&lt;/p&gt
 department, and the Philosophy department has a website. In 2014 I
 rewrote the website from the ground up (twice!), making it modern,
 responsive, and accessible.&lt;/p&gt;
-</description></item><item><title>libgen.js</title><link>http://garbage.world/things/libgen.js/</link><pubDate>Wed, 05 Nov 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/libgen.js/</guid><description>&lt;p&gt;&lt;code&gt;libgen&lt;/code&gt; is a &lt;a href=&#34;http://nodejs.org&#34;&gt;Node.js&lt;/a&gt; wrapper for the
+</description></item><item><title>libgen.js</title><link>http://garbage.world/things/libgen/</link><pubDate>Wed, 05 Nov 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/libgen/</guid><description>&lt;p&gt;&lt;code&gt;libgen&lt;/code&gt; is a &lt;a href=&#34;http://nodejs.org&#34;&gt;Node.js&lt;/a&gt; wrapper for the
 &lt;a href=&#34;http://garbage.world/posts/libgen/&#34;&gt;Library Genesis API&lt;/a&gt;, with search added on top of
 it. Install it in the root folder of your project with &lt;code&gt;npm install
 libgen&lt;/code&gt;, then &lt;code&gt;require&lt;/code&gt; it where it&amp;rsquo;s needed:&lt;/p&gt;
@@ -45,9 +45,7 @@ libgen&lt;/code&gt;, then &lt;code&gt;require&lt;/code&gt; it where it&amp;rsquo
 &lt;a href=&#34;https://github.com/dunn/libgen.js#usage-searching&#34; title=&#34;README&#34;&gt;search&lt;/a&gt;,
 &lt;a href=&#34;https://github.com/dunn/libgen.js#usage-random-texts&#34; title=&#34;README&#34;&gt;random texts&lt;/a&gt;, and
 &lt;a href=&#34;https://github.com/dunn/libgen.js#libgen&#34; title=&#34;README&#34;&gt;other methods&lt;/a&gt;.&lt;/p&gt;
-</description></item><item><title>How to Add Needless Complexity to Your Life</title><link>http://garbage.world/posts/email/</link><pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/email/</guid><description>
-
-&lt;p&gt;I used Apple Mail forever until recently, when my Exchange account
+</description></item><item><title>How to Add Needless Complexity to Your Life</title><link>http://garbage.world/posts/email/</link><pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/email/</guid><description>&lt;p&gt;I used Apple Mail forever until recently, when my Exchange account
 starting causing it to blow itself up.  Instead of installing
 Thunderbird and moving on with my life, I decided it was a good idea
 to start being a Serious Email User, and so I installed the Serious
@@ -58,6 +56,8 @@ Installing and Configuring mutt.  (Even
 &lt;a href=&#34;http://curvedthoughts.com/blog/email-using-getmail-msmtp-mutt/&#34; title=&#34;Manage email using getmail, msmtp, and mutt&#34;&gt;the hard-to-find ones&lt;/a&gt; didn&amp;rsquo;t go in-depth
 enough, and weren&amp;rsquo;t written for OS X.)  So this my attempt to get
 everything necessary—and nothing more—written down in one place.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;mutt-is-just-for-reading-email&#34;&gt;mutt is just for reading email&lt;/h2&gt;
 
@@ -322,10 +322,7 @@ MUTTALIAS_FILES=&amp;quot;.muttrc .mail_aliases muttrc aliases&amp;quot;
 
 &lt;p&gt;Contact me
 (&lt;a href=&#34;http://pgp.mit.edu/pks/lookup?op=get&amp;amp;search=0xFCEC4680ECF924D9&#34;&gt;here&amp;rsquo;s my public key!&lt;/a&gt;)
-with feedback. Or yell at me &lt;a href=&#34;https://twitter.com/dunndunndunn&#34;&gt;on Twitter&lt;/a&gt;.&lt;/p&gt;
-</description></item><item><title>The Library Genesis API</title><link>http://garbage.world/posts/libgen/</link><pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/libgen/</guid><description>
-
-&lt;p&gt;&lt;a href=&#34;http://libgen.io/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only
+with feedback. Or yell at me &lt;a href=&#34;https://twitter.com/dunndunndunn&#34;&gt;on Twitter&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>The Library Genesis API</title><link>http://garbage.world/posts/libgen/</link><pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/libgen/</guid><description>&lt;p&gt;&lt;a href=&#34;http://libgen.io/&#34;&gt;Library Genesis&lt;/a&gt; has an API, but the only
 documentation is
 &lt;a href=&#34;http://genofond.org/viewtopic.php?p=39355&#34; title=&#34;The Library Genesis Miner&#39;s Hut&#34;&gt;a forum thread in Russian&lt;/a&gt;.  So this is an English-language
 guide to using the LibGen API.&lt;/p&gt;
@@ -333,6 +330,8 @@ guide to using the LibGen API.&lt;/p&gt;
 &lt;p&gt;(I don&amp;rsquo;t know Russian, and had to read the original thread using
 &lt;a href=&#34;https://translate.google.com/translate?hl=en&amp;amp;sl=auto&amp;amp;tl=en&amp;amp;u=http%3A%2F%2Fgenofond.org%2Fviewtopic.php%3Fp%3D39355&#34;&gt;Google Translate&lt;/a&gt;,
 so corrections and additions are very welcome!)&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;first-some-bad-news&#34;&gt;First, some bad news&lt;/h2&gt;
 
@@ -584,8 +583,7 @@ repository&#34;&gt;Alfred workflow&lt;/a&gt; by &lt;a href=&#34;http://hackademi
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/dunndunndunn&#34; title=&#34;Twitter&#34;&gt;Let me know&lt;/a&gt; if you write
-your own!&lt;/p&gt;
-</description></item><item><title>Twitter bots</title><link>http://garbage.world/projects/bots/</link><pubDate>Sun, 31 Aug 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/bots/</guid><description>&lt;p&gt;I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here.  Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)&lt;/p&gt;
+your own!&lt;/p&gt;</description></item><item><title>Twitter bots</title><link>http://garbage.world/projects/bots/</link><pubDate>Sun, 31 Aug 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/bots/</guid><description>&lt;p&gt;I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here.  Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)&lt;/p&gt;
 </description></item><item><title>The Good Trolle</title><link>http://garbage.world/things/trolle/</link><pubDate>Thu, 17 Jul 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/trolle/</guid><description>&lt;p&gt;The Good Trolle is a new Twitter citizen who serves two complementary roles:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -599,12 +597,10 @@ single spell. It&amp;rsquo;s where the only argument against a conspiracy
 theory is that it&amp;rsquo;s not consistent. It&amp;rsquo;s where we&amp;rsquo;re still talking
 about &lt;em&gt;Harry Potter,&lt;/em&gt; after all these years.&lt;/p&gt;
 </description></item><item><title>Jerry Fodor&#39;s Wittgenstein parody</title><link>http://garbage.world/things/fodor/</link><pubDate>Sun, 20 Apr 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/fodor/</guid><description>&lt;p&gt;&lt;a href=&#34;http://tar.weatherson.org/2007/01/27/foggy-wittgenstein/&#34;&gt;Sometime in the 60s&lt;/a&gt; Michael Frayn wrote a &lt;a href=&#34;http://stevepetersen.net/personal/wittgenstein-fog.html&#34; title=&#34;Fog-like Sensations&#34;&gt;goofy parody&lt;/a&gt; of Ludwig Wittgenstein&amp;rsquo;s &lt;em&gt;Philosophical Investigations&lt;/em&gt;, and around 1970 Jerry Fodor wrote some &amp;ldquo;further addenda.&amp;rdquo;  Fodor&amp;rsquo;s parody isn&amp;rsquo;t really as good, but it still deserves to be better preserved than it is &lt;a href=&#34;http://www.nyu.edu/gsas/dept/philo/faculty/block/miscellaneous/Fodor_Wittgenstein.png&#34; title=&#34;PNG image&#34;&gt;at present&lt;/a&gt;, so I transcribed it here.&lt;/p&gt;
-</description></item><item><title>Exists.js</title><link>http://garbage.world/things/exists.js/</link><pubDate>Fri, 28 Feb 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/exists.js/</guid><description>&lt;p&gt;If you&amp;rsquo;re a scumbag analytic philosopher like me then this might actually
+</description></item><item><title>Exists.js</title><link>http://garbage.world/things/exists/</link><pubDate>Fri, 28 Feb 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/things/exists/</guid><description>&lt;p&gt;If you&amp;rsquo;re a scumbag analytic philosopher like me then this might actually
 come in handy, like when your &amp;ldquo;friend&amp;rdquo; suggests that chairs are
 ontologically innocent.&lt;/p&gt;
-</description></item><item><title>Leading a Horse</title><link>http://garbage.world/posts/horse_ebooks/</link><pubDate>Tue, 24 Sep 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/horse_ebooks/</guid><description>
-
-&lt;p&gt;I don&amp;rsquo;t really know why all of a sudden I&amp;rsquo;m so cut up about
+</description></item><item><title>Leading a Horse</title><link>http://garbage.world/posts/horse_ebooks/</link><pubDate>Tue, 24 Sep 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/horse_ebooks/</guid><description>&lt;p&gt;I don&amp;rsquo;t really know why all of a sudden I&amp;rsquo;m so cut up about
 @Horse_ebooks
 &lt;a href=&#34;http://bits.blogs.nytimes.com/2013/09/24/the-human-behind-a-favorite-spambot-horse_ebooks/&#34; title=&#34;Jenna Wortham: The Human Behind a Favorite Spambot, Horse_eBooks&#34;&gt;not being real&lt;/a&gt;.
 (Yes, in this context a spambot algorithm is real while a person
@@ -614,6 +610,8 @@ I thought it was a bit over-dramatic, but then I started talking about
 the whole affair with other people and their grief seeped into me or
 something and now I&amp;rsquo;m actually pretty upset about a spambot account on
 Twitter turning out to be something other than a spambot.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Of course there are plenty of people who don&amp;rsquo;t care; either they claim
 to have known it wasn&amp;rsquo;t real since 2011 (granted,
@@ -681,12 +679,13 @@ fools?&#34;&gt;&amp;quot;got funnier&amp;quot;&lt;/a&gt; in September of 2011,
 suddenly seem preferable, actually better, because they&amp;rsquo;re &lt;em&gt;real&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;Nothing: I am not taught to make any thing&lt;/p&gt;&amp;mdash; Horse ebooks (@Horse_ebooks) &lt;a href=&#34;https://twitter.com/Horse_ebooks/statuses/49625817868804097&#34;&gt;March 21, 2011&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-</description></item><item><title>Dudebros as a sublime expression of the absurd, or: proving Shanley&#39;s point without realizing it</title><link>http://garbage.world/posts/dudebros/</link><pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/dudebros/</guid><description>&lt;p&gt;Today &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote a
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;</description></item><item><title>Dudebros as a sublime expression of the absurd, or: proving Shanley&#39;s point without realizing it</title><link>http://garbage.world/posts/dudebros/</link><pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate><guid>http://garbage.world/posts/dudebros/</guid><description>&lt;p&gt;Today &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote a
 &lt;a href=&#34;https://medium.com/about-work/82978662b2d6&#34; title=&#34;Things I
 Never, Ever Want To Hear Again&#34;&gt;great piece&lt;/a&gt; that was made even greater because of
 the people on Twitter who rose to the challenge of proving her points
 for her.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p&gt;And right on cue, Dudebros &lt;a href=&#34;https://twitter.com/leashless&#34;&gt;@leashless&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/chrisbeach&#34;&gt;@chrisbeach&lt;/a&gt; and others are now literally doing the &lt;em&gt;exact thing&lt;/em&gt; &lt;a href=&#34;https://twitter.com/shanley&#34;&gt;@shanley&lt;/a&gt; wrote that Dudebros do.&lt;/p&gt;&amp;mdash; Faruk Ateş (@KuraFire) &lt;a href=&#34;https://twitter.com/KuraFire/statuses/375027715818004482&#34;&gt;September 3, 2013&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
@@ -841,5 +840,4 @@ getting better every day.&lt;/p&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34;
 charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Good work today, everyone.&lt;/p&gt;
-</description></item></channel></rss>
+&lt;p&gt;Good work today, everyone.&lt;/p&gt;</description></item></channel></rss>
