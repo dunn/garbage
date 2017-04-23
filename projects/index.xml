@@ -1,27 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects-rsses on Alex Dunn has no idea what he’s doing</title><link>http://garbage.world/projects/index.xml</link><description>Recent content in Projects-rsses on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 26 Oct 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://garbage.world/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>homebrew-emacs</title><link>http://garbage.world/projects/homebrew-emacs/</link><pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/homebrew-emacs/</guid><description>&lt;p&gt;&lt;a href=&#34;http://brew.sh&#34;&gt;Homebrew&lt;/a&gt; is an OS X package manager primarily
-focused on installing command-line tools, but you can import external
-collections of package formulae called
-&lt;a href=&#34;https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Interesting-Taps-%26-Branches.md&#34;&gt;“taps”&lt;/a&gt;.
-I forked &lt;a href=&#34;https://github.com/edavis&#34;&gt;Eric Davis’&lt;/a&gt; tap of Emacs
-packages and expanded it, and I now use it instead of &lt;code&gt;package.el&lt;/code&gt; and
-&lt;a href=&#34;http://melpa.org&#34;&gt;MELPA&lt;/a&gt;.  It still doesn’t have as many packages as
-MELPA does, but &lt;a href=&#34;https://github.com/Homebrew/homebrew-emacs/blob/master/CONTRIBUTING.md&#34;&gt;you can help fix that!&lt;/a&gt;&lt;/p&gt;
-</description></item><item><title>Twitter bots</title><link>http://garbage.world/projects/bots/</link><pubDate>Sun, 31 Aug 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/bots/</guid><description>&lt;p&gt;I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here.  Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)&lt;/p&gt;
-</description></item><item><title>&lt;em&gt;Modern Philosophy&lt;/em&gt; in plain text</title><link>http://garbage.world/projects/modphil/</link><pubDate>Mon, 28 May 2012 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/modphil/</guid><description>&lt;p&gt;&lt;em&gt;Modern Philosophy&lt;/em&gt; is a free textbook created by
-&lt;a href=&#34;https://filebox.vt.edu/users/ottw/ott.htm&#34; title=&#34;Walter Ott&#39;s
-personal site&#34;&gt;Walter Ott&lt;/a&gt;. It combines public-domain primary sources with
-supplementary material and study questions. Everything not in the
-public domain is licensed under
-&lt;a href=&#34;http://creativecommons.org/licenses/by-nc-sa/3.0/&#34; title=&#34;Creative Commons license page&#34;&gt;CC BY-NC-SA 3.0&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This modified version of the text is written in
-&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34; title=&#34;Markdown
-project page&#34;&gt;Markdown&lt;/a&gt;. Markdown is a plain-text syntax that allows for easy
-conversion to other file formats.  Using
-&lt;a href=&#34;http://johnmacfarlane.net/pandoc/&#34; title=&#34;pandoc project page&#34;&gt;pandoc&lt;/a&gt;,
-&lt;em&gt;Modern Philosophy&lt;/em&gt; can be easily converted to HTML, PDF, EPUB, and
-&lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#options&#34; title=&#34;pandoc options&#34;&gt;many other formats&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This version of &lt;em&gt;Modern Philosophy&lt;/em&gt; is kept in a
-&lt;a href=&#34;https://github.com/dunn/modernphilosophy&#34; title=&#34;GitHub repository&#34;&gt;public repository on GitHub&lt;/a&gt;.&lt;/p&gt;
-</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Alex Dunn has no idea what he’s doing</title><link>http://garbage.world/projects/</link><description>Recent content in Projects on Alex Dunn has no idea what he’s doing</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 26 Oct 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://garbage.world/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>homebrew-emacs</title><link>http://garbage.world/projects/homebrew-emacs/</link><pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/homebrew-emacs/</guid><description>Homebrew is an OS X package manager primarily focused on installing command-line tools, but you can import external collections of package formulae called “taps”. I forked Eric Davis’ tap of Emacs packages and expanded it, and I now use it instead of package.el and MELPA. It still doesn’t have as many packages as MELPA does, but you can help fix that!</description></item><item><title>Twitter bots</title><link>http://garbage.world/projects/bots/</link><pubDate>Sun, 31 Aug 2014 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/bots/</guid><description>I&amp;rsquo;ve made enough Twitter bots now that I guess it&amp;rsquo;s something I can link to here. Follow them, or don&amp;rsquo;t, or follow just the good ones? (Are there any good ones?)</description></item><item><title>&lt;em&gt;Modern Philosophy&lt;/em&gt; in plain text</title><link>http://garbage.world/projects/modphil/</link><pubDate>Mon, 28 May 2012 00:00:00 +0000</pubDate><guid>http://garbage.world/projects/modphil/</guid><description>Modern Philosophy is a free textbook created by Walter Ott. It combines public-domain primary sources with supplementary material and study questions. Everything not in the public domain is licensed under CC BY-NC-SA 3.0.
+This modified version of the text is written in Markdown. Markdown is a plain-text syntax that allows for easy conversion to other file formats. Using pandoc, Modern Philosophy can be easily converted to HTML, PDF, EPUB, and many other formats.</description></item></channel></rss>
